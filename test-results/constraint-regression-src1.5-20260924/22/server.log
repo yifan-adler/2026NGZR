@@ -1,0 +1,51 @@
+[RDFW_TEST_SEED] 20260924
+=========================================
+= Simulation @Home Competition Platform =
+=========================================
+= Ready to accept a new team
+# Registration from 'RDFW'
+> Configurations:
+	Mode: IT
+	Timeout: 5000
+	TestDir: /tmp/robocup-constraint-regression-release/22/runtime/tests/
+	TestSize: 1
+	Single test: 1
+# Testing <case.xml>
+# Result:
+	[Move 4|true]
+	[PickUp 11|true]
+	[Sense | 11 6 7 8 9 10 12 13]
+	[AskLoc 5|not_known]
+	[AskLoc 5|not_known]
+	[AskLoc 5|at(5,6)]
+	[Move 6|true]
+	[Sense | 5 11]
+	[PutDown 11|true]
+	[Move 4|true]
+	[PickUp 9|true]
+	[Move 6|true]
+	[PutDown 9|true]
+	[Move 4|true]
+	[PickUp 10|true]
+	[Move 6|true]
+	[PutDown 10|true]
+	[Move 4|true]
+	[PickUp 6|true]
+	[Move 6|true]
+	[PutDown 6|true]
+	[Move 4|true]
+	[PickUp 12|true]
+	[Move 6|true]
+	[PutDown 12|true]
+	[Move 4|true]
+	[PickUp 7|true]
+	[Move 6|true]
+	[PutDown 7|true]
+	[Move 4|true]
+	[PickUp 8|true]
+	[Move 6|true]
+	[PutDown 8|true]
+	[Move 3|true]
+	[Sense | 2]
+# Time: 3.919s
+# Score: 1323

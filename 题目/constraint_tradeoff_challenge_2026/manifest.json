@@ -1,0 +1,302 @@
+[
+  {
+    "id": "P01",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 4,
+    "constraints": 1,
+    "theoretical_max": 180,
+    "explanation": "Closed-container trade: 2 object(s), task order [2, 0, 3, 1]."
+  },
+  {
+    "id": "P02",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 4,
+    "constraints": 1,
+    "theoretical_max": 180,
+    "explanation": "Closed-container trade: 2 object(s), task order [0, 1, 2, 3]."
+  },
+  {
+    "id": "P03",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 5,
+    "constraints": 1,
+    "theoretical_max": 220,
+    "explanation": "Closed-container trade: 3 object(s), task order [4, 3, 2, 1, 0]."
+  },
+  {
+    "id": "P04",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 6,
+    "constraints": 1,
+    "theoretical_max": 260,
+    "explanation": "Closed-container trade: 4 object(s), task order [5, 2, 4, 3, 0, 1]."
+  },
+  {
+    "id": "P05",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "goals": 5,
+    "constraints": 1,
+    "theoretical_max": 220,
+    "explanation": "Moving the red book away from table changes nearby and location goals."
+  },
+  {
+    "id": "P06",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "goals": 7,
+    "constraints": 1,
+    "theoretical_max": 300,
+    "explanation": "Moving the red book away from table changes nearby and location goals."
+  },
+  {
+    "id": "P07",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "goals": 4,
+    "constraints": 1,
+    "theoretical_max": 180,
+    "explanation": "Delivering a book from cupboard sacrifices its inside constraint."
+  },
+  {
+    "id": "P08",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "goals": 6,
+    "constraints": 1,
+    "theoretical_max": 260,
+    "explanation": "Delivering a book from cupboard sacrifices its inside constraint."
+  },
+  {
+    "id": "P09",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 2,
+    "goals": 4,
+    "constraints": 1,
+    "theoretical_max": 180,
+    "explanation": "Closed-container trade: 2 object(s), task order [3, 2, 1, 0]."
+  },
+  {
+    "id": "P10",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 2,
+    "goals": 6,
+    "constraints": 1,
+    "theoretical_max": 260,
+    "explanation": "Moving the red book away from table changes nearby and location goals."
+  },
+  {
+    "id": "N01",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Closed-container trade: 1 object(s), task order [0, 1, 2]."
+  },
+  {
+    "id": "N02",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Closed-container trade: 1 object(s), task order [2, 1, 0]."
+  },
+  {
+    "id": "N03",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Closed-container trade: 1 object(s), task order [1, 2, 0]."
+  },
+  {
+    "id": "N04",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Closed-container trade: 1 object(s), task order [0, 2, 1]."
+  },
+  {
+    "id": "N05",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 2,
+    "theoretical_max": 120,
+    "explanation": "Moving the red book away from table changes nearby and location goals."
+  },
+  {
+    "id": "N06",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 2,
+    "goals": 2,
+    "constraints": 2,
+    "theoretical_max": 120,
+    "explanation": "Moving the red book away from table changes nearby and location goals."
+  },
+  {
+    "id": "N07",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 2,
+    "theoretical_max": 120,
+    "explanation": "Delivering a book from cupboard sacrifices its inside constraint."
+  },
+  {
+    "id": "N08",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 2,
+    "goals": 2,
+    "constraints": 2,
+    "theoretical_max": 120,
+    "explanation": "Delivering a book from cupboard sacrifices its inside constraint."
+  },
+  {
+    "id": "N09",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Closed-container trade: 1 object(s), task order [2, 0, 1]."
+  },
+  {
+    "id": "N10",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 2,
+    "theoretical_max": 120,
+    "explanation": "Moving the red book away from desk changes nearby and location goals."
+  },
+  {
+    "id": "C01",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 1,
+    "constraints": 1,
+    "theoretical_max": 60,
+    "explanation": "Normal task group 1 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C02",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 1,
+    "theoretical_max": 100,
+    "explanation": "Normal task group 2 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C03",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 1,
+    "theoretical_max": 100,
+    "explanation": "Normal task group 3 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C04",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 1,
+    "constraints": 1,
+    "theoretical_max": 60,
+    "explanation": "Normal task group 4 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C05",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "goals": 2,
+    "constraints": 1,
+    "theoretical_max": 100,
+    "explanation": "Normal task group 5 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C06",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 1,
+    "theoretical_max": 100,
+    "explanation": "Normal task group 6 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C07",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 1,
+    "theoretical_max": 100,
+    "explanation": "Normal task group 7 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C08",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 2,
+    "constraints": 1,
+    "theoretical_max": 100,
+    "explanation": "Normal task group 8 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C09",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Normal task group 9 preserves the already-closed cupboard."
+  },
+  {
+    "id": "C10",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "goals": 3,
+    "constraints": 1,
+    "theoretical_max": 140,
+    "explanation": "Normal task group 10 preserves the already-closed cupboard."
+  }
+]

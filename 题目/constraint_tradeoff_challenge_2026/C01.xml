@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 2)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 table) (size 2 big) (at 2 2)
+(sort 3 chair) (size 3 big) (at 3 3)
+(sort 4 book) (size 4 small) (color 4 red) (at 4 2)
+(sort 5 cup) (size 5 small) (color 5 blue) (at 5 3)
+(sort 6 bottle) (size 6 small) (color 6 white) (at 6 2)
+(sort 7 cupboard) (size 7 big) (at 7 4) (type 7 container) (closed 7)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:cons_notnot (:info (closed X) (:cond (sort X cupboard))))
+(:task (pickup X) (:cond (sort X book) (color X red)))
+)
+</instr>
+<nl>
+The cupboard must be closed.
+Pick up the red book.
+</nl>
+</test>

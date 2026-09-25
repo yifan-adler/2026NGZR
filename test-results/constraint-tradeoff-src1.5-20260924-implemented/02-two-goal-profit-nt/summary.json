@@ -1,0 +1,58 @@
+{
+  "raw_score": 234,
+  "official_score": 234,
+  "platform_seconds": 0.617,
+  "platform_timed_out": false,
+  "actions": {
+    "open": 1,
+    "pickup": 2,
+    "putin": 2,
+    "close": 1
+  },
+  "action_count": 6,
+  "client_metrics": null,
+  "final_goals": 4,
+  "credited_constraints": 0,
+  "platform_error": false,
+  "case": "/mnt/c/Users/20723/Desktop/2026robocup/stage2-location-recovery/题目/constraint_tradeoff_2026/02-two-goal-profit.xml",
+  "case_sha256": "c931d619c4d8c4bc2b1ea29b6af5361bb3d862a15b3fbd41d82e07b627eeedfc",
+  "stage": 1,
+  "mode": "nt",
+  "wall_seconds": 1.036021249000001,
+  "external_timeout": false,
+  "client_exit": 0,
+  "server_exit": -15,
+  "commands": [
+    [
+      "/tmp/robocup-constraint-sdk-src-20260924/bin/cserver",
+      "-td",
+      "/tmp/robocup-constraint-tradeoff-release/02-two-goal-profit-nt/runtime/tests",
+      "-eval",
+      "/tmp/robocup-constraint-sdk-src-20260924/lib/libasp",
+      "-log",
+      "/tmp/robocup-constraint-tradeoff-release/02-two-goal-profit-nt/runtime/log",
+      "-mode",
+      "nt",
+      "-test",
+      "1",
+      "-to",
+      "5000"
+    ],
+    [
+      "/tmp/robocup-constraint-tradeoff-release/build/example",
+      "-stage",
+      "1",
+      "-nlp",
+      "1",
+      "-err",
+      "0",
+      "-ask_2",
+      "0",
+      "-path",
+      "/tmp/robocup-constraint-tradeoff-release/client-assets/words.txt"
+    ]
+  ],
+  "limit_ms": 5000,
+  "budget_ms": null,
+  "status": "ok"
+}

@@ -1,0 +1,58 @@
+{
+  "raw_score": 298,
+  "official_score": 298,
+  "platform_seconds": 1.051,
+  "platform_timed_out": false,
+  "actions": {
+    "open": 1,
+    "pickup": 4,
+    "putin": 4,
+    "close": 1
+  },
+  "action_count": 10,
+  "client_metrics": null,
+  "final_goals": 6,
+  "credited_constraints": 0,
+  "platform_error": false,
+  "case": "/mnt/c/Users/20723/Desktop/2026robocup/stage2-location-recovery/题目/liuyifan1.0/05.xml",
+  "case_sha256": "a53814a5efdda686b446557343cb3f87112bc8caa311679600a07a70688d8433",
+  "stage": 1,
+  "mode": "nt",
+  "wall_seconds": 1.4430158340000006,
+  "external_timeout": false,
+  "client_exit": 0,
+  "server_exit": -15,
+  "commands": [
+    [
+      "/tmp/robocup-constraint-sdk-src-20260924/bin/cserver",
+      "-td",
+      "/tmp/robocup-constraint-tradeoff-release/07-existing-four-goal-nt/runtime/tests",
+      "-eval",
+      "/tmp/robocup-constraint-sdk-src-20260924/lib/libasp",
+      "-log",
+      "/tmp/robocup-constraint-tradeoff-release/07-existing-four-goal-nt/runtime/log",
+      "-mode",
+      "nt",
+      "-test",
+      "1",
+      "-to",
+      "5000"
+    ],
+    [
+      "/tmp/robocup-constraint-tradeoff-release/build/example",
+      "-stage",
+      "1",
+      "-nlp",
+      "1",
+      "-err",
+      "0",
+      "-ask_2",
+      "0",
+      "-path",
+      "/tmp/robocup-constraint-tradeoff-release/client-assets/words.txt"
+    ]
+  ],
+  "limit_ms": 5000,
+  "budget_ms": null,
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 2)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 cupboard) (size 2 big) (at 2 2) (type 2 container) (closed 2)
+(sort 3 book) (size 3 small) (color 3 red) (inside 3 2)
+(sort 4 cup) (size 4 small) (color 4 blue) (at 4 1)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:cons_notnot (:info (inside X Y) (:cond (sort X book) (color X red) (sort Y cupboard))))
+(:task (give human X) (:cond (sort X book) (color X red)))
+(:task (goto X) (:cond (sort X cupboard)))
+(:task (goto X) (:cond (sort X human)))
+(:task (goto X) (:cond (sort X cup) (color X blue)))
+)
+</instr>
+<nl>
+The red book must be in the cupboard.
+Give the red book to me.
+Go to the cupboard.
+Go to the human.
+Go to the blue cup.
+</nl>
+</test>

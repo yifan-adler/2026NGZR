@@ -1,0 +1,59 @@
+{
+  "raw_score": 418,
+  "official_score": 418,
+  "platform_seconds": 4.106,
+  "platform_timed_out": false,
+  "actions": {
+    "move": 14,
+    "pickup": 9,
+    "askloc": 3,
+    "sense": 2,
+    "putdown": 8
+  },
+  "action_count": 36,
+  "client_metrics": null,
+  "final_goals": 9,
+  "credited_constraints": 7,
+  "platform_error": false,
+  "case": "/tmp/robocup-constraint-regression-release/client-assets/cases/11.xml",
+  "case_sha256": "8b300334d74a935765e695b66baf19354551eb54100e6f81d4b82c40ea9aceeb",
+  "stage": 2,
+  "mode": "it",
+  "wall_seconds": 4.502182774999994,
+  "external_timeout": false,
+  "client_exit": 0,
+  "server_exit": -15,
+  "commands": [
+    [
+      "/tmp/robocup-constraint-sdk-src-20260924/bin/cserver",
+      "-td",
+      "/tmp/robocup-constraint-regression-release/11/runtime/tests",
+      "-eval",
+      "/tmp/robocup-constraint-sdk-src-20260924/lib/libasp",
+      "-log",
+      "/tmp/robocup-constraint-regression-release/11/runtime/log",
+      "-mode",
+      "it",
+      "-test",
+      "1",
+      "-to",
+      "5000"
+    ],
+    [
+      "/tmp/robocup-constraint-tradeoff-release/build/example",
+      "-stage",
+      "2",
+      "-nlp",
+      "0",
+      "-err",
+      "1",
+      "-ask_2",
+      "1",
+      "-path",
+      "/tmp/robocup-constraint-regression-release/client-assets/words.txt"
+    ]
+  ],
+  "limit_ms": 5000,
+  "budget_ms": null,
+  "status": "ok"
+}

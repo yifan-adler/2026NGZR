@@ -1,0 +1,148 @@
+[LOG]:-stage
+[LOG]:-nlp
+[LOG]:-err
+[LOG]:-ask_2
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+#(Plug): Timeout=5000
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32mcase.xml
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=3 unique=3 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:4)[0m[33m(2 cupboard inside:[] Closed)[0m(4 book)
+UnknownPos:
+[34m(3 )[0m 
+Task:
+Behave:[35mpickup[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mputin[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:cupboard,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Behave:[35mclosed[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+3
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"putin","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=putin legacy_choice=true eligible=true complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=0ms, remaining=4700ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=putin can_finish=true remaining_plan_ms=300 safety_ms=300 budget_remaining_ms=4700
+[0m
+[LOG]:[TradeoffDecision] phase=main-loop task=0 decision=skip best=74 incumbent=100 search_ms=0
+
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":3,"phase":"main-loop","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=putin legacy_choice=false eligible=true complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=0ms, remaining=4700ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":4,"phase":"main-loop","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=putin legacy_choice=false eligible=true complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=0ms, remaining=4700ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":5,"phase":"must-choose-one","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=must-choose-one rank=1 task_index=0 behave=putin legacy_choice=false eligible=true complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][must-choose-one] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=0ms, remaining=4700ms
+[0m
+[LOG]:[36m[3A][must-choose-one] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+stage=1
+[LOG]:[36m[3B][Deadline] phase=must-choose-one task_index=1 behave=pickup can_finish=true remaining_plan_ms=0 safety_ms=300 budget_remaining_ms=4700
+[0m
+Must Choose one:pickup
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":6,"task_index":1,"tasks":[1],"task_label":"pickup","generated_ms":0,"world_revision":0,"selection_reason":"legacy_must_choose_one_risk","prediction":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":0,"action_cost":0,"final_reward":100,"utility":0},"expected_reward":100,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=1 behave=pickup executed=0 total=0 remaining_utility=0 remaining_duration_ms=0
+[0m
+pickup book的风险系数是：0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":6,"prediction":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":0,"action_cost":0,"final_reward":100,"utility":0},"actual":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":0,"action_cost":0,"final_reward":100,"utility":0},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=1 behave=pickup succeeded=true executed=0 total=0 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[32mTask done
+ Behave:[35mpickup[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+-----check check check-----
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":7,"phase":"check-phase","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=check-phase rank=1 task_index=0 behave=putin legacy_choice=false eligible=false complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][check-phase] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=0ms, remaining=4700ms
+[0m
+[LOG]:[36m[3A][check-phase] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":8,"phase":"stop-rescan","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=putin legacy_choice=false eligible=false complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before check-phase; candidate_count=1 fresh_positive=false include_goto=false
+[0m
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:4)[0m[33m(2 cupboard inside:[] Closed)[0m(4 book)
+UnknownPos:
+[34m(3 )[0m 
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":9,"phase":"multi-goto","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=multi-goto rank=1 task_index=0 behave=putin legacy_choice=false eligible=false complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][multi-goto] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=1ms, remaining=4699ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":10,"phase":"stop-rescan","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=putin legacy_choice=false eligible=false complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before multi-goto; candidate_count=1 fresh_positive=false include_goto=true
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":11,"phase":"terminal-recovery","task_index":0,"task_label":"putin","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":2,"maintained_constraints":0,"action_count":3,"action_cost":6,"final_reward":74,"utility":-26}}
+[LOG]:[36m[3B][Candidate] phase=terminal-recovery rank=1 task_index=0 behave=putin legacy_choice=false eligible=false complete=true actions=3 duration_ms=300 action_cost=6 score_before=100 score_after=74 marginal_score=-26 utility=-26 gained_goals=[0] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[33m[Recovery] stop: no positive legal candidate after full rescan; goals=2/3 revision=0
+[0m
+
+Sovled Task Num:1    Expect Num:3
+[LOG]:[36m[3A][final] goals=2/3 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=1ms, remaining=4699ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[1:pickup,2:goto], satisfied_constraints=[0]
+[0m
+#(Plug): Elapsed time=0.001s
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test

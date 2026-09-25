@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<test>
+<env ans="off" err="off" mis="off">
+<info>
+(hold 0) (plate 0) (at 0 2)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 cupboard) (size 2 big) (at 2 2) (type 2 container) (closed 2)
+(sort 4 book) (size 4 small) (color 4 red) (at 4 2)
+(sort 5 cup) (size 5 small) (color 5 blue) (at 5 2)
+(sort 6 bottle) (size 6 small) (color 6 white) (at 6 2)
+(sort 7 can) (size 7 small) (color 7 green) (at 7 2)
+(sort 20 book) (size 20 small) (color 20 blue) (at 20 2)
+(sort 21 book) (size 21 small) (color 21 white) (at 21 2)
+(sort 22 book) (size 22 small) (color 22 green) (at 22 2)
+(sort 23 book) (size 23 small) (color 23 black) (at 23 2)
+(sort 24 book) (size 24 small) (color 24 yellow) (at 24 2)
+(sort 25 cup) (size 25 small) (color 25 red) (at 25 2)
+(sort 26 cup) (size 26 small) (color 26 white) (at 26 2)
+(sort 27 cup) (size 27 small) (color 27 green) (at 27 2)
+(sort 28 cup) (size 28 small) (color 28 black) (at 28 2)
+(sort 29 cup) (size 29 small) (color 29 yellow) (at 29 2)
+(sort 30 bottle) (size 30 small) (color 30 red) (at 30 2)
+(sort 31 bottle) (size 31 small) (color 31 blue) (at 31 2)
+(sort 32 bottle) (size 32 small) (color 32 green) (at 32 2)
+(sort 33 bottle) (size 33 small) (color 33 black) (at 33 2)
+(sort 34 bottle) (size 34 small) (color 34 yellow) (at 34 2)
+(sort 35 can) (size 35 small) (color 35 red) (at 35 2)
+</info>
+<mis /><err><r /><w /></err><extra />
+</env>
+<instr>
+(:ins
+(:cons_notnot (:info (closed X) (:cond (sort X cupboard))))
+(:task (putin X Y) (:cond (sort X can) (color X green) (sort Y cupboard)))
+(:task (putin X Y) (:cond (sort X book) (color X red) (sort Y cupboard)))
+(:task (putin X Y) (:cond (sort X bottle) (color X white) (sort Y cupboard)))
+(:task (putin X Y) (:cond (sort X cup) (color X blue) (sort Y cupboard)))
+(:task (close X) (:cond (sort X cupboard)))
+(:task (goto X) (:cond (sort X cupboard)))
+(:task (puton X Y) (:cond (sort X book) (color X blue) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X book) (color X white) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X book) (color X green) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X book) (color X black) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X book) (color X yellow) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X cup) (color X red) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X cup) (color X white) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X cup) (color X green) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X cup) (color X black) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X cup) (color X yellow) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X bottle) (color X red) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X bottle) (color X blue) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X bottle) (color X green) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X bottle) (color X black) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X bottle) (color X yellow) (sort Y cupboard)))
+(:task (puton X Y) (:cond (sort X can) (color X red) (sort Y cupboard)))
+)
+</instr>
+<nl>
+The cupboard must be closed.
+Put the green can in the cupboard.
+Put the red book in the cupboard.
+Put the white bottle in the cupboard.
+Put the blue cup in the cupboard.
+Close the cupboard.
+Go to the cupboard.
+Put the blue book on the cupboard.
+Put the white book on the cupboard.
+Put the green book on the cupboard.
+Put the black book on the cupboard.
+Put the yellow book on the cupboard.
+Put the red cup on the cupboard.
+Put the white cup on the cupboard.
+Put the green cup on the cupboard.
+Put the black cup on the cupboard.
+Put the yellow cup on the cupboard.
+Put the red bottle on the cupboard.
+Put the blue bottle on the cupboard.
+Put the green bottle on the cupboard.
+Put the black bottle on the cupboard.
+Put the yellow bottle on the cupboard.
+Put the red can on the cupboard.
+</nl>
+</test>

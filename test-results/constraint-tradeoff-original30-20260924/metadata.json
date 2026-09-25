@@ -1,0 +1,43 @@
+{
+  "old_executable_sha256": "607609802ee5cc9d850a5aa2a2df71623c40ba299540d5e308aabfe67b0f1f62",
+  "new_executable_sha256": "c8ea55e5497b5b225d01b56d4e57d6eadbe9cc0f0f1ca88bca7d270ce03c0ab3",
+  "sdk_cserver_sha256": "8ec0a80853f0bcd022e2cc56b2e25b56bc833bfaaacb05bc8e862adda0eb95cb",
+  "seed": 20260924,
+  "time_limit_ms": 5000,
+  "cases": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10"
+  ],
+  "modes": [
+    "it",
+    "nt"
+  ]
+}

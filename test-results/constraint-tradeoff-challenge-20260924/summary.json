@@ -1,0 +1,49 @@
+{
+  "case_count": 30,
+  "runs": 60,
+  "retries": [
+    {
+      "id": "N08",
+      "mode": "nt",
+      "original_status": "failed",
+      "rerun_status": "ok"
+    }
+  ],
+  "all_evaluator_valid": true,
+  "max_theoretical_score": 300,
+  "max_observed_official_score": 324,
+  "categories": {
+    "positive": {
+      "verdicts": {
+        "pass": 20
+      },
+      "improved": 0,
+      "unchanged": 20,
+      "declined": 0,
+      "total_base_delta": 0,
+      "total_official_delta": -2
+    },
+    "negative": {
+      "verdicts": {
+        "mistake": 4,
+        "pass": 16
+      },
+      "improved": 6,
+      "unchanged": 14,
+      "declined": 0,
+      "total_base_delta": 156,
+      "total_official_delta": 190
+    },
+    "normal": {
+      "verdicts": {
+        "mistake": 2,
+        "pass": 18
+      },
+      "improved": 0,
+      "unchanged": 20,
+      "declined": 0,
+      "total_base_delta": 0,
+      "total_official_delta": 2
+    }
+  }
+}

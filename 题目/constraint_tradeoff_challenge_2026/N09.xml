@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="on" err="on" ans="on">
+<info>
+(hold 0) (plate 4) (at 0 2)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 refrigerator) (size 2 big) (at 2 2) (type 2 container) (closed 2)
+(sort 4 book) (size 4 small) (color 4 red) 
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:cons_notnot (:info (closed X) (:cond (sort X refrigerator))))
+(:task (putin X Y) (:cond (sort X book) (color X red) (sort Y refrigerator)))
+(:task (pickup X) (:cond (sort X book) (color X red)))
+(:task (goto X) (:cond (sort X refrigerator)))
+)
+</instr>
+<nl>
+The refrigerator must be closed.
+Put the red book in the refrigerator.
+Pick up the red book.
+Go to the refrigerator.
+</nl>
+</test>

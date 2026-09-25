@@ -1,0 +1,3386 @@
+[
+  {
+    "id": "P01",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "7c053b98dbc2b64683506951e823e0ca5e94f1c76953ef6269b096d795a381d7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.635,
+      "case_sha256": "7c053b98dbc2b64683506951e823e0ca5e94f1c76953ef6269b096d795a381d7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.636,
+      "case_sha256": "7c053b98dbc2b64683506951e823e0ca5e94f1c76953ef6269b096d795a381d7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P01",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "7c053b98dbc2b64683506951e823e0ca5e94f1c76953ef6269b096d795a381d7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.625,
+      "case_sha256": "7c053b98dbc2b64683506951e823e0ca5e94f1c76953ef6269b096d795a381d7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.645,
+      "case_sha256": "7c053b98dbc2b64683506951e823e0ca5e94f1c76953ef6269b096d795a381d7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P02",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b2bf42b27d8362b4a0fa3ad0073015c4fea40f7f43a496aae3f326bf70e90c4a"
+    },
+    "old": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.618,
+      "case_sha256": "b2bf42b27d8362b4a0fa3ad0073015c4fea40f7f43a496aae3f326bf70e90c4a"
+    },
+    "new": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.639,
+      "case_sha256": "b2bf42b27d8362b4a0fa3ad0073015c4fea40f7f43a496aae3f326bf70e90c4a"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P02",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b2bf42b27d8362b4a0fa3ad0073015c4fea40f7f43a496aae3f326bf70e90c4a"
+    },
+    "old": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.635,
+      "case_sha256": "b2bf42b27d8362b4a0fa3ad0073015c4fea40f7f43a496aae3f326bf70e90c4a"
+    },
+    "new": {
+      "status": "ok",
+      "official": 234,
+      "base": 148,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.621,
+      "case_sha256": "b2bf42b27d8362b4a0fa3ad0073015c4fea40f7f43a496aae3f326bf70e90c4a"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P03",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 220,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2eb5e3d86dd213760e9e594c122cb5ea670c544a75c09e09441a11c1e9048d99"
+    },
+    "old": {
+      "status": "ok",
+      "official": 266,
+      "base": 184,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.847,
+      "case_sha256": "2eb5e3d86dd213760e9e594c122cb5ea670c544a75c09e09441a11c1e9048d99"
+    },
+    "new": {
+      "status": "ok",
+      "official": 266,
+      "base": 184,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.834,
+      "case_sha256": "2eb5e3d86dd213760e9e594c122cb5ea670c544a75c09e09441a11c1e9048d99"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P03",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 220,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2eb5e3d86dd213760e9e594c122cb5ea670c544a75c09e09441a11c1e9048d99"
+    },
+    "old": {
+      "status": "ok",
+      "official": 266,
+      "base": 184,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.812,
+      "case_sha256": "2eb5e3d86dd213760e9e594c122cb5ea670c544a75c09e09441a11c1e9048d99"
+    },
+    "new": {
+      "status": "ok",
+      "official": 266,
+      "base": 184,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.812,
+      "case_sha256": "2eb5e3d86dd213760e9e594c122cb5ea670c544a75c09e09441a11c1e9048d99"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P04",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 260,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "ebdc3faae0032ddd5c22ba7212334af875428c821db615c404126b1141fe2da2"
+    },
+    "old": {
+      "status": "ok",
+      "official": 298,
+      "base": 220,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.034,
+      "case_sha256": "ebdc3faae0032ddd5c22ba7212334af875428c821db615c404126b1141fe2da2"
+    },
+    "new": {
+      "status": "ok",
+      "official": 298,
+      "base": 220,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.065,
+      "case_sha256": "ebdc3faae0032ddd5c22ba7212334af875428c821db615c404126b1141fe2da2"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P04",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 260,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "ebdc3faae0032ddd5c22ba7212334af875428c821db615c404126b1141fe2da2"
+    },
+    "old": {
+      "status": "ok",
+      "official": 298,
+      "base": 220,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.072,
+      "case_sha256": "ebdc3faae0032ddd5c22ba7212334af875428c821db615c404126b1141fe2da2"
+    },
+    "new": {
+      "status": "ok",
+      "official": 298,
+      "base": 220,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.046,
+      "case_sha256": "ebdc3faae0032ddd5c22ba7212334af875428c821db615c404126b1141fe2da2"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P05",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 220,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "ec4be1bd43e52ef7c6cee0778405649a487a2e6a5fd8e14392dd6be2b8f448f9"
+    },
+    "old": {
+      "status": "ok",
+      "official": 190,
+      "base": 104,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "PickUp 5",
+        "Move 2",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "seconds": 0.637,
+      "case_sha256": "ec4be1bd43e52ef7c6cee0778405649a487a2e6a5fd8e14392dd6be2b8f448f9"
+    },
+    "new": {
+      "status": "ok",
+      "official": 190,
+      "base": 104,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "PickUp 5",
+        "Move 2",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "seconds": 0.614,
+      "case_sha256": "ec4be1bd43e52ef7c6cee0778405649a487a2e6a5fd8e14392dd6be2b8f448f9"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P05",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 220,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "ec4be1bd43e52ef7c6cee0778405649a487a2e6a5fd8e14392dd6be2b8f448f9"
+    },
+    "old": {
+      "status": "ok",
+      "official": 190,
+      "base": 104,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "PickUp 5",
+        "Move 2",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "seconds": 0.631,
+      "case_sha256": "ec4be1bd43e52ef7c6cee0778405649a487a2e6a5fd8e14392dd6be2b8f448f9"
+    },
+    "new": {
+      "status": "ok",
+      "official": 190,
+      "base": 104,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "PickUp 5",
+        "Move 2",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "seconds": 0.622,
+      "case_sha256": "ec4be1bd43e52ef7c6cee0778405649a487a2e6a5fd8e14392dd6be2b8f448f9"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P06",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 300,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "23e04eeeb49ed29c404807ff99e7a9eec06c030103c22dfc6276d46ee52a5452"
+    },
+    "old": {
+      "status": "ok",
+      "official": 324,
+      "base": 232,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.328,
+      "case_sha256": "23e04eeeb49ed29c404807ff99e7a9eec06c030103c22dfc6276d46ee52a5452"
+    },
+    "new": {
+      "status": "ok",
+      "official": 324,
+      "base": 232,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.317,
+      "case_sha256": "23e04eeeb49ed29c404807ff99e7a9eec06c030103c22dfc6276d46ee52a5452"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P06",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 300,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "23e04eeeb49ed29c404807ff99e7a9eec06c030103c22dfc6276d46ee52a5452"
+    },
+    "old": {
+      "status": "ok",
+      "official": 324,
+      "base": 232,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.328,
+      "case_sha256": "23e04eeeb49ed29c404807ff99e7a9eec06c030103c22dfc6276d46ee52a5452"
+    },
+    "new": {
+      "status": "ok",
+      "official": 324,
+      "base": 232,
+      "goals": 6,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.322,
+      "case_sha256": "23e04eeeb49ed29c404807ff99e7a9eec06c030103c22dfc6276d46ee52a5452"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P07",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "efb2c7da5107634c74c1e2884c2ed32d1caa64ca782c6e3d4b2633a5dae71147"
+    },
+    "old": {
+      "status": "ok",
+      "official": 186,
+      "base": 102,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3",
+        "PickUp 4",
+        "Move 2",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "seconds": 0.709,
+      "case_sha256": "efb2c7da5107634c74c1e2884c2ed32d1caa64ca782c6e3d4b2633a5dae71147"
+    },
+    "new": {
+      "status": "ok",
+      "official": 186,
+      "base": 102,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3",
+        "PickUp 4",
+        "Move 2",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "seconds": 0.739,
+      "case_sha256": "efb2c7da5107634c74c1e2884c2ed32d1caa64ca782c6e3d4b2633a5dae71147"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P07",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "efb2c7da5107634c74c1e2884c2ed32d1caa64ca782c6e3d4b2633a5dae71147"
+    },
+    "old": {
+      "status": "ok",
+      "official": 186,
+      "base": 102,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3",
+        "PickUp 4",
+        "Move 2",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "seconds": 0.738,
+      "case_sha256": "efb2c7da5107634c74c1e2884c2ed32d1caa64ca782c6e3d4b2633a5dae71147"
+    },
+    "new": {
+      "status": "ok",
+      "official": 186,
+      "base": 102,
+      "goals": 3,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3",
+        "PickUp 4",
+        "Move 2",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "seconds": 0.735,
+      "case_sha256": "efb2c7da5107634c74c1e2884c2ed32d1caa64ca782c6e3d4b2633a5dae71147"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P08",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 260,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8da0a4a949c379afc6ea61110579696c772ef59c3d01c09a73d6b9c7eee94b48"
+    },
+    "old": {
+      "status": "ok",
+      "official": 280,
+      "base": 190,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.419,
+      "case_sha256": "8da0a4a949c379afc6ea61110579696c772ef59c3d01c09a73d6b9c7eee94b48"
+    },
+    "new": {
+      "status": "ok",
+      "official": 280,
+      "base": 190,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.42,
+      "case_sha256": "8da0a4a949c379afc6ea61110579696c772ef59c3d01c09a73d6b9c7eee94b48"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P08",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 260,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8da0a4a949c379afc6ea61110579696c772ef59c3d01c09a73d6b9c7eee94b48"
+    },
+    "old": {
+      "status": "ok",
+      "official": 280,
+      "base": 190,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.427,
+      "case_sha256": "8da0a4a949c379afc6ea61110579696c772ef59c3d01c09a73d6b9c7eee94b48"
+    },
+    "new": {
+      "status": "ok",
+      "official": 280,
+      "base": 190,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.421,
+      "case_sha256": "8da0a4a949c379afc6ea61110579696c772ef59c3d01c09a73d6b9c7eee94b48"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P09",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "023914995115e615f23c703446a858a66a79289397e6630f8ad9c656dd8641d7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 226,
+      "base": 144,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.832,
+      "case_sha256": "023914995115e615f23c703446a858a66a79289397e6630f8ad9c656dd8641d7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 226,
+      "base": 144,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.842,
+      "case_sha256": "023914995115e615f23c703446a858a66a79289397e6630f8ad9c656dd8641d7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P09",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 180,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "023914995115e615f23c703446a858a66a79289397e6630f8ad9c656dd8641d7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 226,
+      "base": 144,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.819,
+      "case_sha256": "023914995115e615f23c703446a858a66a79289397e6630f8ad9c656dd8641d7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 226,
+      "base": 144,
+      "goals": 4,
+      "constraints": 0,
+      "actions": [
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.81,
+      "case_sha256": "023914995115e615f23c703446a858a66a79289397e6630f8ad9c656dd8641d7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P10",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 260,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "6f6c2997371fbbf47c2761766ca17d051eb05426e544bb62fcc7085f63b29e59"
+    },
+    "old": {
+      "status": "ok",
+      "official": 281,
+      "base": 191,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.405,
+      "case_sha256": "6f6c2997371fbbf47c2761766ca17d051eb05426e544bb62fcc7085f63b29e59"
+    },
+    "new": {
+      "status": "ok",
+      "official": 281,
+      "base": 191,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.408,
+      "case_sha256": "6f6c2997371fbbf47c2761766ca17d051eb05426e544bb62fcc7085f63b29e59"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P10",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 260,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "6f6c2997371fbbf47c2761766ca17d051eb05426e544bb62fcc7085f63b29e59"
+    },
+    "old": {
+      "status": "ok",
+      "official": 281,
+      "base": 191,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.406,
+      "case_sha256": "6f6c2997371fbbf47c2761766ca17d051eb05426e544bb62fcc7085f63b29e59"
+    },
+    "new": {
+      "status": "ok",
+      "official": 281,
+      "base": 191,
+      "goals": 5,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.406,
+      "case_sha256": "6f6c2997371fbbf47c2761766ca17d051eb05426e544bb62fcc7085f63b29e59"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N01",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "6c0ad9ce614905f62d14125c7e8d4bd9a0c0f1fe64564dadb357e650cb10b943"
+    },
+    "old": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "6c0ad9ce614905f62d14125c7e8d4bd9a0c0f1fe64564dadb357e650cb10b943"
+    },
+    "new": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "6c0ad9ce614905f62d14125c7e8d4bd9a0c0f1fe64564dadb357e650cb10b943"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N01",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "6c0ad9ce614905f62d14125c7e8d4bd9a0c0f1fe64564dadb357e650cb10b943"
+    },
+    "old": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "6c0ad9ce614905f62d14125c7e8d4bd9a0c0f1fe64564dadb357e650cb10b943"
+    },
+    "new": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "6c0ad9ce614905f62d14125c7e8d4bd9a0c0f1fe64564dadb357e650cb10b943"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N02",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8efbf9d4fdc150f88a9c46679de90e51e01f17c16f34f5a2dbe5eb72dbe7907c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "8efbf9d4fdc150f88a9c46679de90e51e01f17c16f34f5a2dbe5eb72dbe7907c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "8efbf9d4fdc150f88a9c46679de90e51e01f17c16f34f5a2dbe5eb72dbe7907c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N02",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8efbf9d4fdc150f88a9c46679de90e51e01f17c16f34f5a2dbe5eb72dbe7907c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "8efbf9d4fdc150f88a9c46679de90e51e01f17c16f34f5a2dbe5eb72dbe7907c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "8efbf9d4fdc150f88a9c46679de90e51e01f17c16f34f5a2dbe5eb72dbe7907c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N03",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b0f0f42bc2870c9e42030ce40eef74487d370aec806f829f9317072382a00104"
+    },
+    "old": {
+      "status": "ok",
+      "official": 158,
+      "base": 70,
+      "goals": 2,
+      "constraints": 0,
+      "actions": [
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "fromplate": 1,
+        "putdown": 1,
+        "open": 1,
+        "pickup": 1,
+        "putin": 1
+      },
+      "seconds": 0.523,
+      "case_sha256": "b0f0f42bc2870c9e42030ce40eef74487d370aec806f829f9317072382a00104"
+    },
+    "new": {
+      "status": "ok",
+      "official": 195,
+      "base": 99,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.105,
+      "case_sha256": "b0f0f42bc2870c9e42030ce40eef74487d370aec806f829f9317072382a00104"
+    },
+    "base_delta": 29,
+    "official_delta": 37
+  },
+  {
+    "id": "N03",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b0f0f42bc2870c9e42030ce40eef74487d370aec806f829f9317072382a00104"
+    },
+    "old": {
+      "status": "ok",
+      "official": 158,
+      "base": 70,
+      "goals": 2,
+      "constraints": 0,
+      "actions": [
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "fromplate": 1,
+        "putdown": 1,
+        "open": 1,
+        "pickup": 1,
+        "putin": 1
+      },
+      "seconds": 0.525,
+      "case_sha256": "b0f0f42bc2870c9e42030ce40eef74487d370aec806f829f9317072382a00104"
+    },
+    "new": {
+      "status": "ok",
+      "official": 195,
+      "base": 99,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.104,
+      "case_sha256": "b0f0f42bc2870c9e42030ce40eef74487d370aec806f829f9317072382a00104"
+    },
+    "base_delta": 29,
+    "official_delta": 37
+  },
+  {
+    "id": "N04",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "bd9cf56c90e43ec72506f8a2272bf76d2de5490384d1817cc9c8841ebab052a7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "bd9cf56c90e43ec72506f8a2272bf76d2de5490384d1817cc9c8841ebab052a7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "bd9cf56c90e43ec72506f8a2272bf76d2de5490384d1817cc9c8841ebab052a7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N04",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "bd9cf56c90e43ec72506f8a2272bf76d2de5490384d1817cc9c8841ebab052a7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "bd9cf56c90e43ec72506f8a2272bf76d2de5490384d1817cc9c8841ebab052a7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 198,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "bd9cf56c90e43ec72506f8a2272bf76d2de5490384d1817cc9c8841ebab052a7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N05",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "250a4a616168edf17efdfe3101887f15a22fbafb52245683b380df51a3c67df4"
+    },
+    "old": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "250a4a616168edf17efdfe3101887f15a22fbafb52245683b380df51a3c67df4"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "250a4a616168edf17efdfe3101887f15a22fbafb52245683b380df51a3c67df4"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N05",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "250a4a616168edf17efdfe3101887f15a22fbafb52245683b380df51a3c67df4"
+    },
+    "old": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "250a4a616168edf17efdfe3101887f15a22fbafb52245683b380df51a3c67df4"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "250a4a616168edf17efdfe3101887f15a22fbafb52245683b380df51a3c67df4"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N06",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "f40b7ed72a3612376e5907865d55bdcffa2295c481d9dda5e7fa3e48e1c0da8e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 175,
+      "base": 79,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.103,
+      "case_sha256": "f40b7ed72a3612376e5907865d55bdcffa2295c481d9dda5e7fa3e48e1c0da8e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "f40b7ed72a3612376e5907865d55bdcffa2295c481d9dda5e7fa3e48e1c0da8e"
+    },
+    "base_delta": 1,
+    "official_delta": 3
+  },
+  {
+    "id": "N06",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "f40b7ed72a3612376e5907865d55bdcffa2295c481d9dda5e7fa3e48e1c0da8e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 175,
+      "base": 79,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.106,
+      "case_sha256": "f40b7ed72a3612376e5907865d55bdcffa2295c481d9dda5e7fa3e48e1c0da8e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "f40b7ed72a3612376e5907865d55bdcffa2295c481d9dda5e7fa3e48e1c0da8e"
+    },
+    "base_delta": 1,
+    "official_delta": 3
+  },
+  {
+    "id": "N07",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "1f086a369fc3fde9b9d84a7ca254683842360a710cf7a7a00971fe5c0d9077e8"
+    },
+    "old": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.002,
+      "case_sha256": "1f086a369fc3fde9b9d84a7ca254683842360a710cf7a7a00971fe5c0d9077e8"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1f086a369fc3fde9b9d84a7ca254683842360a710cf7a7a00971fe5c0d9077e8"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N07",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "1f086a369fc3fde9b9d84a7ca254683842360a710cf7a7a00971fe5c0d9077e8"
+    },
+    "old": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1f086a369fc3fde9b9d84a7ca254683842360a710cf7a7a00971fe5c0d9077e8"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1f086a369fc3fde9b9d84a7ca254683842360a710cf7a7a00971fe5c0d9077e8"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N08",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "5db199ef7a527a94ba92a9493ce3880259eedc3269e35c59c3bc124ec0fb7cf2"
+    },
+    "old": {
+      "status": "ok",
+      "official": 175,
+      "base": 79,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.103,
+      "case_sha256": "5db199ef7a527a94ba92a9493ce3880259eedc3269e35c59c3bc124ec0fb7cf2"
+    },
+    "new": {
+      "status": "ok",
+      "official": 175,
+      "base": 79,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.104,
+      "case_sha256": "5db199ef7a527a94ba92a9493ce3880259eedc3269e35c59c3bc124ec0fb7cf2"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N08",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "5db199ef7a527a94ba92a9493ce3880259eedc3269e35c59c3bc124ec0fb7cf2"
+    },
+    "old": {
+      "status": "ok",
+      "official": 175,
+      "base": 79,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.102,
+      "case_sha256": "5db199ef7a527a94ba92a9493ce3880259eedc3269e35c59c3bc124ec0fb7cf2"
+    },
+    "new": {
+      "status": "ok",
+      "official": 175,
+      "base": 79,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.108,
+      "case_sha256": "5db199ef7a527a94ba92a9493ce3880259eedc3269e35c59c3bc124ec0fb7cf2"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N09",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b6893f0ad86f8353669bbe002d3639a911ef81b64d0dbf283adcc262b0f98ae9"
+    },
+    "old": {
+      "status": "ok",
+      "official": 158,
+      "base": 70,
+      "goals": 2,
+      "constraints": 0,
+      "actions": [
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "fromplate": 1,
+        "putdown": 1,
+        "open": 1,
+        "pickup": 1,
+        "putin": 1
+      },
+      "seconds": 0.522,
+      "case_sha256": "b6893f0ad86f8353669bbe002d3639a911ef81b64d0dbf283adcc262b0f98ae9"
+    },
+    "new": {
+      "status": "ok",
+      "official": 195,
+      "base": 99,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.11,
+      "case_sha256": "b6893f0ad86f8353669bbe002d3639a911ef81b64d0dbf283adcc262b0f98ae9"
+    },
+    "base_delta": 29,
+    "official_delta": 37
+  },
+  {
+    "id": "N09",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b6893f0ad86f8353669bbe002d3639a911ef81b64d0dbf283adcc262b0f98ae9"
+    },
+    "old": {
+      "status": "ok",
+      "official": 158,
+      "base": 70,
+      "goals": 2,
+      "constraints": 0,
+      "actions": [
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "fromplate": 1,
+        "putdown": 1,
+        "open": 1,
+        "pickup": 1,
+        "putin": 1
+      },
+      "seconds": 0.525,
+      "case_sha256": "b6893f0ad86f8353669bbe002d3639a911ef81b64d0dbf283adcc262b0f98ae9"
+    },
+    "new": {
+      "status": "ok",
+      "official": 195,
+      "base": 99,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.103,
+      "case_sha256": "b6893f0ad86f8353669bbe002d3639a911ef81b64d0dbf283adcc262b0f98ae9"
+    },
+    "base_delta": 29,
+    "official_delta": 37
+  },
+  {
+    "id": "N10",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "1c388ed33f07611e3fb35bfa92193c29226be3a2f75487c79170798e58322b1e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1c388ed33f07611e3fb35bfa92193c29226be3a2f75487c79170798e58322b1e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1c388ed33f07611e3fb35bfa92193c29226be3a2f75487c79170798e58322b1e"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "N10",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 120,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 180,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "1c388ed33f07611e3fb35bfa92193c29226be3a2f75487c79170798e58322b1e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1c388ed33f07611e3fb35bfa92193c29226be3a2f75487c79170798e58322b1e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 178,
+      "base": 80,
+      "goals": 1,
+      "constraints": 2,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "1c388ed33f07611e3fb35bfa92193c29226be3a2f75487c79170798e58322b1e"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C01",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 60,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "7e19602e048058853977dc1a20e9e0bb4842632c78bada337fdb7efbccaef264"
+    },
+    "old": {
+      "status": "ok",
+      "official": 154,
+      "base": 58,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.109,
+      "case_sha256": "7e19602e048058853977dc1a20e9e0bb4842632c78bada337fdb7efbccaef264"
+    },
+    "new": {
+      "status": "ok",
+      "official": 154,
+      "base": 58,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.108,
+      "case_sha256": "7e19602e048058853977dc1a20e9e0bb4842632c78bada337fdb7efbccaef264"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C01",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 60,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "7e19602e048058853977dc1a20e9e0bb4842632c78bada337fdb7efbccaef264"
+    },
+    "old": {
+      "status": "ok",
+      "official": 154,
+      "base": 58,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.102,
+      "case_sha256": "7e19602e048058853977dc1a20e9e0bb4842632c78bada337fdb7efbccaef264"
+    },
+    "new": {
+      "status": "ok",
+      "official": 154,
+      "base": 58,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.102,
+      "case_sha256": "7e19602e048058853977dc1a20e9e0bb4842632c78bada337fdb7efbccaef264"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C02",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2cbdb1f1eff1f9274b7351fe56d9c1668a1d2dfbf0ccd3d9bb5da5c2f51e196d"
+    },
+    "old": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.102,
+      "case_sha256": "2cbdb1f1eff1f9274b7351fe56d9c1668a1d2dfbf0ccd3d9bb5da5c2f51e196d"
+    },
+    "new": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.109,
+      "case_sha256": "2cbdb1f1eff1f9274b7351fe56d9c1668a1d2dfbf0ccd3d9bb5da5c2f51e196d"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C02",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2cbdb1f1eff1f9274b7351fe56d9c1668a1d2dfbf0ccd3d9bb5da5c2f51e196d"
+    },
+    "old": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.105,
+      "case_sha256": "2cbdb1f1eff1f9274b7351fe56d9c1668a1d2dfbf0ccd3d9bb5da5c2f51e196d"
+    },
+    "new": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.105,
+      "case_sha256": "2cbdb1f1eff1f9274b7351fe56d9c1668a1d2dfbf0ccd3d9bb5da5c2f51e196d"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C03",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2756ffdafd7299a449089a6c8cef7356023de2b6379ed95fb274ce73f5dc4a92"
+    },
+    "old": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2756ffdafd7299a449089a6c8cef7356023de2b6379ed95fb274ce73f5dc4a92"
+    },
+    "new": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2756ffdafd7299a449089a6c8cef7356023de2b6379ed95fb274ce73f5dc4a92"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C03",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2756ffdafd7299a449089a6c8cef7356023de2b6379ed95fb274ce73f5dc4a92"
+    },
+    "old": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2756ffdafd7299a449089a6c8cef7356023de2b6379ed95fb274ce73f5dc4a92"
+    },
+    "new": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "2756ffdafd7299a449089a6c8cef7356023de2b6379ed95fb274ce73f5dc4a92"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C04",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 60,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "d4a611a7f884c889d48d63f48604a0071e572109ec1434c796ed03814978ce7c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 144,
+      "base": 52,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.312,
+      "case_sha256": "d4a611a7f884c889d48d63f48604a0071e572109ec1434c796ed03814978ce7c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 144,
+      "base": 52,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.314,
+      "case_sha256": "d4a611a7f884c889d48d63f48604a0071e572109ec1434c796ed03814978ce7c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C04",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 60,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "d4a611a7f884c889d48d63f48604a0071e572109ec1434c796ed03814978ce7c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 144,
+      "base": 52,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.315,
+      "case_sha256": "d4a611a7f884c889d48d63f48604a0071e572109ec1434c796ed03814978ce7c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 144,
+      "base": 52,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.314,
+      "case_sha256": "d4a611a7f884c889d48d63f48604a0071e572109ec1434c796ed03814978ce7c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C05",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "dfd26724904e8243b377243e9e3596d1c71fdedada9f5969ba53ddb5319d4ba9"
+    },
+    "old": {
+      "status": "ok",
+      "official": 187,
+      "base": 95,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.318,
+      "case_sha256": "dfd26724904e8243b377243e9e3596d1c71fdedada9f5969ba53ddb5319d4ba9"
+    },
+    "new": {
+      "status": "ok",
+      "official": 195,
+      "base": 99,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.109,
+      "case_sha256": "dfd26724904e8243b377243e9e3596d1c71fdedada9f5969ba53ddb5319d4ba9"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "C05",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "dfd26724904e8243b377243e9e3596d1c71fdedada9f5969ba53ddb5319d4ba9"
+    },
+    "old": {
+      "status": "ok",
+      "official": 187,
+      "base": 95,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.322,
+      "case_sha256": "dfd26724904e8243b377243e9e3596d1c71fdedada9f5969ba53ddb5319d4ba9"
+    },
+    "new": {
+      "status": "ok",
+      "official": 195,
+      "base": 99,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.104,
+      "case_sha256": "dfd26724904e8243b377243e9e3596d1c71fdedada9f5969ba53ddb5319d4ba9"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "C06",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "95c1d992c9ab60ad5cbd689404f85f2465169d4951f40c9b43632ec2665412b7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 192,
+      "base": 96,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.11,
+      "case_sha256": "95c1d992c9ab60ad5cbd689404f85f2465169d4951f40c9b43632ec2665412b7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 192,
+      "base": 96,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.102,
+      "case_sha256": "95c1d992c9ab60ad5cbd689404f85f2465169d4951f40c9b43632ec2665412b7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C06",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "95c1d992c9ab60ad5cbd689404f85f2465169d4951f40c9b43632ec2665412b7"
+    },
+    "old": {
+      "status": "ok",
+      "official": 192,
+      "base": 96,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.104,
+      "case_sha256": "95c1d992c9ab60ad5cbd689404f85f2465169d4951f40c9b43632ec2665412b7"
+    },
+    "new": {
+      "status": "ok",
+      "official": 192,
+      "base": 96,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.11,
+      "case_sha256": "95c1d992c9ab60ad5cbd689404f85f2465169d4951f40c9b43632ec2665412b7"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C07",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "6d0d09d3d388c9c5403a120754f0b9e7429192dbdf80deab04a18f09a1be4b18"
+    },
+    "old": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.101,
+      "case_sha256": "6d0d09d3d388c9c5403a120754f0b9e7429192dbdf80deab04a18f09a1be4b18"
+    },
+    "new": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.108,
+      "case_sha256": "6d0d09d3d388c9c5403a120754f0b9e7429192dbdf80deab04a18f09a1be4b18"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C07",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 160,
+      "base": 60,
+      "goals": 1,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "6d0d09d3d388c9c5403a120754f0b9e7429192dbdf80deab04a18f09a1be4b18"
+    },
+    "old": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.106,
+      "case_sha256": "6d0d09d3d388c9c5403a120754f0b9e7429192dbdf80deab04a18f09a1be4b18"
+    },
+    "new": {
+      "status": "ok",
+      "official": 194,
+      "base": 98,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.101,
+      "case_sha256": "6d0d09d3d388c9c5403a120754f0b9e7429192dbdf80deab04a18f09a1be4b18"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C08",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c4a8e53f108267d4646d3bdc1e25e17b426a0fedb7ffff9ccf6f1deebb96a6ad"
+    },
+    "old": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c4a8e53f108267d4646d3bdc1e25e17b426a0fedb7ffff9ccf6f1deebb96a6ad"
+    },
+    "new": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c4a8e53f108267d4646d3bdc1e25e17b426a0fedb7ffff9ccf6f1deebb96a6ad"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C08",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 100,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c4a8e53f108267d4646d3bdc1e25e17b426a0fedb7ffff9ccf6f1deebb96a6ad"
+    },
+    "old": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c4a8e53f108267d4646d3bdc1e25e17b426a0fedb7ffff9ccf6f1deebb96a6ad"
+    },
+    "new": {
+      "status": "ok",
+      "official": 200,
+      "base": 100,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c4a8e53f108267d4646d3bdc1e25e17b426a0fedb7ffff9ccf6f1deebb96a6ad"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C09",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "99ae4dccebc72b250e0c2202efdad2a632d2c46d1524ccfa50747401e040989e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 173,
+      "base": 87,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "seconds": 0.639,
+      "case_sha256": "99ae4dccebc72b250e0c2202efdad2a632d2c46d1524ccfa50747401e040989e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 173,
+      "base": 87,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "seconds": 0.633,
+      "case_sha256": "99ae4dccebc72b250e0c2202efdad2a632d2c46d1524ccfa50747401e040989e"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C09",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 100,
+      "base": 0,
+      "goals": 0,
+      "constraints": 0,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "99ae4dccebc72b250e0c2202efdad2a632d2c46d1524ccfa50747401e040989e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 173,
+      "base": 87,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "seconds": 0.63,
+      "case_sha256": "99ae4dccebc72b250e0c2202efdad2a632d2c46d1524ccfa50747401e040989e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 173,
+      "base": 87,
+      "goals": 2,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "seconds": 0.636,
+      "case_sha256": "99ae4dccebc72b250e0c2202efdad2a632d2c46d1524ccfa50747401e040989e"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C10",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 240,
+      "base": 140,
+      "goals": 3,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c9117e2378140126c93a13e0f343af3f3389f117bdc2e230a738986f49a7743c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 240,
+      "base": 140,
+      "goals": 3,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c9117e2378140126c93a13e0f343af3f3389f117bdc2e230a738986f49a7743c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 240,
+      "base": 140,
+      "goals": 3,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c9117e2378140126c93a13e0f343af3f3389f117bdc2e230a738986f49a7743c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C10",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 140,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 240,
+      "base": 140,
+      "goals": 3,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c9117e2378140126c93a13e0f343af3f3389f117bdc2e230a738986f49a7743c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 240,
+      "base": 140,
+      "goals": 3,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c9117e2378140126c93a13e0f343af3f3389f117bdc2e230a738986f49a7743c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 240,
+      "base": 140,
+      "goals": 3,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c9117e2378140126c93a13e0f343af3f3389f117bdc2e230a738986f49a7743c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  }
+]

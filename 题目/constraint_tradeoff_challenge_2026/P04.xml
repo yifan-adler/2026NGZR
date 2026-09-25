@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 2)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 cupboard) (size 2 big) (at 2 2) (type 2 container) (closed 2)
+(sort 4 book) (size 4 small) (color 4 red) (at 4 2)
+(sort 5 cup) (size 5 small) (color 5 blue) (at 5 2)
+(sort 6 bottle) (size 6 small) (color 6 white) (at 6 2)
+(sort 7 can) (size 7 small) (color 7 green) (at 7 2)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:cons_notnot (:info (closed X) (:cond (sort X cupboard))))
+(:task (putin X Y) (:cond (sort X can) (color X green) (sort Y cupboard)))
+(:task (putin X Y) (:cond (sort X book) (color X red) (sort Y cupboard)))
+(:task (putin X Y) (:cond (sort X bottle) (color X white) (sort Y cupboard)))
+(:task (putin X Y) (:cond (sort X cup) (color X blue) (sort Y cupboard)))
+(:task (close X) (:cond (sort X cupboard)))
+(:task (goto X) (:cond (sort X cupboard)))
+)
+</instr>
+<nl>
+The cupboard must be closed.
+Put the green can in the cupboard.
+Put the red book in the cupboard.
+Put the white bottle in the cupboard.
+Put the blue cup in the cupboard.
+Close the cupboard.
+Go to the cupboard.
+</nl>
+</test>

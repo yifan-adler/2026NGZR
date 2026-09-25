@@ -1,0 +1,1908 @@
+[
+  {
+    "case": "01-one-goal-loss",
+    "stage": 1,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "10f9e1aef2bfaf92ec250ec092bc0dee3c4e2cff3fec130730fce4df8c4d85bc",
+    "official_score": 198,
+    "goals": 2,
+    "constraints": 1,
+    "actions": [],
+    "action_cost": 0,
+    "base_score": 100,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 0,
+    "official_delta": -2,
+    "expected_goals": 2,
+    "expected_constraints": 1,
+    "expected_trade": false,
+    "meets_outcome": true,
+    "selected_count": 1,
+    "result_count": 1,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 6,
+      "task_index": 1,
+      "tasks": [
+        1
+      ],
+      "task_label": "pickup",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_must_choose_one_risk",
+      "prediction": {
+        "goal_gain": 0,
+        "goal_loss": 0,
+        "constraint_gain": 0,
+        "constraint_loss": 0,
+        "completed_goals": 2,
+        "maintained_constraints": 1,
+        "action_count": 0,
+        "action_cost": 0,
+        "final_reward": 100,
+        "utility": 0
+      },
+      "expected_reward": 100,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "01-one-goal-loss",
+    "stage": 1,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "10f9e1aef2bfaf92ec250ec092bc0dee3c4e2cff3fec130730fce4df8c4d85bc",
+    "official_score": 198,
+    "goals": 2,
+    "constraints": 1,
+    "actions": [],
+    "action_cost": 0,
+    "base_score": 100,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 0,
+    "official_delta": -2,
+    "expected_goals": 2,
+    "expected_constraints": 1,
+    "expected_trade": false,
+    "meets_outcome": true,
+    "selected_count": 1,
+    "result_count": 1,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 6,
+      "task_index": 1,
+      "tasks": [
+        1
+      ],
+      "task_label": "pickup",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_must_choose_one_risk",
+      "prediction": {
+        "goal_gain": 0,
+        "goal_loss": 0,
+        "constraint_gain": 0,
+        "constraint_loss": 0,
+        "completed_goals": 2,
+        "maintained_constraints": 1,
+        "action_count": 0,
+        "action_cost": 0,
+        "final_reward": 100,
+        "utility": 0
+      },
+      "expected_reward": 100,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "02-two-goal-profit",
+    "stage": 1,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "c931d619c4d8c4bc2b1ea29b6af5361bb3d862a15b3fbd41d82e07b627eeedfc",
+    "official_score": 234,
+    "goals": 4,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "Close 2"
+    ],
+    "action_cost": 12,
+    "base_score": 148,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 48,
+    "official_delta": 34,
+    "expected_goals": 4,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      },
+      "expected_reward": 74,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "02-two-goal-profit",
+    "stage": 1,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "c931d619c4d8c4bc2b1ea29b6af5361bb3d862a15b3fbd41d82e07b627eeedfc",
+    "official_score": 234,
+    "goals": 4,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "Close 2"
+    ],
+    "action_cost": 12,
+    "base_score": 148,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 48,
+    "official_delta": 34,
+    "expected_goals": 4,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      },
+      "expected_reward": 74,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "03-four-goal-reordered",
+    "stage": 1,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "bc665eb1000aa12cbc4f2b3358a2055c5e21f89e8d113f8756d7093ad998a09e",
+    "official_score": 298,
+    "goals": 6,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "PickUp 7",
+      "PutIn 7 2",
+      "PickUp 6",
+      "PutIn 6 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "Close 2"
+    ],
+    "action_cost": 20,
+    "base_score": 220,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 120,
+    "official_delta": 98,
+    "expected_goals": 6,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 5,
+    "result_count": 5,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      },
+      "expected_reward": 74,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "03-four-goal-reordered",
+    "stage": 1,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "bc665eb1000aa12cbc4f2b3358a2055c5e21f89e8d113f8756d7093ad998a09e",
+    "official_score": 298,
+    "goals": 6,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "PickUp 7",
+      "PutIn 7 2",
+      "PickUp 6",
+      "PutIn 6 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "Close 2"
+    ],
+    "action_cost": 20,
+    "base_score": 220,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 120,
+    "official_delta": 98,
+    "expected_goals": 6,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 5,
+    "result_count": 5,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      },
+      "expected_reward": 74,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "04-stage2-two-goal",
+    "stage": 2,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "972e3a099fe21a528f20efb8b9ed1f7128d76feba101144373740cd82da673fc",
+    "official_score": 226,
+    "goals": 4,
+    "constraints": 0,
+    "actions": [
+      "PickUp 4",
+      "PutDown 4",
+      "Open 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "Close 2"
+    ],
+    "action_cost": 16,
+    "base_score": 144,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 44,
+    "official_delta": 26,
+    "expected_goals": 4,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 2,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 5,
+        "action_cost": 10,
+        "final_reward": 70,
+        "utility": 10
+      },
+      "expected_reward": 70,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "constraint_derived",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": false
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 2,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 5,
+        "action_cost": 10,
+        "final_reward": 70,
+        "utility": 10
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "04-stage2-two-goal",
+    "stage": 2,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "972e3a099fe21a528f20efb8b9ed1f7128d76feba101144373740cd82da673fc",
+    "official_score": 226,
+    "goals": 4,
+    "constraints": 0,
+    "actions": [
+      "PickUp 4",
+      "PutDown 4",
+      "Open 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "Close 2"
+    ],
+    "action_cost": 16,
+    "base_score": 144,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 44,
+    "official_delta": 26,
+    "expected_goals": 4,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 2,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 5,
+        "action_cost": 10,
+        "final_reward": 70,
+        "utility": 10
+      },
+      "expected_reward": 70,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "constraint_derived",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": false
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": false
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 2,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 5,
+        "action_cost": 10,
+        "final_reward": 70,
+        "utility": 10
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "05-near-shared-goals",
+    "stage": 1,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "594955913e179d67365e2d764cf75793fa5d093c01611be1fc961513ff0da0be",
+    "official_score": 284,
+    "goals": 5,
+    "constraints": 0,
+    "actions": [
+      "PickUp 4",
+      "Move 3",
+      "PutDown 4"
+    ],
+    "action_cost": 8,
+    "base_score": 192,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 92,
+    "official_delta": 84,
+    "expected_goals": 5,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "puton",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 5,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 8,
+        "final_reward": 192,
+        "utility": 92
+      },
+      "expected_reward": 192,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "puton",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 5,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 8,
+        "final_reward": 192,
+        "utility": 92
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "05-near-shared-goals",
+    "stage": 1,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "594955913e179d67365e2d764cf75793fa5d093c01611be1fc961513ff0da0be",
+    "official_score": 284,
+    "goals": 5,
+    "constraints": 0,
+    "actions": [
+      "PickUp 4",
+      "Move 3",
+      "PutDown 4"
+    ],
+    "action_cost": 8,
+    "base_score": 192,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 92,
+    "official_delta": 84,
+    "expected_goals": 5,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "puton",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 5,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 8,
+        "final_reward": 192,
+        "utility": 92
+      },
+      "expected_reward": 192,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "puton",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 5,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 8,
+        "final_reward": 192,
+        "utility": 92
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "06-inside-shared-goals",
+    "stage": 1,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "b61f3ebbacf09d1c75755e0572f086cf3bb942410e2f0871c91dd5796d53b44b",
+    "official_score": 206,
+    "goals": 4,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "TakeOut 3 2",
+      "Move 1",
+      "PutDown 3",
+      "PickUp 4",
+      "Move 2",
+      "PutDown 4",
+      "Move 1",
+      "PickUp 5",
+      "Move 2",
+      "PutDown 5"
+    ],
+    "action_cost": 30,
+    "base_score": 130,
+    "control_goals": 1,
+    "control_constraints": 1,
+    "control_base_score": 60,
+    "base_delta": 70,
+    "official_delta": 46,
+    "expected_goals": 4,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "give",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 4,
+        "maintained_constraints": 0,
+        "action_count": 4,
+        "action_cost": 10,
+        "final_reward": 150,
+        "utility": 90
+      },
+      "expected_reward": 150,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "give",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 4,
+        "maintained_constraints": 0,
+        "action_count": 4,
+        "action_cost": 10,
+        "final_reward": 150,
+        "utility": 90
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "06-inside-shared-goals",
+    "stage": 1,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "b61f3ebbacf09d1c75755e0572f086cf3bb942410e2f0871c91dd5796d53b44b",
+    "official_score": 206,
+    "goals": 4,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "TakeOut 3 2",
+      "Move 1",
+      "PutDown 3",
+      "PickUp 4",
+      "Move 2",
+      "PutDown 4",
+      "Move 1",
+      "PickUp 5",
+      "Move 2",
+      "PutDown 5"
+    ],
+    "action_cost": 30,
+    "base_score": 130,
+    "control_goals": 1,
+    "control_constraints": 1,
+    "control_base_score": 60,
+    "base_delta": 70,
+    "official_delta": 46,
+    "expected_goals": 4,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 3,
+    "result_count": 3,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "give",
+      "generated_ms": 1,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 4,
+        "maintained_constraints": 0,
+        "action_count": 4,
+        "action_cost": 10,
+        "final_reward": 150,
+        "utility": 90
+      },
+      "expected_reward": 150,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "give",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 4,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 4,
+        "maintained_constraints": 0,
+        "action_count": 4,
+        "action_cost": 10,
+        "final_reward": 150,
+        "utility": 90
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "07-existing-four-goal",
+    "stage": 1,
+    "mode": "it",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "a53814a5efdda686b446557343cb3f87112bc8caa311679600a07a70688d8433",
+    "official_score": 298,
+    "goals": 6,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "PickUp 6",
+      "PutIn 6 2",
+      "PickUp 7",
+      "PutIn 7 2",
+      "Close 2"
+    ],
+    "action_cost": 20,
+    "base_score": 220,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 120,
+    "official_delta": 98,
+    "expected_goals": 6,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 5,
+    "result_count": 5,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      },
+      "expected_reward": 74,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  },
+  {
+    "case": "07-existing-four-goal",
+    "stage": 1,
+    "mode": "nt",
+    "status": "ok",
+    "control_status": "ok",
+    "case_sha256": "a53814a5efdda686b446557343cb3f87112bc8caa311679600a07a70688d8433",
+    "official_score": 298,
+    "goals": 6,
+    "constraints": 0,
+    "actions": [
+      "Open 2",
+      "PickUp 4",
+      "PutIn 4 2",
+      "PickUp 5",
+      "PutIn 5 2",
+      "PickUp 6",
+      "PutIn 6 2",
+      "PickUp 7",
+      "PutIn 7 2",
+      "Close 2"
+    ],
+    "action_cost": 20,
+    "base_score": 220,
+    "control_goals": 2,
+    "control_constraints": 1,
+    "control_base_score": 100,
+    "base_delta": 120,
+    "official_delta": 98,
+    "expected_goals": 6,
+    "expected_constraints": 0,
+    "expected_trade": true,
+    "meets_outcome": true,
+    "selected_count": 5,
+    "result_count": 5,
+    "first_selected": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_selected",
+      "candidate_id": 1,
+      "task_index": 0,
+      "tasks": [
+        0
+      ],
+      "task_label": "putin",
+      "generated_ms": 0,
+      "world_revision": 0,
+      "selection_reason": "legacy_main_loop_task_order",
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      },
+      "expected_reward": 74,
+      "evidence": [
+        {
+          "object_id": 1,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 2,
+          "fact": "container_state",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 3,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 4,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 5,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 6,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "location",
+          "source": "initial",
+          "verified": true
+        },
+        {
+          "object_id": 7,
+          "fact": "inside",
+          "source": "initial",
+          "verified": true
+        }
+      ]
+    },
+    "first_considered": {
+      "schema": "decision_feedback.v1",
+      "event": "candidate_considered",
+      "candidate_id": 1,
+      "phase": "main-loop",
+      "task_index": 0,
+      "task_label": "putin",
+      "legacy_choice": true,
+      "eligible": true,
+      "dry_run_succeeded": true,
+      "prediction": {
+        "goal_gain": 1,
+        "goal_loss": 1,
+        "constraint_gain": 0,
+        "constraint_loss": 1,
+        "completed_goals": 2,
+        "maintained_constraints": 0,
+        "action_count": 3,
+        "action_cost": 6,
+        "final_reward": 74,
+        "utility": -26
+      }
+    },
+    "nonzero_errors": []
+  }
+]

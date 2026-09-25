@@ -1,0 +1,115 @@
+[LOG]:-stage
+[LOG]:-nlp
+[LOG]:-err
+[LOG]:-ask_2
+[LOG]:-path
+[LOG]:nlp 0, err 1
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+#(Plug): Timeout=5000
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32mcase.xml
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=2 unique=2 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+Pos  0:(F):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 table)[0m(4 book)(6 bottle)
+Pos  3:(T):[33m(3 chair)[0m(5 cup)
+Pos  4:(T):[33m(7 cupboard inside:[] Closed)[0m
+UnknownPos:
+
+[LOG]:[32m[MustIn] correction done.
+[0m
+[LOG]:[32m[MustNear] correction done.
+[0m
+Pos  0:(F):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 table)[0m(4 book)(6 bottle)
+Pos  3:(T):[33m(3 chair)[0m(5 cup)
+Pos  4:(T):[33m(7 cupboard inside:[] Closed)[0m
+UnknownPos:
+
+Task:
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:table,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mputon[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:table,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Behave:[35mclosed[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+2
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"puton","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":2,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":3,"action_cost":5,"final_reward":95,"utility":95}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=puton legacy_choice=true eligible=true complete=true actions=3 duration_ms=300 action_cost=5 score_before=0 score_after=95 marginal_score=95 utility=95 gained_goals=[0,1] lost_goals=[] broken_constraints=[] preserved_constraints=[0]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/2 (unknown=2), constraints=1/1 (unknown=0), base_score=0, action_cost=0, elapsed=1ms, remaining=4699ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[0]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=puton can_finish=true remaining_plan_ms=300 safety_ms=300 budget_remaining_ms=4699
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":1,"task_index":0,"tasks":[0],"task_label":"puton","generated_ms":1,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":2,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":3,"action_cost":5,"final_reward":95,"utility":95},"expected_reward":95,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":false},{"object_id":2,"fact":"location","source":"initial","verified":false},{"object_id":3,"fact":"location","source":"initial","verified":false},{"object_id":4,"fact":"location","source":"initial","verified":false},{"object_id":4,"fact":"inside","source":"initial","verified":false},{"object_id":5,"fact":"location","source":"initial","verified":false},{"object_id":5,"fact":"inside","source":"initial","verified":false},{"object_id":6,"fact":"location","source":"initial","verified":false},{"object_id":6,"fact":"inside","source":"initial","verified":false},{"object_id":7,"fact":"location","source":"initial","verified":false},{"object_id":7,"fact":"container_state","source":"constraint_derived","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=puton executed=0 total=3 remaining_utility=95 remaining_duration_ms=300
+[0m
+puton book的风险系数是：0
+[LOG]:PickUp(4,book)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PickUp executed=1 total=3 remaining_utility=97 remaining_duration_ms=200 can_finish=true
+[0m
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Sense executed=2 total=3 remaining_utility=98 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:[32m[SenseCurrentLocationOnly] Location 2 marked as sensed
+[0m
+[LOG]:[SenseCurrentLocationOnly] Object 4 detected at location 2
+[LOG]:[SenseCurrentLocationOnly] Object 6 detected at location 2
+[LOG]:[SenseCurrentLocationOnly] Object 2 detected at location 2
+[LOG]:PutDown(4,book)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PutDown executed=3 total=3 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mputon[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:table,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":1,"prediction":{"goal_gain":2,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":3,"action_cost":5,"final_reward":95,"utility":95},"actual":{"goal_gain":2,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":1,"action_count":3,"action_cost":5,"final_reward":95,"utility":95},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=puton succeeded=true executed=3 total=3 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/2 (unknown=0), constraints=1/1 (unknown=0), base_score=95, action_cost=5, elapsed=367ms, remaining=4333ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:puton,1:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before main-loop
+[0m
+-----check check check-----
+
+Sovled Task Num:1    Expect Num:2
+[LOG]:[36m[3A][final] goals=2/2 (unknown=0), constraints=1/1 (unknown=0), base_score=95, action_cost=5, elapsed=367ms, remaining=4333ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:puton,1:goto], satisfied_constraints=[0]
+[0m
+#(Plug): Elapsed time=0.369s
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test

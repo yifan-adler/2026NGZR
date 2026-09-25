@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 2)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 table) (size 2 big) (at 2 2)
+(sort 3 chair) (size 3 big) (at 3 3)
+(sort 4 book) (size 4 small) (color 4 red) (at 4 2)
+(sort 8 desk) (size 8 big) (at 8 2)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:cons_notnot (:info (near X Y) (:cond (sort X book) (color X red) (sort Y table))))
+(:cons_notnot (:info (near X Y) (:cond (sort X book) (color X red) (sort Y desk))))
+(:task (goto X) (:cond (sort X table)))
+(:task (puton X Y) (:cond (sort X book) (color X red) (sort Y chair)))
+)
+</instr>
+<nl>
+The red book must be near the table.
+The red book must be near the desk.
+Go to the table.
+Put the red book on the chair.
+</nl>
+</test>

@@ -1,0 +1,12 @@
+[RDFW_TEST_SEED] 20260924
+=========================================
+= Simulation @Home Competition Platform =
+=========================================
+= Ready to accept a new team
+# Registration from 'RDFW'
+> Configurations:
+	Mode: NT
+	Timeout: 5000
+	TestDir: /tmp/robocup-constraint-challenge-final-20260924/N08-nt-new/runtime/tests/
+	TestSize: 1
+	Single test: 1

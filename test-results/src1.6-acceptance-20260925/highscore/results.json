@@ -1,0 +1,3562 @@
+[
+  {
+    "id": "P01",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "597d7a560a496cbc64887c01408443797c73fc6c5fa5dc0a452313383f7069ab"
+    },
+    "old": {
+      "status": "ok",
+      "official": 952,
+      "base": 868,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.723,
+      "case_sha256": "597d7a560a496cbc64887c01408443797c73fc6c5fa5dc0a452313383f7069ab"
+    },
+    "new": {
+      "status": "ok",
+      "official": 954,
+      "base": 868,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.657,
+      "case_sha256": "597d7a560a496cbc64887c01408443797c73fc6c5fa5dc0a452313383f7069ab"
+    },
+    "base_delta": 0,
+    "official_delta": 2
+  },
+  {
+    "id": "P01",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "597d7a560a496cbc64887c01408443797c73fc6c5fa5dc0a452313383f7069ab"
+    },
+    "old": {
+      "status": "ok",
+      "official": 954,
+      "base": 868,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.682,
+      "case_sha256": "597d7a560a496cbc64887c01408443797c73fc6c5fa5dc0a452313383f7069ab"
+    },
+    "new": {
+      "status": "ok",
+      "official": 952,
+      "base": 868,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.721,
+      "case_sha256": "597d7a560a496cbc64887c01408443797c73fc6c5fa5dc0a452313383f7069ab"
+    },
+    "base_delta": 0,
+    "official_delta": -2
+  },
+  {
+    "id": "P02",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "eb37846d88783b077bafb8d347c01f07044b7b2f3d48432d08178309d8c33173"
+    },
+    "old": {
+      "status": "ok",
+      "official": 994,
+      "base": 908,
+      "goals": 23,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.7,
+      "case_sha256": "eb37846d88783b077bafb8d347c01f07044b7b2f3d48432d08178309d8c33173"
+    },
+    "new": {
+      "status": "ok",
+      "official": 992,
+      "base": 908,
+      "goals": 23,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.735,
+      "case_sha256": "eb37846d88783b077bafb8d347c01f07044b7b2f3d48432d08178309d8c33173"
+    },
+    "base_delta": 0,
+    "official_delta": -2
+  },
+  {
+    "id": "P02",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "eb37846d88783b077bafb8d347c01f07044b7b2f3d48432d08178309d8c33173"
+    },
+    "old": {
+      "status": "ok",
+      "official": 992,
+      "base": 908,
+      "goals": 23,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.735,
+      "case_sha256": "eb37846d88783b077bafb8d347c01f07044b7b2f3d48432d08178309d8c33173"
+    },
+    "new": {
+      "status": "ok",
+      "official": 992,
+      "base": 908,
+      "goals": 23,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 0.746,
+      "case_sha256": "eb37846d88783b077bafb8d347c01f07044b7b2f3d48432d08178309d8c33173"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P03",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8aae5ba9ceca777d8c8ffe653c2b65a9e5f4b4f6fc5838265482fa9b1d3ebc26"
+    },
+    "old": {
+      "status": "ok",
+      "official": 904,
+      "base": 824,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.923,
+      "case_sha256": "8aae5ba9ceca777d8c8ffe653c2b65a9e5f4b4f6fc5838265482fa9b1d3ebc26"
+    },
+    "new": {
+      "status": "ok",
+      "official": 906,
+      "base": 824,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.896,
+      "case_sha256": "8aae5ba9ceca777d8c8ffe653c2b65a9e5f4b4f6fc5838265482fa9b1d3ebc26"
+    },
+    "base_delta": 0,
+    "official_delta": 2
+  },
+  {
+    "id": "P03",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8aae5ba9ceca777d8c8ffe653c2b65a9e5f4b4f6fc5838265482fa9b1d3ebc26"
+    },
+    "old": {
+      "status": "ok",
+      "official": 904,
+      "base": 824,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.916,
+      "case_sha256": "8aae5ba9ceca777d8c8ffe653c2b65a9e5f4b4f6fc5838265482fa9b1d3ebc26"
+    },
+    "new": {
+      "status": "ok",
+      "official": 904,
+      "base": 824,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "seconds": 0.915,
+      "case_sha256": "8aae5ba9ceca777d8c8ffe653c2b65a9e5f4b4f6fc5838265482fa9b1d3ebc26"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P04",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8804b3d92793ef9d3caa20c5190b9d5ceb374bd429f7f1513e8febba6084ab1f"
+    },
+    "old": {
+      "status": "ok",
+      "official": 936,
+      "base": 860,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.148,
+      "case_sha256": "8804b3d92793ef9d3caa20c5190b9d5ceb374bd429f7f1513e8febba6084ab1f"
+    },
+    "new": {
+      "status": "ok",
+      "official": 936,
+      "base": 860,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.149,
+      "case_sha256": "8804b3d92793ef9d3caa20c5190b9d5ceb374bd429f7f1513e8febba6084ab1f"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P04",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "8804b3d92793ef9d3caa20c5190b9d5ceb374bd429f7f1513e8febba6084ab1f"
+    },
+    "old": {
+      "status": "ok",
+      "official": 936,
+      "base": 860,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.102,
+      "case_sha256": "8804b3d92793ef9d3caa20c5190b9d5ceb374bd429f7f1513e8febba6084ab1f"
+    },
+    "new": {
+      "status": "ok",
+      "official": 934,
+      "base": 860,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "PickUp 7",
+        "PutIn 7 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 6",
+        "PutIn 6 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "seconds": 1.204,
+      "case_sha256": "8804b3d92793ef9d3caa20c5190b9d5ceb374bd429f7f1513e8febba6084ab1f"
+    },
+    "base_delta": 0,
+    "official_delta": -2
+  },
+  {
+    "id": "P05",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 918,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "00474b9ca7199b5fe14a7a673dd4f7ed421c76060e5b3a10f2c63f560419aa10"
+    },
+    "old": {
+      "status": "ok",
+      "official": 964,
+      "base": 872,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.343,
+      "case_sha256": "00474b9ca7199b5fe14a7a673dd4f7ed421c76060e5b3a10f2c63f560419aa10"
+    },
+    "new": {
+      "status": "ok",
+      "official": 964,
+      "base": 872,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.34,
+      "case_sha256": "00474b9ca7199b5fe14a7a673dd4f7ed421c76060e5b3a10f2c63f560419aa10"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P05",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "00474b9ca7199b5fe14a7a673dd4f7ed421c76060e5b3a10f2c63f560419aa10"
+    },
+    "old": {
+      "status": "ok",
+      "official": 964,
+      "base": 872,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.357,
+      "case_sha256": "00474b9ca7199b5fe14a7a673dd4f7ed421c76060e5b3a10f2c63f560419aa10"
+    },
+    "new": {
+      "status": "ok",
+      "official": 964,
+      "base": 872,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.324,
+      "case_sha256": "00474b9ca7199b5fe14a7a673dd4f7ed421c76060e5b3a10f2c63f560419aa10"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P06",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 760,
+      "base": 660,
+      "goals": 16,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "53980ae284d17edeeb565ad3382475e4a4dd0b608423ce73b0e8a58ff6f9ae68"
+    },
+    "old": {
+      "status": "ok",
+      "official": 884,
+      "base": 792,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.34,
+      "case_sha256": "53980ae284d17edeeb565ad3382475e4a4dd0b608423ce73b0e8a58ff6f9ae68"
+    },
+    "new": {
+      "status": "ok",
+      "official": 884,
+      "base": 792,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.345,
+      "case_sha256": "53980ae284d17edeeb565ad3382475e4a4dd0b608423ce73b0e8a58ff6f9ae68"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P06",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 760,
+      "base": 660,
+      "goals": 16,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "53980ae284d17edeeb565ad3382475e4a4dd0b608423ce73b0e8a58ff6f9ae68"
+    },
+    "old": {
+      "status": "ok",
+      "official": 884,
+      "base": 792,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.358,
+      "case_sha256": "53980ae284d17edeeb565ad3382475e4a4dd0b608423ce73b0e8a58ff6f9ae68"
+    },
+    "new": {
+      "status": "ok",
+      "official": 884,
+      "base": 792,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.358,
+      "case_sha256": "53980ae284d17edeeb565ad3382475e4a4dd0b608423ce73b0e8a58ff6f9ae68"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P07",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 880,
+      "base": 780,
+      "goals": 19,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "32e90655963c5c00e857e305786e69725ffac348a871bcd6dc018744eec9e232"
+    },
+    "old": {
+      "status": "ok",
+      "official": 920,
+      "base": 830,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.497,
+      "case_sha256": "32e90655963c5c00e857e305786e69725ffac348a871bcd6dc018744eec9e232"
+    },
+    "new": {
+      "status": "ok",
+      "official": 920,
+      "base": 830,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.48,
+      "case_sha256": "32e90655963c5c00e857e305786e69725ffac348a871bcd6dc018744eec9e232"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P07",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 880,
+      "base": 780,
+      "goals": 19,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "32e90655963c5c00e857e305786e69725ffac348a871bcd6dc018744eec9e232"
+    },
+    "old": {
+      "status": "ok",
+      "official": 920,
+      "base": 830,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.456,
+      "case_sha256": "32e90655963c5c00e857e305786e69725ffac348a871bcd6dc018744eec9e232"
+    },
+    "new": {
+      "status": "ok",
+      "official": 920,
+      "base": 830,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.493,
+      "case_sha256": "32e90655963c5c00e857e305786e69725ffac348a871bcd6dc018744eec9e232"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P08",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "61bc69458c674c874badd2dae1fa474c46f843b95b60addd6d375a683eab607c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 960,
+      "base": 870,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.468,
+      "case_sha256": "61bc69458c674c874badd2dae1fa474c46f843b95b60addd6d375a683eab607c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 960,
+      "base": 870,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.479,
+      "case_sha256": "61bc69458c674c874badd2dae1fa474c46f843b95b60addd6d375a683eab607c"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "P08",
+    "category": "positive",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "61bc69458c674c874badd2dae1fa474c46f843b95b60addd6d375a683eab607c"
+    },
+    "old": {
+      "status": "ok",
+      "official": 958,
+      "base": 870,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.501,
+      "case_sha256": "61bc69458c674c874badd2dae1fa474c46f843b95b60addd6d375a683eab607c"
+    },
+    "new": {
+      "status": "ok",
+      "official": 960,
+      "base": 870,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.485,
+      "case_sha256": "61bc69458c674c874badd2dae1fa474c46f843b95b60addd6d375a683eab607c"
+    },
+    "base_delta": 0,
+    "official_delta": 2
+  },
+  {
+    "id": "P09",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 880,
+      "base": 780,
+      "goals": 19,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "486e06a4d51ad50c4535290247aa9341b410d73a0be4f34cd2d95fa9ccc55d4e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 891,
+      "base": 819,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "PickUp 26",
+        "Sense",
+        "PutDown 26",
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "pickup": 4,
+        "sense": 1,
+        "putdown": 2,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 1.335,
+      "case_sha256": "486e06a4d51ad50c4535290247aa9341b410d73a0be4f34cd2d95fa9ccc55d4e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 901,
+      "base": 823,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Sense",
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "sense": 1,
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 1.086,
+      "case_sha256": "486e06a4d51ad50c4535290247aa9341b410d73a0be4f34cd2d95fa9ccc55d4e"
+    },
+    "base_delta": 4,
+    "official_delta": 10
+  },
+  {
+    "id": "P09",
+    "category": "positive",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 880,
+      "base": 780,
+      "goals": 19,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "486e06a4d51ad50c4535290247aa9341b410d73a0be4f34cd2d95fa9ccc55d4e"
+    },
+    "old": {
+      "status": "ok",
+      "official": 891,
+      "base": 819,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "PickUp 26",
+        "Sense",
+        "PutDown 26",
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "pickup": 4,
+        "sense": 1,
+        "putdown": 2,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 1.353,
+      "case_sha256": "486e06a4d51ad50c4535290247aa9341b410d73a0be4f34cd2d95fa9ccc55d4e"
+    },
+    "new": {
+      "status": "ok",
+      "official": 901,
+      "base": 823,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Sense",
+        "PickUp 5",
+        "PutDown 5",
+        "Open 2",
+        "PickUp 5",
+        "PutIn 5 2",
+        "PickUp 4",
+        "PutIn 4 2",
+        "Close 2"
+      ],
+      "action_counts": {
+        "sense": 1,
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "seconds": 1.046,
+      "case_sha256": "486e06a4d51ad50c4535290247aa9341b410d73a0be4f34cd2d95fa9ccc55d4e"
+    },
+    "base_delta": 4,
+    "official_delta": 10
+  },
+  {
+    "id": "P10",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b9fc2b67ec608849ecaf4cab64cf5d2b38b5768b48a24fb8b3e2471924e4fd69"
+    },
+    "old": {
+      "status": "ok",
+      "official": 908,
+      "base": 826,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "PickUp 25",
+        "Sense",
+        "PutDown 25",
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 2,
+        "putdown": 2,
+        "move": 1
+      },
+      "seconds": 0.842,
+      "case_sha256": "b9fc2b67ec608849ecaf4cab64cf5d2b38b5768b48a24fb8b3e2471924e4fd69"
+    },
+    "new": {
+      "status": "ok",
+      "official": 918,
+      "base": 830,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Sense",
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "sense": 2,
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.599,
+      "case_sha256": "b9fc2b67ec608849ecaf4cab64cf5d2b38b5768b48a24fb8b3e2471924e4fd69"
+    },
+    "base_delta": 4,
+    "official_delta": 10
+  },
+  {
+    "id": "P10",
+    "category": "positive",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "b9fc2b67ec608849ecaf4cab64cf5d2b38b5768b48a24fb8b3e2471924e4fd69"
+    },
+    "old": {
+      "status": "ok",
+      "official": 908,
+      "base": 826,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "PickUp 25",
+        "Sense",
+        "PutDown 25",
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 2,
+        "putdown": 2,
+        "move": 1
+      },
+      "seconds": 0.841,
+      "case_sha256": "b9fc2b67ec608849ecaf4cab64cf5d2b38b5768b48a24fb8b3e2471924e4fd69"
+    },
+    "new": {
+      "status": "ok",
+      "official": 916,
+      "base": 830,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Sense",
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "sense": 2,
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.603,
+      "case_sha256": "b9fc2b67ec608849ecaf4cab64cf5d2b38b5768b48a24fb8b3e2471924e4fd69"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "N01",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "915d17f27bea57bb24345b982fd8de3b6dbf06978f74fad6a7dd31c2e292698b"
+    },
+    "old": {
+      "status": "ok",
+      "official": 926,
+      "base": 834,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "FromPlate 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "fromplate": 1,
+        "putin": 1
+      },
+      "seconds": 0.373,
+      "case_sha256": "915d17f27bea57bb24345b982fd8de3b6dbf06978f74fad6a7dd31c2e292698b"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.01,
+      "case_sha256": "915d17f27bea57bb24345b982fd8de3b6dbf06978f74fad6a7dd31c2e292698b"
+    },
+    "base_delta": 26,
+    "official_delta": 32
+  },
+  {
+    "id": "N01",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "915d17f27bea57bb24345b982fd8de3b6dbf06978f74fad6a7dd31c2e292698b"
+    },
+    "old": {
+      "status": "ok",
+      "official": 926,
+      "base": 834,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "FromPlate 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "fromplate": 1,
+        "putin": 1
+      },
+      "seconds": 0.367,
+      "case_sha256": "915d17f27bea57bb24345b982fd8de3b6dbf06978f74fad6a7dd31c2e292698b"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.01,
+      "case_sha256": "915d17f27bea57bb24345b982fd8de3b6dbf06978f74fad6a7dd31c2e292698b"
+    },
+    "base_delta": 26,
+    "official_delta": 32
+  },
+  {
+    "id": "N02",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "3339bebcb3861250cd845fd2924609b4f88a3b6b8ddf846d88cc77745e48ea10"
+    },
+    "old": {
+      "status": "ok",
+      "official": 966,
+      "base": 874,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "FromPlate 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "fromplate": 1,
+        "putin": 1
+      },
+      "seconds": 0.342,
+      "case_sha256": "3339bebcb3861250cd845fd2924609b4f88a3b6b8ddf846d88cc77745e48ea10"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.011,
+      "case_sha256": "3339bebcb3861250cd845fd2924609b4f88a3b6b8ddf846d88cc77745e48ea10"
+    },
+    "base_delta": 26,
+    "official_delta": 32
+  },
+  {
+    "id": "N02",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "3339bebcb3861250cd845fd2924609b4f88a3b6b8ddf846d88cc77745e48ea10"
+    },
+    "old": {
+      "status": "ok",
+      "official": 966,
+      "base": 874,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "FromPlate 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "fromplate": 1,
+        "putin": 1
+      },
+      "seconds": 0.325,
+      "case_sha256": "3339bebcb3861250cd845fd2924609b4f88a3b6b8ddf846d88cc77745e48ea10"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.008,
+      "case_sha256": "3339bebcb3861250cd845fd2924609b4f88a3b6b8ddf846d88cc77745e48ea10"
+    },
+    "base_delta": 26,
+    "official_delta": 32
+  },
+  {
+    "id": "N03",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "998b6045e6bebebb8fd8fd82d2ee80fef0eaa10f399cf4e7edef16d83ee34720"
+    },
+    "old": {
+      "status": "ok",
+      "official": 867,
+      "base": 785,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 1,
+        "putdown": 2,
+        "fromplate": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "seconds": 0.859,
+      "case_sha256": "998b6045e6bebebb8fd8fd82d2ee80fef0eaa10f399cf4e7edef16d83ee34720"
+    },
+    "new": {
+      "status": "ok",
+      "official": 915,
+      "base": 819,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.119,
+      "case_sha256": "998b6045e6bebebb8fd8fd82d2ee80fef0eaa10f399cf4e7edef16d83ee34720"
+    },
+    "base_delta": 34,
+    "official_delta": 48
+  },
+  {
+    "id": "N03",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "998b6045e6bebebb8fd8fd82d2ee80fef0eaa10f399cf4e7edef16d83ee34720"
+    },
+    "old": {
+      "status": "ok",
+      "official": 867,
+      "base": 785,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 1,
+        "putdown": 2,
+        "fromplate": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "seconds": 0.862,
+      "case_sha256": "998b6045e6bebebb8fd8fd82d2ee80fef0eaa10f399cf4e7edef16d83ee34720"
+    },
+    "new": {
+      "status": "ok",
+      "official": 915,
+      "base": 819,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.125,
+      "case_sha256": "998b6045e6bebebb8fd8fd82d2ee80fef0eaa10f399cf4e7edef16d83ee34720"
+    },
+    "base_delta": 34,
+    "official_delta": 48
+  },
+  {
+    "id": "N04",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "1736766196979dc53e88fcdf10808be647a7f5a07f4ce53be3215f1dc8f5dcc4"
+    },
+    "old": {
+      "status": "ok",
+      "official": 926,
+      "base": 834,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "FromPlate 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "fromplate": 1,
+        "putin": 1
+      },
+      "seconds": 0.345,
+      "case_sha256": "1736766196979dc53e88fcdf10808be647a7f5a07f4ce53be3215f1dc8f5dcc4"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.008,
+      "case_sha256": "1736766196979dc53e88fcdf10808be647a7f5a07f4ce53be3215f1dc8f5dcc4"
+    },
+    "base_delta": 26,
+    "official_delta": 32
+  },
+  {
+    "id": "N04",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "1736766196979dc53e88fcdf10808be647a7f5a07f4ce53be3215f1dc8f5dcc4"
+    },
+    "old": {
+      "status": "ok",
+      "official": 926,
+      "base": 834,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "FromPlate 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "fromplate": 1,
+        "putin": 1
+      },
+      "seconds": 0.377,
+      "case_sha256": "1736766196979dc53e88fcdf10808be647a7f5a07f4ce53be3215f1dc8f5dcc4"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.008,
+      "case_sha256": "1736766196979dc53e88fcdf10808be647a7f5a07f4ce53be3215f1dc8f5dcc4"
+    },
+    "base_delta": 26,
+    "official_delta": 32
+  },
+  {
+    "id": "N05",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "4072cfbfd1d5b25f843dfbb968df75e4b8427b181e6c76c76014c6bc3b481f23"
+    },
+    "old": {
+      "status": "ok",
+      "official": 958,
+      "base": 868,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 2,
+        "putdown": 1
+      },
+      "seconds": 0.481,
+      "case_sha256": "4072cfbfd1d5b25f843dfbb968df75e4b8427b181e6c76c76014c6bc3b481f23"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.006,
+      "case_sha256": "4072cfbfd1d5b25f843dfbb968df75e4b8427b181e6c76c76014c6bc3b481f23"
+    },
+    "base_delta": 32,
+    "official_delta": 40
+  },
+  {
+    "id": "N05",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "4072cfbfd1d5b25f843dfbb968df75e4b8427b181e6c76c76014c6bc3b481f23"
+    },
+    "old": {
+      "status": "ok",
+      "official": 958,
+      "base": 868,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 2,
+        "putdown": 1
+      },
+      "seconds": 0.447,
+      "case_sha256": "4072cfbfd1d5b25f843dfbb968df75e4b8427b181e6c76c76014c6bc3b481f23"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.007,
+      "case_sha256": "4072cfbfd1d5b25f843dfbb968df75e4b8427b181e6c76c76014c6bc3b481f23"
+    },
+    "base_delta": 32,
+    "official_delta": 40
+  },
+  {
+    "id": "N06",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "41acbe44e3da66e0cd0c91c537ea2b20347a6fb399056bbb43eb24ebadf092b8"
+    },
+    "old": {
+      "status": "ok",
+      "official": 862,
+      "base": 782,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 2,
+        "putdown": 2,
+        "move": 2
+      },
+      "seconds": 0.985,
+      "case_sha256": "41acbe44e3da66e0cd0c91c537ea2b20347a6fb399056bbb43eb24ebadf092b8"
+    },
+    "new": {
+      "status": "ok",
+      "official": 915,
+      "base": 819,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.126,
+      "case_sha256": "41acbe44e3da66e0cd0c91c537ea2b20347a6fb399056bbb43eb24ebadf092b8"
+    },
+    "base_delta": 37,
+    "official_delta": 53
+  },
+  {
+    "id": "N06",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "41acbe44e3da66e0cd0c91c537ea2b20347a6fb399056bbb43eb24ebadf092b8"
+    },
+    "old": {
+      "status": "ok",
+      "official": 862,
+      "base": 782,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "PickUp 4",
+        "Move 3",
+        "Sense",
+        "PutDown 4",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 2,
+        "putdown": 2,
+        "move": 2
+      },
+      "seconds": 0.949,
+      "case_sha256": "41acbe44e3da66e0cd0c91c537ea2b20347a6fb399056bbb43eb24ebadf092b8"
+    },
+    "new": {
+      "status": "ok",
+      "official": 915,
+      "base": 819,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.13,
+      "case_sha256": "41acbe44e3da66e0cd0c91c537ea2b20347a6fb399056bbb43eb24ebadf092b8"
+    },
+    "base_delta": 37,
+    "official_delta": 53
+  },
+  {
+    "id": "N07",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "543b6f82a048a6e18122ff1f88dae78f6390f96c70eaeb179bc3ce1b96814035"
+    },
+    "old": {
+      "status": "ok",
+      "official": 914,
+      "base": 826,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3",
+        "Move 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 1
+      },
+      "seconds": 0.587,
+      "case_sha256": "543b6f82a048a6e18122ff1f88dae78f6390f96c70eaeb179bc3ce1b96814035"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.01,
+      "case_sha256": "543b6f82a048a6e18122ff1f88dae78f6390f96c70eaeb179bc3ce1b96814035"
+    },
+    "base_delta": 34,
+    "official_delta": 44
+  },
+  {
+    "id": "N07",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "543b6f82a048a6e18122ff1f88dae78f6390f96c70eaeb179bc3ce1b96814035"
+    },
+    "old": {
+      "status": "ok",
+      "official": 914,
+      "base": 826,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "PutDown 3",
+        "Move 2"
+      ],
+      "action_counts": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 1
+      },
+      "seconds": 0.59,
+      "case_sha256": "543b6f82a048a6e18122ff1f88dae78f6390f96c70eaeb179bc3ce1b96814035"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.01,
+      "case_sha256": "543b6f82a048a6e18122ff1f88dae78f6390f96c70eaeb179bc3ce1b96814035"
+    },
+    "base_delta": 34,
+    "official_delta": 44
+  },
+  {
+    "id": "N08",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "facf89bdd46514c433a9de160d1e64766ac387f867d1e13334fc6c66290fd694"
+    },
+    "old": {
+      "status": "ok",
+      "official": 938,
+      "base": 860,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 28",
+        "Sense",
+        "PutDown 28",
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "Sense",
+        "PutDown 3",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "sense": 2,
+        "putdown": 2,
+        "open": 1,
+        "takeout": 1,
+        "move": 2
+      },
+      "seconds": 1.089,
+      "case_sha256": "facf89bdd46514c433a9de160d1e64766ac387f867d1e13334fc6c66290fd694"
+    },
+    "new": {
+      "status": "ok",
+      "official": 995,
+      "base": 899,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.125,
+      "case_sha256": "facf89bdd46514c433a9de160d1e64766ac387f867d1e13334fc6c66290fd694"
+    },
+    "base_delta": 39,
+    "official_delta": 57
+  },
+  {
+    "id": "N08",
+    "category": "negative",
+    "family": "inside-and-delivery",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 940,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "facf89bdd46514c433a9de160d1e64766ac387f867d1e13334fc6c66290fd694"
+    },
+    "old": {
+      "status": "ok",
+      "official": 938,
+      "base": 860,
+      "goals": 22,
+      "constraints": 0,
+      "actions": [
+        "PickUp 28",
+        "Sense",
+        "PutDown 28",
+        "Open 2",
+        "TakeOut 3 2",
+        "Move 1",
+        "Sense",
+        "PutDown 3",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "sense": 2,
+        "putdown": 2,
+        "open": 1,
+        "takeout": 1,
+        "move": 2
+      },
+      "seconds": 1.084,
+      "case_sha256": "facf89bdd46514c433a9de160d1e64766ac387f867d1e13334fc6c66290fd694"
+    },
+    "new": {
+      "status": "ok",
+      "official": 995,
+      "base": 899,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.125,
+      "case_sha256": "facf89bdd46514c433a9de160d1e64766ac387f867d1e13334fc6c66290fd694"
+    },
+    "base_delta": 39,
+    "official_delta": 57
+  },
+  {
+    "id": "N09",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "e8d8f46756ae6b172a99af396384b3bc59da1efe43e59dd2f532a042eeeac9fc"
+    },
+    "old": {
+      "status": "ok",
+      "official": 865,
+      "base": 785,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 1,
+        "putdown": 2,
+        "fromplate": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "seconds": 0.951,
+      "case_sha256": "e8d8f46756ae6b172a99af396384b3bc59da1efe43e59dd2f532a042eeeac9fc"
+    },
+    "new": {
+      "status": "ok",
+      "official": 915,
+      "base": 819,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.123,
+      "case_sha256": "e8d8f46756ae6b172a99af396384b3bc59da1efe43e59dd2f532a042eeeac9fc"
+    },
+    "base_delta": 34,
+    "official_delta": 50
+  },
+  {
+    "id": "N09",
+    "category": "negative",
+    "family": "closed-container",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "e8d8f46756ae6b172a99af396384b3bc59da1efe43e59dd2f532a042eeeac9fc"
+    },
+    "old": {
+      "status": "ok",
+      "official": 865,
+      "base": 785,
+      "goals": 20,
+      "constraints": 0,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "FromPlate 4",
+        "PutDown 4",
+        "Open 2",
+        "PickUp 4",
+        "PutIn 4 2"
+      ],
+      "action_counts": {
+        "pickup": 2,
+        "sense": 1,
+        "putdown": 2,
+        "fromplate": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "seconds": 0.933,
+      "case_sha256": "e8d8f46756ae6b172a99af396384b3bc59da1efe43e59dd2f532a042eeeac9fc"
+    },
+    "new": {
+      "status": "ok",
+      "official": 915,
+      "base": 819,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.13,
+      "case_sha256": "e8d8f46756ae6b172a99af396384b3bc59da1efe43e59dd2f532a042eeeac9fc"
+    },
+    "base_delta": 34,
+    "official_delta": 50
+  },
+  {
+    "id": "N10",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "dd7b8136b3e3eaa189047bb92b2d9425c61e1864f548a40881a3f15d0de5b9b6"
+    },
+    "old": {
+      "status": "ok",
+      "official": 918,
+      "base": 828,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 2,
+        "putdown": 1
+      },
+      "seconds": 0.472,
+      "case_sha256": "dd7b8136b3e3eaa189047bb92b2d9425c61e1864f548a40881a3f15d0de5b9b6"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.006,
+      "case_sha256": "dd7b8136b3e3eaa189047bb92b2d9425c61e1864f548a40881a3f15d0de5b9b6"
+    },
+    "base_delta": 32,
+    "official_delta": 40
+  },
+  {
+    "id": "N10",
+    "category": "negative",
+    "family": "near-and-location",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "dd7b8136b3e3eaa189047bb92b2d9425c61e1864f548a40881a3f15d0de5b9b6"
+    },
+    "old": {
+      "status": "ok",
+      "official": 918,
+      "base": 828,
+      "goals": 21,
+      "constraints": 0,
+      "actions": [
+        "PickUp 4",
+        "Move 3",
+        "PutDown 4",
+        "Move 2"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 2,
+        "putdown": 1
+      },
+      "seconds": 0.445,
+      "case_sha256": "dd7b8136b3e3eaa189047bb92b2d9425c61e1864f548a40881a3f15d0de5b9b6"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.005,
+      "case_sha256": "dd7b8136b3e3eaa189047bb92b2d9425c61e1864f548a40881a3f15d0de5b9b6"
+    },
+    "base_delta": 32,
+    "official_delta": 40
+  },
+  {
+    "id": "C01",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "718b97e4533348376476d7299ed87d3da5afd30104e0f18027d4aad2cbe12711"
+    },
+    "old": {
+      "status": "ok",
+      "official": 954,
+      "base": 858,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.124,
+      "case_sha256": "718b97e4533348376476d7299ed87d3da5afd30104e0f18027d4aad2cbe12711"
+    },
+    "new": {
+      "status": "ok",
+      "official": 954,
+      "base": 858,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.123,
+      "case_sha256": "718b97e4533348376476d7299ed87d3da5afd30104e0f18027d4aad2cbe12711"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C01",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "718b97e4533348376476d7299ed87d3da5afd30104e0f18027d4aad2cbe12711"
+    },
+    "old": {
+      "status": "ok",
+      "official": 954,
+      "base": 858,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.126,
+      "case_sha256": "718b97e4533348376476d7299ed87d3da5afd30104e0f18027d4aad2cbe12711"
+    },
+    "new": {
+      "status": "ok",
+      "official": 954,
+      "base": 858,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.121,
+      "case_sha256": "718b97e4533348376476d7299ed87d3da5afd30104e0f18027d4aad2cbe12711"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C02",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "837438efd8314a25d36edf0fc827d58c60961acbcb1ca7f2241730f133ebac42"
+    },
+    "old": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.126,
+      "case_sha256": "837438efd8314a25d36edf0fc827d58c60961acbcb1ca7f2241730f133ebac42"
+    },
+    "new": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.122,
+      "case_sha256": "837438efd8314a25d36edf0fc827d58c60961acbcb1ca7f2241730f133ebac42"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C02",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "837438efd8314a25d36edf0fc827d58c60961acbcb1ca7f2241730f133ebac42"
+    },
+    "old": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.126,
+      "case_sha256": "837438efd8314a25d36edf0fc827d58c60961acbcb1ca7f2241730f133ebac42"
+    },
+    "new": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.127,
+      "case_sha256": "837438efd8314a25d36edf0fc827d58c60961acbcb1ca7f2241730f133ebac42"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C03",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "0becd4dc9e969afb7a86090998f3d67aa5083825163a339b6c1b740857ddfb8b"
+    },
+    "old": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "0becd4dc9e969afb7a86090998f3d67aa5083825163a339b6c1b740857ddfb8b"
+    },
+    "new": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "0becd4dc9e969afb7a86090998f3d67aa5083825163a339b6c1b740857ddfb8b"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C03",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "0becd4dc9e969afb7a86090998f3d67aa5083825163a339b6c1b740857ddfb8b"
+    },
+    "old": {
+      "status": "ok",
+      "official": 958,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "0becd4dc9e969afb7a86090998f3d67aa5083825163a339b6c1b740857ddfb8b"
+    },
+    "new": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "0becd4dc9e969afb7a86090998f3d67aa5083825163a339b6c1b740857ddfb8b"
+    },
+    "base_delta": 0,
+    "official_delta": 2
+  },
+  {
+    "id": "C04",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "e5ca2fd0e3f4b97d4ee0a6864597264cf55eb1c984bc011b3e186017dd6f20ce"
+    },
+    "old": {
+      "status": "ok",
+      "official": 944,
+      "base": 852,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.372,
+      "case_sha256": "e5ca2fd0e3f4b97d4ee0a6864597264cf55eb1c984bc011b3e186017dd6f20ce"
+    },
+    "new": {
+      "status": "ok",
+      "official": 944,
+      "base": 852,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.361,
+      "case_sha256": "e5ca2fd0e3f4b97d4ee0a6864597264cf55eb1c984bc011b3e186017dd6f20ce"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C04",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 920,
+      "base": 820,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "e5ca2fd0e3f4b97d4ee0a6864597264cf55eb1c984bc011b3e186017dd6f20ce"
+    },
+    "old": {
+      "status": "ok",
+      "official": 944,
+      "base": 852,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.36,
+      "case_sha256": "e5ca2fd0e3f4b97d4ee0a6864597264cf55eb1c984bc011b3e186017dd6f20ce"
+    },
+    "new": {
+      "status": "ok",
+      "official": 944,
+      "base": 852,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4",
+        "Move 1",
+        "PutDown 4"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "seconds": 0.344,
+      "case_sha256": "e5ca2fd0e3f4b97d4ee0a6864597264cf55eb1c984bc011b3e186017dd6f20ce"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C05",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "eb1a985ee0c076bc447830a3b8c8d49bef1a213cdd4921b2bef4434e54b0bcbd"
+    },
+    "old": {
+      "status": "ok",
+      "official": 987,
+      "base": 895,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 29",
+        "Sense",
+        "PutDown 29"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.347,
+      "case_sha256": "eb1a985ee0c076bc447830a3b8c8d49bef1a213cdd4921b2bef4434e54b0bcbd"
+    },
+    "new": {
+      "status": "ok",
+      "official": 995,
+      "base": 899,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.128,
+      "case_sha256": "eb1a985ee0c076bc447830a3b8c8d49bef1a213cdd4921b2bef4434e54b0bcbd"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "C05",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "eb1a985ee0c076bc447830a3b8c8d49bef1a213cdd4921b2bef4434e54b0bcbd"
+    },
+    "old": {
+      "status": "ok",
+      "official": 987,
+      "base": 895,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 29",
+        "Sense",
+        "PutDown 29"
+      ],
+      "action_counts": {
+        "pickup": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "seconds": 0.372,
+      "case_sha256": "eb1a985ee0c076bc447830a3b8c8d49bef1a213cdd4921b2bef4434e54b0bcbd"
+    },
+    "new": {
+      "status": "ok",
+      "official": 995,
+      "base": 899,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "Sense"
+      ],
+      "action_counts": {
+        "sense": 1
+      },
+      "seconds": 0.126,
+      "case_sha256": "eb1a985ee0c076bc447830a3b8c8d49bef1a213cdd4921b2bef4434e54b0bcbd"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "C06",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 880,
+      "base": 780,
+      "goals": 19,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "9cb2b7557119091193e9c19d01545dbb69d12b8182813d8b834c2bcd615732b5"
+    },
+    "old": {
+      "status": "ok",
+      "official": 952,
+      "base": 856,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.117,
+      "case_sha256": "9cb2b7557119091193e9c19d01545dbb69d12b8182813d8b834c2bcd615732b5"
+    },
+    "new": {
+      "status": "ok",
+      "official": 952,
+      "base": 856,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.123,
+      "case_sha256": "9cb2b7557119091193e9c19d01545dbb69d12b8182813d8b834c2bcd615732b5"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C06",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 880,
+      "base": 780,
+      "goals": 19,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "9cb2b7557119091193e9c19d01545dbb69d12b8182813d8b834c2bcd615732b5"
+    },
+    "old": {
+      "status": "ok",
+      "official": 952,
+      "base": 856,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.11,
+      "case_sha256": "9cb2b7557119091193e9c19d01545dbb69d12b8182813d8b834c2bcd615732b5"
+    },
+    "new": {
+      "status": "ok",
+      "official": 952,
+      "base": 856,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [
+        "Move 3"
+      ],
+      "action_counts": {
+        "move": 1
+      },
+      "seconds": 0.121,
+      "case_sha256": "9cb2b7557119091193e9c19d01545dbb69d12b8182813d8b834c2bcd615732b5"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C07",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "f0e2da6faeb81384ea5fc8cebc5acc9c3f60bd72be94e2bb0dfac68a8bb17872"
+    },
+    "old": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.117,
+      "case_sha256": "f0e2da6faeb81384ea5fc8cebc5acc9c3f60bd72be94e2bb0dfac68a8bb17872"
+    },
+    "new": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.128,
+      "case_sha256": "f0e2da6faeb81384ea5fc8cebc5acc9c3f60bd72be94e2bb0dfac68a8bb17872"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C07",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 960,
+      "base": 860,
+      "goals": 21,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "f0e2da6faeb81384ea5fc8cebc5acc9c3f60bd72be94e2bb0dfac68a8bb17872"
+    },
+    "old": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.13,
+      "case_sha256": "f0e2da6faeb81384ea5fc8cebc5acc9c3f60bd72be94e2bb0dfac68a8bb17872"
+    },
+    "new": {
+      "status": "ok",
+      "official": 994,
+      "base": 898,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [
+        "PickUp 4"
+      ],
+      "action_counts": {
+        "pickup": 1
+      },
+      "seconds": 0.126,
+      "case_sha256": "f0e2da6faeb81384ea5fc8cebc5acc9c3f60bd72be94e2bb0dfac68a8bb17872"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C08",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "82b8fc0ff1a46e6b95813a73ea61696852ac25e9f28987499b7435766d6edf8b"
+    },
+    "old": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "82b8fc0ff1a46e6b95813a73ea61696852ac25e9f28987499b7435766d6edf8b"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "82b8fc0ff1a46e6b95813a73ea61696852ac25e9f28987499b7435766d6edf8b"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C08",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "82b8fc0ff1a46e6b95813a73ea61696852ac25e9f28987499b7435766d6edf8b"
+    },
+    "old": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "82b8fc0ff1a46e6b95813a73ea61696852ac25e9f28987499b7435766d6edf8b"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "82b8fc0ff1a46e6b95813a73ea61696852ac25e9f28987499b7435766d6edf8b"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C09",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "it",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "f6feb100cb7e6818cb87312e5970339afce4be6dc908c842df52c69c80d54556"
+    },
+    "old": {
+      "status": "ok",
+      "official": 880,
+      "base": 802,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 3,
+        "sense": 2,
+        "putdown": 3,
+        "move": 1
+      },
+      "seconds": 1.008,
+      "case_sha256": "f6feb100cb7e6818cb87312e5970339afce4be6dc908c842df52c69c80d54556"
+    },
+    "new": {
+      "status": "ok",
+      "official": 888,
+      "base": 806,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense",
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "sense": 2,
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1
+      },
+      "seconds": 0.822,
+      "case_sha256": "f6feb100cb7e6818cb87312e5970339afce4be6dc908c842df52c69c80d54556"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "C09",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 2,
+    "mode": "nt",
+    "theoretical_max": 860,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 840,
+      "base": 740,
+      "goals": 18,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "f6feb100cb7e6818cb87312e5970339afce4be6dc908c842df52c69c80d54556"
+    },
+    "old": {
+      "status": "ok",
+      "official": 880,
+      "base": 802,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "PickUp 27",
+        "Sense",
+        "PutDown 27",
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "pickup": 3,
+        "sense": 2,
+        "putdown": 3,
+        "move": 1
+      },
+      "seconds": 1.058,
+      "case_sha256": "f6feb100cb7e6818cb87312e5970339afce4be6dc908c842df52c69c80d54556"
+    },
+    "new": {
+      "status": "ok",
+      "official": 888,
+      "base": 806,
+      "goals": 20,
+      "constraints": 1,
+      "actions": [
+        "Sense",
+        "PickUp 4",
+        "PutDown 4",
+        "Move 3",
+        "PickUp 5",
+        "Sense",
+        "PutDown 5"
+      ],
+      "action_counts": {
+        "sense": 2,
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1
+      },
+      "seconds": 0.845,
+      "case_sha256": "f6feb100cb7e6818cb87312e5970339afce4be6dc908c842df52c69c80d54556"
+    },
+    "base_delta": 4,
+    "official_delta": 8
+  },
+  {
+    "id": "C10",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "it",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c50e08feb8e44f91cf6cda4952e53759dee3fa1ce1e3e9752e47afbfe5658fa3"
+    },
+    "old": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "c50e08feb8e44f91cf6cda4952e53759dee3fa1ce1e3e9752e47afbfe5658fa3"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "c50e08feb8e44f91cf6cda4952e53759dee3fa1ce1e3e9752e47afbfe5658fa3"
+    },
+    "base_delta": 0,
+    "official_delta": 0
+  },
+  {
+    "id": "C10",
+    "category": "normal",
+    "family": "constraint-preserving",
+    "stage": 1,
+    "mode": "nt",
+    "theoretical_max": 900,
+    "verdict": "pass",
+    "control": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c50e08feb8e44f91cf6cda4952e53759dee3fa1ce1e3e9752e47afbfe5658fa3"
+    },
+    "old": {
+      "status": "ok",
+      "official": 1000,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.0,
+      "case_sha256": "c50e08feb8e44f91cf6cda4952e53759dee3fa1ce1e3e9752e47afbfe5658fa3"
+    },
+    "new": {
+      "status": "ok",
+      "official": 998,
+      "base": 900,
+      "goals": 22,
+      "constraints": 1,
+      "actions": [],
+      "action_counts": {},
+      "seconds": 0.001,
+      "case_sha256": "c50e08feb8e44f91cf6cda4952e53759dee3fa1ce1e3e9752e47afbfe5658fa3"
+    },
+    "base_delta": 0,
+    "official_delta": -2
+  }
+]

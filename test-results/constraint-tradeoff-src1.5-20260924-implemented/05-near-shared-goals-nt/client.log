@@ -1,0 +1,282 @@
+[LOG]:-stage
+[LOG]:-nlp
+[LOG]:-err
+[LOG]:-ask_2
+[LOG]:-path
+[LOG]:nlp 1, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+#(Plug): Timeout=5000
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32mcase.xml
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[32mThe red book must be near the table.[0m
+[LOG]:<S:>
+  <NP:>
+    <ART:the>
+    <ADJ:red>
+    <N:book>
+  <VP:>
+    <MUST:must>
+    <VP:>
+      <BE:be>
+      <PREP:near>
+      <NP:>
+        <ART:the>
+        <N:table>
+
+[LOG]:[32mGo to the table.[0m
+[LOG]:<S:>
+  <VP:>
+    <VP:>
+      <V:go>
+      <PREP:to>
+    <NP:>
+      <ART:the>
+      <N:table>
+
+[LOG]:[32mPut the red book on the chair.[0m
+[LOG]:<S:>
+  <VP:>
+    <V:put>
+    <NP:>
+      <ART:the>
+      <ADJ:red>
+      <N:book>
+    <PREP:on>
+    <NP:>
+      <ART:the>
+      <N:chair>
+
+[LOG]:[32mGo to the red book.[0m
+[LOG]:<S:>
+  <VP:>
+    <VP:>
+      <V:go>
+      <PREP:to>
+    <NP:>
+      <ART:the>
+      <ADJ:red>
+      <N:book>
+
+[LOG]:[32mGo to the chair.[0m
+[LOG]:<S:>
+  <VP:>
+    <VP:>
+      <V:go>
+      <PREP:to>
+    <NP:>
+      <ART:the>
+      <N:chair>
+
+[LOG]:[32mGo to the blue cup.[0m
+[LOG]:<S:>
+  <VP:>
+    <VP:>
+      <V:go>
+      <PREP:to>
+    <NP:>
+      <ART:the>
+      <ADJ:blue>
+      <N:cup>
+
+[LOG]:[32mGo to the white bottle.[0m
+[LOG]:<S:>
+  <VP:>
+    <VP:>
+      <V:go>
+      <PREP:to>
+    <NP:>
+      <ART:the>
+      <ADJ:white>
+      <N:bottle>
+
+[LOG]:[Preflight] task raw=6 unique=6 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 table)[0m(4 book)
+Pos  3:(T):[33m(3 chair)[0m(5 cup)(6 bottle)
+UnknownPos:
+
+Task:
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:table,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mputon[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:chair,Color:)[0m
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:chair,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:cup,Color:blue)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:bottle,Color:white)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Behave:[35mnear[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:table,Color:)[0m
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+6
+[LOG]:[33m[Defer] multi-goto detected: 5 tasks; skip in main loop, handle at final aggregation
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"puton","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":4,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":5,"maintained_constraints":0,"action_count":3,"action_cost":8,"final_reward":192,"utility":92}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=puton legacy_choice=true eligible=true complete=true actions=3 duration_ms=320 action_cost=8 score_before=100 score_after=192 marginal_score=92 utility=92 gained_goals=[0,3,4,5] lost_goals=[1] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/6 (unknown=0), constraints=1/1 (unknown=0), base_score=100, action_cost=0, elapsed=0ms, remaining=4700ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[1:goto,2:goto], satisfied_constraints=[0]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=puton can_finish=true remaining_plan_ms=320 safety_ms=300 budget_remaining_ms=4700
+[0m
+[LOG]:[TradeoffDecision] phase=main-loop task=0 decision=execute score=192 incumbent=100 group=1
+
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":1,"task_index":0,"tasks":[0],"task_label":"puton","generated_ms":0,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":4,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":5,"maintained_constraints":0,"action_count":3,"action_cost":8,"final_reward":192,"utility":92},"expected_reward":192,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true},{"object_id":6,"fact":"location","source":"initial","verified":true},{"object_id":6,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=puton executed=0 total=3 remaining_utility=92 remaining_duration_ms=320
+[0m
+puton book的风险系数是：1
+[LOG]:PickUp(4,book)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PickUp executed=1 total=3 remaining_utility=94 remaining_duration_ms=220 can_finish=true
+[0m
+[LOG]:Move(3)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=2 total=3 remaining_utility=98 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PutDown(4,book)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PutDown executed=3 total=3 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mputon[0m
+ConditionX:[35m(Sort:book,Color:red)[0m
+ConditionY:[35m(Sort:chair,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":1,"prediction":{"goal_gain":4,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":5,"maintained_constraints":0,"action_count":3,"action_cost":8,"final_reward":192,"utility":92},"actual":{"goal_gain":4,"goal_loss":1,"constraint_gain":0,"constraint_loss":1,"completed_goals":5,"maintained_constraints":0,"action_count":3,"action_cost":8,"final_reward":192,"utility":92},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=puton succeeded=true executed=3 total=3 remaining_utility=0 remaining_duration_ms=0
+[0m
+-----check check check-----
+[LOG]:[33m[Defer] multi-goto detected: 5 tasks; skip in main loop, handle at final aggregation
+[0m
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[33m(2 table)[0m
+Pos  3:(T):[32m(robot hold:0 plate:0)[0m[33m(3 chair)[0m(4 book)(5 cup)(6 bottle)
+UnknownPos:
+
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"multi-goto","task_index":1,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":4,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":68,"utility":-124}}
+[LOG]:[36m[3B][Candidate] phase=multi-goto rank=1 task_index=1 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=192 score_after=68 marginal_score=-124 utility=-124 gained_goals=[1] lost_goals=[2,3,4,5] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][multi-goto] goals=5/6 (unknown=0), constraints=0/1 (unknown=0), base_score=192, action_cost=8, elapsed=311ms, remaining=4389ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:puton,2:goto,3:goto,4:goto,5:goto], satisfied_constraints=[]
+[0m
+[LOG]:[32m[MultiGoto] Executing multi-goto aggregation - skipping Sense operations
+[0m
+[LOG]:[32m[MultiGoto] Object[5]: goto_risk=0, pickup_risk=0, mustnear_risk=0, total_risk=0, can_move=true
+[0m
+[LOG]:[32m[MultiGoto] Object[6]: goto_risk=0, pickup_risk=0, mustnear_risk=0, total_risk=0, can_move=true
+[0m
+[LOG]:[32m[MultiGoto] BigObject[2]: goto_risk=0
+[0m
+[LOG]:[32m[MultiGoto] BigObject[3]: goto_risk=0
+[0m
+[LOG]:[32m[MultiGoto] small_cand_id_disable: 
+[LOG]:[32m4 
+[LOG]:[32m
+[0m
+[LOG]:[32m[MultiGoto] small_cand_ids: 
+[LOG]:[32m5 
+[LOG]:[32m6 
+[LOG]:[32m
+[0m
+[LOG]:[32m[MultiGoto] big_cand_ids: 
+[LOG]:[32m2 
+[LOG]:[32m3 
+[LOG]:[32m
+[0m
+[LOG]:[32m[MultiGoto] small_cand_ids.size()=2, big_cand_ids.size()=2
+[0m
+[LOG]:[32m[MultiGoto] small_lowrisk_ids.size()=2
+[0m
+[LOG]:[32m[MultiGoto] Entering main aggregation logic
+[0m
+[LOG]:[32m[MultiGoto] Performance optimization: Only checking 2 occupied locations instead of 100 total locations
+[0m
+[MultiGoto] location 3 has 3 small objects
+[MultiGoto] most_smallobj_loc 3
+[LOG]:[33m[MultiGoto] smallobj_loc is found: 3
+[0m
+[LOG]:[32mFinal-GOTO: choose hub=3
+[0m
+[LOG]:[32m[MultiGoto] hub location=3 representative_object=3
+[0m
+[LOG]:[36m[3B][Candidate] phase=multi-goto-relocation task_index=6 behave=multi-goto-puton actions=0 duration_ms=0 action_cost=0 marginal_score=0 utility=0 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=multi-goto-relocation task_index=6 behave=multi-goto-puton can_finish=true remaining_plan_ms=0 safety_ms=300 budget_remaining_ms=4389
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":3,"task_index":6,"tasks":[],"task_label":"multi-goto-puton","generated_ms":311,"world_revision":3,"selection_reason":"multi_goto_hub_relocation","prediction":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":5,"maintained_constraints":0,"action_count":0,"action_cost":0,"final_reward":192,"utility":0},"expected_reward":192,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"action_success","verified":true},{"object_id":4,"fact":"inside","source":"action_success","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true},{"object_id":6,"fact":"location","source":"initial","verified":true},{"object_id":6,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=6 behave=multi-goto-puton executed=0 total=0 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":3,"prediction":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":5,"maintained_constraints":0,"action_count":0,"action_cost":0,"final_reward":192,"utility":0},"actual":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":5,"maintained_constraints":0,"action_count":0,"action_cost":0,"final_reward":192,"utility":0},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=6 behave=multi-goto-puton succeeded=true executed=0 total=0 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[32mFinal-GOTO: moved obj[5] to hub=3 (1/500) (via SolveTask_PutOn)
+[0m
+[LOG]:[36m[3B][Candidate] phase=multi-goto-relocation task_index=6 behave=multi-goto-puton actions=0 duration_ms=0 action_cost=0 marginal_score=0 utility=0 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=multi-goto-relocation task_index=6 behave=multi-goto-puton can_finish=true remaining_plan_ms=0 safety_ms=300 budget_remaining_ms=4389
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":4,"task_index":6,"tasks":[],"task_label":"multi-goto-puton","generated_ms":311,"world_revision":3,"selection_reason":"multi_goto_hub_relocation","prediction":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":5,"maintained_constraints":0,"action_count":0,"action_cost":0,"final_reward":192,"utility":0},"expected_reward":192,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"action_success","verified":true},{"object_id":4,"fact":"inside","source":"action_success","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true},{"object_id":6,"fact":"location","source":"initial","verified":true},{"object_id":6,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=6 behave=multi-goto-puton executed=0 total=0 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":4,"prediction":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":5,"maintained_constraints":0,"action_count":0,"action_cost":0,"final_reward":192,"utility":0},"actual":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":5,"maintained_constraints":0,"action_count":0,"action_cost":0,"final_reward":192,"utility":0},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=6 behave=multi-goto-puton succeeded=true executed=0 total=0 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[32mFinal-GOTO: moved obj[6] to hub=3 (2/500) (via SolveTask_PutOn)
+[0m
+[LOG]:[32mFinal-GOTO: aggregation done, stay at hub=3
+[0m
+[LOG]:[32m[MultiGoto] ExecuteMultiGotoAggregation finished
+[0m
+[LOG]:[36m[Recovery] reactivated task=1 behave=goto revision=3
+[0m
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":5,"phase":"terminal-recovery","task_index":1,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":4,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":68,"utility":-124}}
+[LOG]:[36m[3B][Candidate] phase=terminal-recovery rank=1 task_index=1 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=192 score_after=68 marginal_score=-124 utility=-124 gained_goals=[1] lost_goals=[2,3,4,5] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[33m[Recovery] stop: no positive legal candidate after full rescan; goals=5/6 revision=3
+[0m
+
+Sovled Task Num:1    Expect Num:6
+[LOG]:[36m[3A][final] goals=5/6 (unknown=0), constraints=0/1 (unknown=0), base_score=192, action_cost=8, elapsed=311ms, remaining=4389ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:puton,2:goto,3:goto,4:goto,5:goto], satisfied_constraints=[]
+[0m
+#(Plug): Elapsed time=0.312s
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test

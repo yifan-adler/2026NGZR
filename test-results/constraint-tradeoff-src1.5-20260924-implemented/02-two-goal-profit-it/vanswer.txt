@@ -1,0 +1,9 @@
+Answer: 1
+value(5,40) value(4,40) value(2,40) value(3,40) true(goal) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000

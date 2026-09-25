@@ -1,0 +1,26 @@
+=========================================
+= Simulation @Home Competition Platform =
+=========================================
+= Ready to accept a new team
+# Registration from 'RDFW'
+> Configurations:
+	Mode: NT
+	Timeout: 5000
+	TestDir: /tmp/robocup-constraint-tradeoff-release/06-inside-shared-goals-nt/runtime/tests/
+	TestSize: 1
+	Single test: 1
+# Testing <case.xml>
+# Result:
+	[Open 2|true]
+	[TakeOut 3 2|true]
+	[Move 1|true]
+	[PutDown 3|true]
+	[PickUp 4|true]
+	[Move 2|true]
+	[PutDown 4|true]
+	[Move 1|true]
+	[PickUp 5|true]
+	[Move 2|true]
+	[PutDown 5|true]
+# Time: 1.144s
+# Score: 206
