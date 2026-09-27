@@ -1,0 +1,117 @@
+{
+  "pairs": 86,
+  "sdk_sha256": {
+    "bin/cserver": "49a6bb86f180e877701bd478e387babafc801dea4c3cf9751884afb7af68212e",
+    "lib/libasp.so": "bc34c0c324680f121f68ac975728aadc1c31e9234a309ff882562d694589023f",
+    "res/fortask.lp": "59b3cee204930d7ce0e6a88a1a2efc55baacf421fefcc08956dea4d90cfca3a3",
+    "res/forcons.lp": "25a658d971584f002f65b032bfa60c98359754b4c327a5ba2057ce7ed4a8c2cb"
+  },
+  "invalid": [],
+  "losses": [
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+      "mode": "it",
+      "old": 302,
+      "new": 259
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+      "mode": "nt",
+      "old": 302,
+      "new": 259
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/29.xml",
+      "mode": "it",
+      "old": 856,
+      "new": 788
+    }
+  ],
+  "cost_mismatches": [],
+  "base_differences": [
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N03.xml",
+      "mode": "it",
+      "stage": 2,
+      "official_base": 99,
+      "internal": 59
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N03.xml",
+      "mode": "nt",
+      "stage": 2,
+      "official_base": 99,
+      "internal": 59
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N06.xml",
+      "mode": "it",
+      "stage": 2,
+      "official_base": 80,
+      "internal": 0
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N06.xml",
+      "mode": "nt",
+      "stage": 2,
+      "official_base": 80,
+      "internal": 0
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N09.xml",
+      "mode": "it",
+      "stage": 2,
+      "official_base": 99,
+      "internal": 59
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N09.xml",
+      "mode": "nt",
+      "stage": 2,
+      "official_base": 99,
+      "internal": 59
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/03.xml",
+      "mode": "it",
+      "stage": 2,
+      "official_base": 334,
+      "internal": 34
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/03.xml",
+      "mode": "nt",
+      "stage": 2,
+      "official_base": 334,
+      "internal": 34
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+      "mode": "it",
+      "stage": 2,
+      "official_base": 259,
+      "internal": 159
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+      "mode": "nt",
+      "stage": 2,
+      "official_base": 259,
+      "internal": 159
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/15.xml",
+      "mode": "it",
+      "stage": 2,
+      "official_base": 87,
+      "internal": 47
+    },
+    {
+      "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/15.xml",
+      "mode": "nt",
+      "stage": 2,
+      "official_base": 87,
+      "internal": 47
+    }
+  ]
+}

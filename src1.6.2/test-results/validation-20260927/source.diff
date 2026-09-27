@@ -1,0 +1,590 @@
+--- src1.6.1/CMakeLists.txt
++++ src1.6.2/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-PROJECT(rdfw VERSION 1.6.1)
++PROJECT(rdfw VERSION 1.6.2)
+ # 设置指定的C++编译器版本是必须的，如果不设置，或者为OFF，则指定版本不可用时，会使用上一版本。
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ 
+@@ -33,7 +33,7 @@
+ ADD_DEPENDENCIES(example frame utility)
+ TARGET_LINK_LIBRARIES(example frame utility ${Boost_LIBRARIES})
+ 
+-option(BUILD_INPUT_SAFETY_TESTS "Build src1.6.1 input safety unit tests" OFF)
++option(BUILD_INPUT_SAFETY_TESTS "Build src1.6.2 input safety unit tests" OFF)
+ if(BUILD_INPUT_SAFETY_TESTS)
+     ADD_EXECUTABLE(input_safety_tests
+         tests/input_safety_tests.cpp
+--- src1.6.1/candidate_plan.cpp
++++ src1.6.2/candidate_plan.cpp
+@@ -84,6 +84,7 @@
+                                   const CandidatePrediction& actual) {
+     PredictionError result;
+     result.goal_gain = actual.goal_gain - prediction.goal_gain;
++    result.goal_loss = actual.goal_loss - prediction.goal_loss;
+     result.constraint_gain = actual.constraint_gain - prediction.constraint_gain;
+     result.constraint_loss = actual.constraint_loss - prediction.constraint_loss;
+     result.action_cost = actual.action_cost - prediction.action_cost;
+--- src1.6.1/candidate_plan.hpp
++++ src1.6.2/candidate_plan.hpp
+@@ -57,6 +57,7 @@
+ 
+ struct PredictionError {
+     int goal_gain = 0;
++    int goal_loss = 0;
+     int constraint_gain = 0;
+     int constraint_loss = 0;
+     int action_cost = 0;
+--- src1.6.1/rdfw.cpp
++++ src1.6.2/rdfw.cpp
+@@ -321,6 +321,8 @@
+     for (std::size_t index : group)
+         if (index >= tasks.size()) return CandidatePlan();
+     const std::vector<bool> original_constraint_eligible = constraint_eligible;
++    const std::vector<bool> saved_constraint_uncertain = constraint_uncertain;
++    const std::vector<int> saved_score_locations = score_locations;
+     InitializeConstraintLedger();
+ 
+     struct ObjectState {
+@@ -529,6 +531,8 @@
+         isErrorCorrection = saved_error_correction;
+         score_evaluator = saved_score_evaluator;
+         constraint_eligible = saved_constraint_eligible;
++        constraint_uncertain = saved_constraint_uncertain;
++        score_locations = saved_score_locations;
+         shadow_dry_run = saved_shadow_dry_run;
+         shadow_action_sink = saved_shadow_sink;
+         shadow_projected_duration = saved_projected_duration;
+@@ -683,6 +687,11 @@
+         score.deterministic_base_score = static_cast<int>(score.completed_goals) * 40 +
+             (score.completed_goals == 0 ? 0 :
+              static_cast<int>(score.satisfied_constraints) * 20) - score.action_cost;
++        const std::size_t possible_goals = score.completed_goals + score.unknown_goals;
++        const std::size_t possible_constraints = static_cast<std::size_t>(std::count(
++            terminal.constraint_eligible.begin(), terminal.constraint_eligible.end(), true));
++        score.possible_base_score = static_cast<int>(possible_goals) * 40 +
++            (possible_goals ? static_cast<int>(possible_constraints) * 20 : 0) - score.action_cost;
+         return score;
+     };
+     const ScoreSnapshot score_before = adjusted_score(result.score_before, before);
+@@ -702,6 +711,8 @@
+ 
+ CandidatePlan RDFW::PreviewFinalMove(unsigned int destination) {
+     const std::vector<bool> old_eligible = constraint_eligible;
++    const std::vector<bool> old_uncertain = constraint_uncertain;
++    const std::vector<int> old_score_locations = score_locations;
+     InitializeConstraintLedger();
+     const TerminalSummary before = terminal_checker.evaluateAll(*this);
+     const ScoreSnapshot score_before = score_evaluator.snapshot(*this, terminal_checker);
+@@ -723,6 +734,8 @@
+     if (hold) hold->location = old_hold_location;
+     if (plate) plate->location = old_plate_location;
+     constraint_eligible = old_eligible;
++    constraint_uncertain = old_uncertain;
++    score_locations = old_score_locations;
+     world_revision = old_revision;
+     score_evaluator = old_evaluator;
+     CandidatePlan plan = CandidatePlanEvaluator::evaluate(
+@@ -890,9 +903,7 @@
+         first_goal = false;
+     }
+     for (std::size_t i = 0; i < terminal.constraints.size(); ++i) {
+-        if (!terminal.constraint_eligible[i] ||
+-            (terminal.constraints[i] != TerminalStatus::SATISFIED &&
+-             i < not_infoConstrains.size() + notnot_infoConstrains.size())) continue;
++        if (!terminal.constraint_credited[i]) continue;
+         if (!first_constraint) satisfied_constraint_ids << ',';
+         satisfied_constraint_ids << i;
+         first_constraint = false;
+@@ -1192,6 +1203,7 @@
+         result << JsonString(record.actual.failure_reasons[i]);
+     }
+     result << "],\"error\":{\"goal_gain\":" << record.error.goal_gain
++        << ",\"goal_loss\":" << record.error.goal_loss
+         << ",\"constraint_gain\":" << record.error.constraint_gain
+         << ",\"constraint_loss\":" << record.error.constraint_loss
+         << ",\"action_cost\":" << record.error.action_cost
+@@ -1236,6 +1248,10 @@
+         out << task.isEnable << task.isfalse << task.isMultiPuton << ',';
+     out << 'c';
+     for (bool value : constraint_eligible) out << value;
++    out << ":uncertain:";
++    for (bool value : constraint_uncertain) out << value;
++    out << ":score_locations:";
++    for (int value : score_locations) out << value << ",";
+     out << 'e';
+     for (std::size_t i = 0; i < objects.size(); ++i) {
+         out << (i < objectLocationVerified.size() && objectLocationVerified[i])
+@@ -1314,41 +1330,44 @@
+ void RDFW::InitializeConstraintLedger() {
+     const std::size_t count = not_infoConstrains.size() +
+         notnot_infoConstrains.size() + not_taskConstrains.size();
+-    if (constraint_eligible.size() == count) return;
++    if (constraint_eligible.size() == count && constraint_uncertain.size() == count) return;
++    // No initial-state constraint pass exists in the SDK.
+     constraint_eligible.assign(count, true);
+-    const TerminalSummary initial = terminal_checker.evaluateAll(*this);
+-    for (std::size_t i = 0; i < count; ++i)
+-        if (initial.constraints[i] == TerminalStatus::UNSATISFIED)
+-            constraint_eligible[i] = false;
++    constraint_uncertain.assign(count, false);
+ }
+ 
+ void RDFW::UpdateConstraintLedger(
+     const char* action, const std::vector<unsigned int>& arguments) {
+     InitializeConstraintLedger();
+     const std::vector<bool> eligibility_before = constraint_eligible;
+-    const TerminalSummary current = terminal_checker.evaluateAll(*this);
+-    for (std::size_t i = 0; i < current.constraints.size(); ++i) {
+-        if (current.constraints[i] == TerminalStatus::UNSATISFIED)
+-            constraint_eligible[i] = false;
+-    }
+-    // Action prohibitions refer to the executed transition, rather than a
+-    // predicate of the resulting world state.
+-    std::string performed(action);
+-    std::transform(performed.begin(), performed.end(), performed.begin(), ::tolower);
+-    const std::size_t offset = not_infoConstrains.size() + notnot_infoConstrains.size();
+-    for (std::size_t i = 0; i < not_taskConstrains.size(); ++i) {
+-        const Instruction& forbidden = not_taskConstrains[i];
+-        if (!forbidden.IsUsable() || forbidden.X.empty() || !forbidden.X[0]) continue;
+-        bool same_action = forbidden.behave == performed;
+-        if (forbidden.behave == "goto" && performed == "move")
+-            same_action = !arguments.empty() &&
+-                forbidden.X[0]->location == static_cast<int>(arguments[0]);
+-        if (!same_action || arguments.empty()) continue;
+-        if (performed != "move" && forbidden.X[0]->id != arguments[0]) continue;
+-        if (!forbidden.Y.empty() && forbidden.Y[0] &&
+-            (arguments.size() < 2 || forbidden.Y[0]->id != arguments[1])) continue;
+-        constraint_eligible[offset + i] = false;
+-    }
++    // AskLoc and Sense run ASP but do not call asp_to_state in the SDK.
++    // Only successful state-changing actions persist false(X,cons/ncons).
++    const std::string performed(action);
++    if (stage == 1) {
++        if (score_locations.size() < objects.size()) score_locations.resize(objects.size(), UNKNOWN);
++        if (performed == "Move") {
++            if (hold_id > 0) score_locations[hold_id] = location;
++            if (plate_id > 0) score_locations[plate_id] = location;
++        } else if (!arguments.empty() && arguments[0] < score_locations.size()) {
++            if (performed == "PutIn") score_locations[arguments[0]] = UNKNOWN;
++            else if (performed == "PickUp" || performed == "TakeOut" ||
++                     performed == "PutDown" || performed == "ToPlate" ||
++                     performed == "FromPlate") score_locations[arguments[0]] = location;
++        }
++    }
++    if (performed != "Sense" && performed != "AskLoc") {
++        const TerminalSummary current = terminal_checker.evaluateAll(*this);
++        for (std::size_t i = 0; i < current.constraints.size(); ++i) {
++            if (current.constraints[i] == TerminalStatus::UNSATISFIED) {
++                constraint_eligible[i] = false;
++                constraint_uncertain[i] = false;
++            } else if (current.constraints[i] == TerminalStatus::UNKNOWN &&
++                       constraint_eligible[i]) {
++                constraint_uncertain[i] = true;
++            }
++        }
++    }
++    (void)arguments;
+     ++world_revision;
+     if (shadow_dry_run && shadow_action_sink && !shadow_action_sink->empty()) {
+         CandidateAction& issued = shadow_action_sink->back();
+@@ -1371,6 +1390,8 @@
+     if (shadow_dry_run || !has_active_candidate || succeeded) return;
+     active_action_failed = true;
+     active_failure_reasons.push_back(std::string(name) + "_returned_false");
++    if (guarded_actions_active)
++        throw std::runtime_error(std::string(name) + " failed in approved task group");
+ }
+ 
+ bool RDFW::DryRunActionSucceeds(
+@@ -1664,10 +1685,12 @@
+ 
+ void RDFW::Plan() // 改
+ {
+-    LOG("[PlannerVersion] 1.6.1");
++    LOG("[PlannerVersion] 1.6.2");
+     deadline_manager.reset(deadline_manager.timeLimit());
+     score_evaluator.reset();
+     constraint_eligible.clear();
++    constraint_uncertain.clear();
++    score_locations.clear();
+     world_revision = 0;
+     stop_rescan_count = 0;
+     task_group_search_used = std::chrono::steady_clock::duration::zero();
+@@ -2059,6 +2082,9 @@
+         action_losses.erase(std::unique(action_losses.begin(), action_losses.end()),
+                             action_losses.end());
+         if (!authorized.dry_run_succeeded || !same_actions ||
++            authorized.terminal_after.goals != best_prefix.terminal_after.goals ||
++            authorized.terminal_after.constraint_credited != best_prefix.terminal_after.constraint_credited ||
++            authorized.score_after.deterministic_base_score != best_prefix.score_after.deterministic_base_score ||
+             action_losses != authorized.broken_constraints ||
+             authorized.broken_constraints != best_prefix.broken_constraints ||
+             shadow_cpu_budget_exhausted ||
+@@ -2117,6 +2143,7 @@
+         guarded_next_action = 0;
+         guarded_allowed_losses.clear();
+     });
++    BeginCandidateExecution(group, "guarded_task_group");
+     bool complete = true;
+     for (std::size_t step = 0; step < group.task_indices.size(); ++step) {
+         const std::size_t index = group.task_indices[step];
+@@ -2168,8 +2195,11 @@
+         actual_terminal.constraint_eligible !=
+             group.terminal_after.constraint_eligible ||
+         actual_score.deterministic_base_score !=
+-            group.score_after.deterministic_base_score)
++            group.score_after.deterministic_base_score ||
++        actual_score.action_cost != group.score_after.action_cost ||
++        actual_terminal.constraint_credited != group.terminal_after.constraint_credited)
+         complete = false;
++    EndCandidateExecution(complete);
+     return complete;
+ }
+ 
+@@ -6157,6 +6187,9 @@
+             return false;
+         }
+         obj->location = location_id;
++        if (score_locations.size() <= static_cast<std::size_t>(index))
++            score_locations.resize(index + 1, UNKNOWN);
++        score_locations[index] = location_id;
+         if (index > 0)
+             MarkDirectLocationEvidence(index, stage == 1, EvidenceSource::INITIAL);
+         rightlocation[location_id] = true;
+@@ -6246,6 +6279,8 @@
+     if (!open_forms.empty())
+         LOG_ERROR("Ignoring %zu unterminated environment form(s)", open_forms.size());
+ 
++    // Preserve explicit ASP locations before inside propagates planner locations.
++    if (score_locations.size() < objects.size()) score_locations.resize(objects.size(), UNKNOWN);
+     // set robot status
+     if (hold_id > 0)
+     {
+@@ -6256,6 +6291,7 @@
+             SetHold(nullptr);
+         } else {
+             SetHold(held);
++            score_locations[hold_id] = location;
+             MarkDirectLocationEvidence(hold_id, stage == 1, EvidenceSource::INITIAL);
+             SetInsideEvidence(hold_id, stage == 1, EvidenceSource::INITIAL);
+         }
+@@ -6269,6 +6305,7 @@
+             SetPlate(nullptr);
+         } else {
+             SetPlate(plated);
++            score_locations[plate_id] = location;
+             MarkDirectLocationEvidence(plate_id, stage == 1, EvidenceSource::INITIAL);
+             SetInsideEvidence(plate_id, stage == 1, EvidenceSource::INITIAL);
+         }
+--- src1.6.1/rdfw.hpp
++++ src1.6.2/rdfw.hpp
+@@ -395,6 +395,11 @@
+         // One entry per constraint in TerminalChecker order. False is permanent
+         // for this question, including after the predicate becomes true again.
+         vector<bool> constraint_eligible;
++        // A successful transition with UNKNOWN predicate truth cannot prove
++        // that the SDK's irreversible false(X,cons) was never produced.
++        vector<bool> constraint_uncertain;
++        // Stage 1 ASP at facts, separate from planner locations inferred from inside.
++        vector<int> score_locations;
+ 
+ 
+ 
+@@ -674,6 +679,7 @@
+ 
+ 
+     private:
++        friend struct ScoreSemanticsTestAccess;
+ 
+         friend class TerminalChecker;
+ 
+--- src1.6.1/score_evaluator.cpp
++++ src1.6.2/score_evaluator.cpp
+@@ -57,7 +57,6 @@
+     std::size_t possible_constraints = terminal.credited_constraints;
+     for (std::size_t i = 0; i < terminal.constraints.size(); ++i)
+         if (terminal.constraint_eligible[i] &&
+-            terminal.constraints[i] == TerminalStatus::UNKNOWN &&
+             !terminal.constraint_credited[i]) ++possible_constraints;
+     result.possible_base_score = static_cast<int>(possible_goals) * 40 +
+         (possible_goals ? static_cast<int>(possible_constraints) * 20 : 0) - action_cost_;
+--- src1.6.1/terminal_checker.cpp
++++ src1.6.2/terminal_checker.cpp
+@@ -21,25 +21,69 @@
+     return TerminalStatus::SATISFIED;
+ }
+ 
++bool constraintEvidenceUsable(const RDFW& world, unsigned int id) {
++    const std::size_t offset = world.not_infoConstrains.size();
++    for (std::size_t i = 0; i < world.notnot_infoConstrains.size(); ++i) {
++        const std::size_t index = offset + i;
++        if (index >= world.constraint_eligible.size()) continue;
++        if (world.constraint_eligible[index] &&
++            (index >= world.constraint_uncertain.size() || !world.constraint_uncertain[index])) continue;
++        const Instruction& c = world.notnot_infoConstrains[i];
++        for (const auto& x : c.X) if (x && x->id == id) return false;
++        for (const auto& y : c.Y) if (y && y->id == id) return false;
++        if (id < world.objects.size() && world.objects[id] &&
++            (c.conditionX.IsObjectSatisfy(world.objects[id]) ||
++             (c.isUseY && c.conditionY.IsObjectSatisfy(world.objects[id])))) return false;
++    }
++    return true;
++}
++
+ bool isLocationKnown(const RDFW& world, const std::shared_ptr<Object>& object) {
+     if (!object || object->location == _home::UNKNOWN) return false;
+     if (object->id == 0) return world.location != _home::UNKNOWN;
+-    return world.stage == 1 || world.IsLocationVerified(object->id);
++    return world.stage == 1 || (world.IsLocationVerified(object->id) &&
++        (world.LocationSource(object->id) != EvidenceSource::CONSTRAINT_DERIVED ||
++         constraintEvidenceUsable(world, object->id)));
++}
++
++int scoreLocation(const RDFW& world, const std::shared_ptr<Object>& object) {
++    if (!object) return _home::UNKNOWN;
++    if (object->id == 0) return world.location;
++    if (world.stage == 1 && object->id < world.score_locations.size())
++        return world.score_locations[object->id];
++    return object->location;
+ }
+ 
+ bool isInsideKnown(const RDFW& world, const std::shared_ptr<SmallObject>& object) {
+     return object && object->inside != _home::UNKNOWN &&
+-           (world.stage == 1 || world.IsInsideVerified(object->id));
++           (world.stage == 1 || (world.IsInsideVerified(object->id) &&
++            (world.InsideSource(object->id) != EvidenceSource::CONSTRAINT_DERIVED ||
++             constraintEvidenceUsable(world, object->id))));
+ }
+ 
+ bool isContainerStateKnown(const RDFW& world,
+                            const std::shared_ptr<Container>& container) {
+     return container && (container->isOpen == 0 || container->isOpen == 1) &&
+-           (world.stage == 1 || world.IsContainerStateVerified(container->id));
++           (world.stage == 1 || (world.IsContainerStateVerified(container->id) &&
++            (world.ContainerSource(container->id) != EvidenceSource::CONSTRAINT_DERIVED ||
++             constraintEvidenceUsable(world, container->id))));
+ }
+ 
+ TerminalStatus boolStatus(bool value) {
+     return value ? TerminalStatus::SATISFIED : TerminalStatus::UNSATISFIED;
++}
++
++std::vector<std::shared_ptr<Object>> scoreBindings(
++    const RDFW& world, const Condition& condition,
++    const std::vector<std::shared_ptr<Object>>& planner_bindings) {
++    if (condition.sort.empty() && condition.color.empty() &&
++        condition.declared_type.empty() && !condition.has_explicit_id)
++        return planner_bindings;
++    std::vector<std::shared_ptr<Object>> result;
++    for (const auto& object : world.objects)
++        if (object && object->id > 0 && condition.IsObjectSatisfy(object))
++            result.push_back(object);
++    return result;
+ }
+ 
+ TerminalStatus evaluatePair(const RDFW& world, const std::string& behave,
+@@ -48,6 +92,9 @@
+     if (!x) return TerminalStatus::UNKNOWN;
+ 
+     if (behave == "goto" || behave == "move") {
++        if (world.stage == 1)
++            return boolStatus(scoreLocation(world, x) != _home::UNKNOWN &&
++                              world.location == scoreLocation(world, x));
+         if (world.location != _home::UNKNOWN &&
+             world.IsAbsentFromSensedLocation(x->id, world.location))
+             return TerminalStatus::UNSATISFIED;
+@@ -76,11 +123,11 @@
+     if (behave == "putdown") {
+         const std::shared_ptr<SmallObject> small =
+             std::dynamic_pointer_cast<SmallObject>(x);
+-        if (!isInsideKnown(world, small)) return TerminalStatus::UNKNOWN;
++        if (!small) return TerminalStatus::UNKNOWN;
++        if (world.stage == 2 && !world.IsInsideVerified(x->id))
++            return TerminalStatus::UNKNOWN;
+         if (world.hold_id == x->id || world.plate_id == x->id)
+             return TerminalStatus::UNSATISFIED;
+-        if (small->inside != _home::NONE) return TerminalStatus::UNSATISFIED;
+-        if (!isLocationKnown(world, x)) return TerminalStatus::UNKNOWN;
+         return TerminalStatus::SATISFIED;
+     }
+ 
+@@ -102,6 +149,10 @@
+         behave == "nextto" || behave == "give") {
+         std::shared_ptr<Object> target = y;
+         if (behave == "give") target = world.human;
++        if (world.stage == 1 && target &&
++            (scoreLocation(world, x) == _home::UNKNOWN ||
++             scoreLocation(world, target) == _home::UNKNOWN))
++            return TerminalStatus::UNSATISFIED;
+         if (target && isLocationKnown(world, x) &&
+             world.IsAbsentFromSensedLocation(target->id, x->location))
+             return TerminalStatus::UNSATISFIED;
+@@ -111,15 +162,14 @@
+         if (!target || !isLocationKnown(world, x) || !isLocationKnown(world, target))
+             return TerminalStatus::UNKNOWN;
+ 
+-        if (behave == "puton" || behave == "on" || behave == "give") {
++        if (behave == "puton" || behave == "give") {
+             const std::shared_ptr<SmallObject> small =
+                 std::dynamic_pointer_cast<SmallObject>(x);
+             if (!isInsideKnown(world, small)) return TerminalStatus::UNKNOWN;
+             if (world.hold_id == x->id || world.plate_id == x->id)
+                 return TerminalStatus::UNSATISFIED;
+-            if (small->inside != _home::NONE) return TerminalStatus::UNSATISFIED;
+         }
+-        return boolStatus(x->location == target->location);
++        return boolStatus(scoreLocation(world, x) == scoreLocation(world, target));
+     }
+ 
+     if (behave == "plate") {
+@@ -165,41 +215,46 @@
+     return !goals.empty() && satisfied_goals == goals.size();
+ }
+ 
+-TerminalStatus TerminalChecker::evaluatePredicate(
+-    const RDFW& world, const Instruction& instruction) const {
+-    if (!instruction.IsUsable() || instruction.X.empty())
+-        return TerminalStatus::UNKNOWN;
+-
+-    TerminalStatus aggregate = TerminalStatus::SATISFIED;
+-    for (std::size_t xi = 0; xi < instruction.X.size(); ++xi) {
+-        if (instruction.Y.empty()) {
+-            aggregate = combineStatus(
+-                aggregate,
+-                evaluatePair(world, instruction.behave, instruction.X[xi], nullptr));
+-        } else {
+-            for (std::size_t yi = 0; yi < instruction.Y.size(); ++yi) {
+-                aggregate = combineStatus(
+-                    aggregate,
+-                    evaluatePair(world, instruction.behave,
+-                                 instruction.X[xi], instruction.Y[yi]));
+-            }
+-        }
+-    }
+-    return aggregate;
+-}
+-
+ TerminalStatus TerminalChecker::evaluateTask(
+     const RDFW& world, const Instruction& task) const {
+-    return evaluatePredicate(world, task);
++    if (!task.IsUsable() || task.X.empty()) return TerminalStatus::UNKNOWN;
++    const auto xs = scoreBindings(world, task.conditionX, task.X);
++    const auto ys = scoreBindings(world, task.conditionY, task.Y);
++    // The SDK selects exactly one grounding with 1{task(...):cond}1,
++    // then reads the first answer set. Mixed groundings cannot prove a score.
++    TerminalStatus result = TerminalStatus::UNKNOWN;
++    bool first = true;
++    for (const auto& x : xs) {
++        const std::size_t count = ys.empty() ? 1 : ys.size();
++        for (std::size_t i = 0; i < count; ++i) {
++            const TerminalStatus next = evaluatePair(world, task.behave, x,
++                ys.empty() ? nullptr : ys[i]);
++            if (!first && result != next) return TerminalStatus::UNKNOWN;
++            result = next;
++            first = false;
++        }
++    }
++    return result;
+ }
+ 
+ TerminalStatus TerminalChecker::evaluateConstraint(
+     const RDFW& world, const Instruction& constraint, ConstraintKind kind) const {
+-    // A prohibited action is a trajectory property.  A current World State cannot
+-    // prove that it was never executed, so deterministic terminal evaluation is UNKNOWN.
+-    if (kind == ConstraintKind::PROHIBITED_ACTION) return TerminalStatus::UNKNOWN;
+-    const TerminalStatus predicate = evaluatePredicate(world, constraint);
+-    return kind == ConstraintKind::MUST_NOT_HOLD ? invertStatus(predicate) : predicate;
++    // cons(task) forbids the task's resulting predicate, not the command.
++    // Each grounded constraint must hold; negate BEFORE combining bindings.
++    if (!constraint.IsUsable() || constraint.X.empty()) return TerminalStatus::UNKNOWN;
++    const auto xs = scoreBindings(world, constraint.conditionX, constraint.X);
++    const auto ys = scoreBindings(world, constraint.conditionY, constraint.Y);
++    TerminalStatus result = TerminalStatus::SATISFIED;
++    for (const auto& x : xs) {
++        const std::size_t count = ys.empty() ? 1 : ys.size();
++        for (std::size_t i = 0; i < count; ++i) {
++            TerminalStatus next = evaluatePair(world, constraint.behave, x,
++                ys.empty() ? nullptr : ys[i]);
++            if (kind != ConstraintKind::MUST_HOLD) next = invertStatus(next);
++            result = combineStatus(result, next);
++        }
++    }
++    return result;
+ }
+ 
+ TerminalSummary TerminalChecker::evaluateAll(const RDFW& world) const {
+@@ -224,8 +279,10 @@
+         result.constraints.push_back(status);
+         const bool eligible = !has_ledger || world.constraint_eligible[result.constraints.size()-1];
+         result.constraint_eligible.push_back(eligible);
+-        result.constraint_credited.push_back(eligible && status == TerminalStatus::SATISFIED);
+-        if (eligible && status == TerminalStatus::SATISFIED) ++result.credited_constraints;
++        const bool certain = !has_ledger || world.constraint_uncertain.size() != world.constraint_eligible.size() ||
++            !world.constraint_uncertain[result.constraints.size()-1];
++        result.constraint_credited.push_back(eligible && certain);
++        if (eligible && certain) ++result.credited_constraints;
+         countStatus(status, result.satisfied_constraints,
+                     result.unsatisfied_constraints, result.unknown_constraints);
+     }
+@@ -235,20 +292,23 @@
+         result.constraints.push_back(status);
+         const bool eligible = !has_ledger || world.constraint_eligible[result.constraints.size()-1];
+         result.constraint_eligible.push_back(eligible);
+-        result.constraint_credited.push_back(eligible && status == TerminalStatus::SATISFIED);
+-        if (eligible && status == TerminalStatus::SATISFIED) ++result.credited_constraints;
++        const bool certain = !has_ledger || world.constraint_uncertain.size() != world.constraint_eligible.size() ||
++            !world.constraint_uncertain[result.constraints.size()-1];
++        result.constraint_credited.push_back(eligible && certain);
++        if (eligible && certain) ++result.credited_constraints;
+         countStatus(status, result.satisfied_constraints,
+                     result.unsatisfied_constraints, result.unknown_constraints);
+     }
+     for (std::size_t i = 0; i < world.not_taskConstrains.size(); ++i) {
+         const TerminalStatus status = evaluateConstraint(
+-            world, world.not_taskConstrains[i], ConstraintKind::PROHIBITED_ACTION);
++            world, world.not_taskConstrains[i], ConstraintKind::FORBIDDEN_TASK_STATE);
+         result.constraints.push_back(status);
+         const bool eligible = !has_ledger || world.constraint_eligible[result.constraints.size()-1];
+         result.constraint_eligible.push_back(eligible);
+-        result.constraint_credited.push_back(eligible);
+-        // A prohibited action remains eligible until that action occurs.
+-        if (eligible) ++result.credited_constraints;
++        const bool certain = !has_ledger || world.constraint_uncertain.size() != world.constraint_eligible.size() ||
++            !world.constraint_uncertain[result.constraints.size()-1];
++        result.constraint_credited.push_back(eligible && certain);
++        if (eligible && certain) ++result.credited_constraints;
+         countStatus(status, result.satisfied_constraints,
+                     result.unsatisfied_constraints, result.unknown_constraints);
+     }
+--- src1.6.1/terminal_checker.hpp
++++ src1.6.2/terminal_checker.hpp
+@@ -17,7 +17,7 @@
+ enum class ConstraintKind {
+     MUST_HOLD,
+     MUST_NOT_HOLD,
+-    PROHIBITED_ACTION
++    FORBIDDEN_TASK_STATE
+ };
+ 
+ const char* TerminalStatusName(TerminalStatus status);
+@@ -41,7 +41,8 @@
+ };
+ 
+ // Pure, read-only interpretation of the current world state.  It deliberately
+-// does not inspect isEnable, solved_task_num, plan existence, or action history.
++// does not inspect isEnable, solved_task_num, or plan existence. Constraint
++// credits read the separate irreversible trajectory ledger.
+ class TerminalChecker {
+ public:
+     TerminalStatus evaluateTask(const RDFW& world, const Instruction& task) const;
+@@ -50,9 +51,6 @@
+                                       ConstraintKind kind) const;
+     TerminalSummary evaluateAll(const RDFW& world) const;
+ 
+-private:
+-    TerminalStatus evaluatePredicate(const RDFW& world,
+-                                     const Instruction& instruction) const;
+ };
+ 
+ } // namespace _home

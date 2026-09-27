@@ -1,0 +1,632 @@
+[
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/01-stop-before-conflicting-pickup.xml",
+    "sha256": "f637a2e45f671957cdc1e4cedcafaf3cb89251d4eb2ff0454cbfff794d6eb35c",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/decision-01-stop-before-conflicting-pickup-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/decision-01-stop-before-conflicting-pickup-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/01-stop-before-conflicting-pickup.xml",
+    "sha256": "f637a2e45f671957cdc1e4cedcafaf3cb89251d4eb2ff0454cbfff794d6eb35c",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/decision-01-stop-before-conflicting-pickup-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/decision-01-stop-before-conflicting-pickup-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/02-pickup-route-and-capacity.xml",
+    "sha256": "ffc80ff3fee725267fd9832f04f4c2357ffa23f484ff961612ae96dc6f9390ab",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/decision-02-pickup-route-and-capacity-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/decision-02-pickup-route-and-capacity-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/02-pickup-route-and-capacity.xml",
+    "sha256": "ffc80ff3fee725267fd9832f04f4c2357ffa23f484ff961612ae96dc6f9390ab",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/decision-02-pickup-route-and-capacity-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/decision-02-pickup-route-and-capacity-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/04-reorder-container-and-pickup.xml",
+    "sha256": "404bcfc199f44c8d8ae53b035bc8136c0a238e00167658ad41452c2a1f0498c6",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 190,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 1,
+        "close": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/decision-04-reorder-container-and-pickup-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 190,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 1,
+        "close": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/decision-04-reorder-container-and-pickup-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/04-reorder-container-and-pickup.xml",
+    "sha256": "404bcfc199f44c8d8ae53b035bc8136c0a238e00167658ad41452c2a1f0498c6",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 190,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 1,
+        "close": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/decision-04-reorder-container-and-pickup-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 190,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 1,
+        "close": 1,
+        "pickup": 1
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/decision-04-reorder-container-and-pickup-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/01-two-rooms-four-goals.xml",
+    "sha256": "b51a8a7dc852143eedeb9861e6018c4e30c37410955b866a4b1735f7fbf0ecab",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 24,
+      "base": 136,
+      "internal_base": 136,
+      "internal_cost": 24,
+      "official": 220,
+      "timed_out": false,
+      "actions": {
+        "move": 4,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-01-two-rooms-four-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 24,
+      "base": 136,
+      "internal_base": 136,
+      "internal_cost": 24,
+      "official": 220,
+      "timed_out": false,
+      "actions": {
+        "move": 4,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-01-two-rooms-four-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/01-two-rooms-four-goals.xml",
+    "sha256": "b51a8a7dc852143eedeb9861e6018c4e30c37410955b866a4b1735f7fbf0ecab",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 24,
+      "base": 136,
+      "internal_base": 136,
+      "internal_cost": 24,
+      "official": 220,
+      "timed_out": false,
+      "actions": {
+        "move": 4,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-01-two-rooms-four-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 24,
+      "base": 136,
+      "internal_base": 136,
+      "internal_cost": 24,
+      "official": 220,
+      "timed_out": false,
+      "actions": {
+        "move": 4,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-01-two-rooms-four-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/02-two-rooms-five-goals.xml",
+    "sha256": "afc9b680d112d54a1b6dddc909fd585e0178140918abf94e36b64946134fe1b7",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 30,
+      "base": 170,
+      "internal_base": 170,
+      "internal_cost": 30,
+      "official": 250,
+      "timed_out": false,
+      "actions": {
+        "move": 5,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-02-two-rooms-five-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 30,
+      "base": 170,
+      "internal_base": 170,
+      "internal_cost": 30,
+      "official": 250,
+      "timed_out": false,
+      "actions": {
+        "move": 5,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-02-two-rooms-five-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/02-two-rooms-five-goals.xml",
+    "sha256": "afc9b680d112d54a1b6dddc909fd585e0178140918abf94e36b64946134fe1b7",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 30,
+      "base": 170,
+      "internal_base": 170,
+      "internal_cost": 30,
+      "official": 250,
+      "timed_out": false,
+      "actions": {
+        "move": 5,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-02-two-rooms-five-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 30,
+      "base": 170,
+      "internal_base": 170,
+      "internal_cost": 30,
+      "official": 250,
+      "timed_out": false,
+      "actions": {
+        "move": 5,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-02-two-rooms-five-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/03-two-rooms-six-goals.xml",
+    "sha256": "7b5c912ea3cc8a8444f99de7b05daf512016d2807c67e0aebbc5bc78c969b407",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-03-two-rooms-six-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-03-two-rooms-six-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/03-two-rooms-six-goals.xml",
+    "sha256": "7b5c912ea3cc8a8444f99de7b05daf512016d2807c67e0aebbc5bc78c969b407",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-03-two-rooms-six-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-03-two-rooms-six-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/04-three-rooms-six-goals.xml",
+    "sha256": "3f362ee9741c8301b7177079ce7b22cc4b6df49f17d5788a9313b56a01bb638c",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-04-three-rooms-six-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-04-three-rooms-six-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/04-three-rooms-six-goals.xml",
+    "sha256": "3f362ee9741c8301b7177079ce7b22cc4b6df49f17d5788a9313b56a01bb638c",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "off",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.1/combinatorial_gain-04-three-rooms-six-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 36,
+      "base": 204,
+      "internal_base": 204,
+      "internal_cost": 36,
+      "official": 280,
+      "timed_out": false,
+      "actions": {
+        "move": 6,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [],
+      "output": "/tmp/rdfw-162-final-off/src1.6.2/combinatorial_gain-04-three-rooms-six-goals-nt"
+    }
+  }
+]

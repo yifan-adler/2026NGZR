@@ -1,0 +1,23 @@
+{
+  "source_hashes_verified": true,
+  "original_161_unchanged": true,
+  "guarded_pairs": 86,
+  "off_pairs": 14,
+  "gains": 1,
+  "losses": 3,
+  "artifacts": {
+    "asan-CMakeCache.txt": "18fc784187cbadfb4a3238de29dca3b6d368fb61191b752d3b106431b5318d81",
+    "asan-LastTest.log": "c778d5191bef44a6d095445d6ec029a72d1fce518b1c9a2d07a795084690218b",
+    "guarded-evidence.zip": "4f8801d5fc153a244c4573b3d8b7bf8005ca9eb1ed19f58c40ba6580259b3518",
+    "guarded-results.json": "83ac31f1a1ab1e59b76a49f1f36d3945e9a5d54ee54dd9a4a45736ca1d9590ec",
+    "guarded-summary.json": "01f3ba7e43742646c07adb981a75924c99b2a9c7a3d39c2176d83e99fcd66e23",
+    "off-evidence.zip": "b5bdb78cedf8cad0229ac9d9d8dbb8ceb0e48d5b108e253f17ac5796fb6a5b2f",
+    "off-results.json": "62499c0c1d226680d755c745a76734b8e399c2d7b29f469fc1659bcba5a5347d",
+    "off-summary.json": "0adb9b9fdc90ac8017ad1465d505e4474f333cc719ae54e7866655e5110f7abf",
+    "official-semantics.zip": "317341478a9942e86f610705be413e97c3dd4ed51a7178c359aa9ca1a3032716",
+    "REPORT.md": "3814291f51e571cc1a925bce90485531c362659a64abfff6d27f3847517cb65c",
+    "source.diff": "fa5a3889bd7d6d418dc9924c7e49a06a539abbabe46972d6b54390860f6670bd",
+    "unit-CMakeCache.txt": "79c1b3faf33af59cc834ca9bb8ebd60147284b5244272a589a033101f6eb0fb3",
+    "unit-LastTest.log": "8ea7dd3b04a69253e0075802e6dfef1b94b82f50975983c67bcd16e8d810b3e9"
+  }
+}

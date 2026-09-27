@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 1)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 cupboard) (size 2 big) (type 2 container) (closed 2) (at 2 2)
+(sort 3 closet) (size 3 big) (type 3 container) (opened 3) (at 3 3)
+(sort 4 refrigerator) (size 4 big) (type 4 container) (opened 4) (at 4 2)
+(sort 5 microwave) (size 5 big) (type 5 container) (closed 5) (at 5 3)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:task (open X) (:cond (sort X cupboard)))
+(:task (close X) (:cond (sort X closet)))
+(:task (close X) (:cond (sort X refrigerator)))
+(:task (open X) (:cond (sort X microwave)))
+)
+</instr>
+<nl>
+Open the cupboard.
+Close the closet.
+Close the refrigerator.
+Open the microwave.
+</nl>
+</test>

@@ -1,0 +1,4064 @@
+[
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/01-stop-before-conflicting-pickup.xml",
+    "sha256": "f637a2e45f671957cdc1e4cedcafaf3cb89251d4eb2ff0454cbfff794d6eb35c",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=68 stop=0 safe_prefix=68 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/decision-01-stop-before-conflicting-pickup-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=68 stop=0 safe_prefix=68 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/decision-01-stop-before-conflicting-pickup-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/01-stop-before-conflicting-pickup.xml",
+    "sha256": "f637a2e45f671957cdc1e4cedcafaf3cb89251d4eb2ff0454cbfff794d6eb35c",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=68 stop=0 safe_prefix=68 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/decision-01-stop-before-conflicting-pickup-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 0,
+      "cost": 12,
+      "base": 68,
+      "internal_base": 68,
+      "internal_cost": 12,
+      "official": 160,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "pickup": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=68 stop=0 safe_prefix=68 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/decision-01-stop-before-conflicting-pickup-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/02-pickup-route-and-capacity.xml",
+    "sha256": "ffc80ff3fee725267fd9832f04f4c2357ffa23f484ff961612ae96dc6f9390ab",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=34 stop=0 safe_prefix=34 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/decision-02-pickup-route-and-capacity-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=34 stop=0 safe_prefix=34 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/decision-02-pickup-route-and-capacity-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/02-pickup-route-and-capacity.xml",
+    "sha256": "ffc80ff3fee725267fd9832f04f4c2357ffa23f484ff961612ae96dc6f9390ab",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=34 stop=0 safe_prefix=34 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/decision-02-pickup-route-and-capacity-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 0,
+      "cost": 6,
+      "base": 34,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 130,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=34 stop=0 safe_prefix=34 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/decision-02-pickup-route-and-capacity-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/04-reorder-container-and-pickup.xml",
+    "sha256": "404bcfc199f44c8d8ae53b035bc8136c0a238e00167658ad41452c2a1f0498c6",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 14,
+      "base": 106,
+      "internal_base": 106,
+      "internal_cost": 14,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "close": 1,
+        "open": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[1,0,2] reference=102 stop=0 predicted=106 continuation_actions=5 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/decision-04-reorder-container-and-pickup-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 14,
+      "base": 106,
+      "internal_base": 106,
+      "internal_cost": 14,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "close": 1,
+        "open": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[1,0,2] reference=102 stop=0 predicted=106 continuation_actions=5 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/decision-04-reorder-container-and-pickup-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/decision/04-reorder-container-and-pickup.xml",
+    "sha256": "404bcfc199f44c8d8ae53b035bc8136c0a238e00167658ad41452c2a1f0498c6",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 14,
+      "base": 106,
+      "internal_base": 106,
+      "internal_cost": 14,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "close": 1,
+        "open": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[1,0,2] reference=102 stop=0 predicted=106 continuation_actions=5 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/decision-04-reorder-container-and-pickup-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 14,
+      "base": 106,
+      "internal_base": 106,
+      "internal_cost": 14,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "close": 1,
+        "open": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[1,0,2] reference=102 stop=0 predicted=106 continuation_actions=5 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/decision-04-reorder-container-and-pickup-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/01-two-rooms-four-goals.xml",
+    "sha256": "b51a8a7dc852143eedeb9861e6018c4e30c37410955b866a4b1735f7fbf0ecab",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 232,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=136 stop=0 predicted=144 continuation_actions=6 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-01-two-rooms-four-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 232,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=136 stop=0 predicted=144 continuation_actions=6 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-01-two-rooms-four-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/01-two-rooms-four-goals.xml",
+    "sha256": "b51a8a7dc852143eedeb9861e6018c4e30c37410955b866a4b1735f7fbf0ecab",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 232,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=136 stop=0 predicted=144 continuation_actions=6 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-01-two-rooms-four-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 232,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 2,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=136 stop=0 predicted=144 continuation_actions=6 terminal=after_group"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-01-two-rooms-four-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/02-two-rooms-five-goals.xml",
+    "sha256": "afc9b680d112d54a1b6dddc909fd585e0178140918abf94e36b64946134fe1b7",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 22,
+      "base": 178,
+      "internal_base": 178,
+      "internal_cost": 22,
+      "official": 262,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=170 stop=0 predicted=178 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-02-two-rooms-five-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 22,
+      "base": 178,
+      "internal_base": 178,
+      "internal_cost": 22,
+      "official": 262,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=170 stop=0 predicted=178 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-02-two-rooms-five-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/02-two-rooms-five-goals.xml",
+    "sha256": "afc9b680d112d54a1b6dddc909fd585e0178140918abf94e36b64946134fe1b7",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 22,
+      "base": 178,
+      "internal_base": 178,
+      "internal_cost": 22,
+      "official": 262,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=170 stop=0 predicted=178 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-02-two-rooms-five-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 22,
+      "base": 178,
+      "internal_base": 178,
+      "internal_cost": 22,
+      "official": 262,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,1,3] reference=170 stop=0 predicted=178 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-02-two-rooms-five-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/03-two-rooms-six-goals.xml",
+    "sha256": "7b5c912ea3cc8a8444f99de7b05daf512016d2807c67e0aebbc5bc78c969b407",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 304,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,4,1] reference=204 stop=0 predicted=220 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-03-two-rooms-six-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 304,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,4,1] reference=204 stop=0 predicted=220 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-03-two-rooms-six-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/03-two-rooms-six-goals.xml",
+    "sha256": "7b5c912ea3cc8a8444f99de7b05daf512016d2807c67e0aebbc5bc78c969b407",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 304,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,4,1] reference=204 stop=0 predicted=220 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-03-two-rooms-six-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 304,
+      "timed_out": false,
+      "actions": {
+        "move": 2,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,2,4,1] reference=204 stop=0 predicted=220 continuation_actions=8 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-03-two-rooms-six-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/04-three-rooms-six-goals.xml",
+    "sha256": "3f362ee9741c8301b7177079ce7b22cc4b6df49f17d5788a9313b56a01bb638c",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 24,
+      "base": 216,
+      "internal_base": 216,
+      "internal_cost": 24,
+      "official": 298,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,3,1,4] reference=204 stop=0 predicted=216 continuation_actions=9 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-04-three-rooms-six-goals-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 24,
+      "base": 216,
+      "internal_base": 216,
+      "internal_cost": 24,
+      "official": 298,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,3,1,4] reference=204 stop=0 predicted=216 continuation_actions=9 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-04-three-rooms-six-goals-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.2/tests/fixtures/combinatorial_gain/04-three-rooms-six-goals.xml",
+    "sha256": "3f362ee9741c8301b7177079ce7b22cc4b6df49f17d5788a9313b56a01bb638c",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 24,
+      "base": 216,
+      "internal_base": 216,
+      "internal_cost": 24,
+      "official": 298,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,3,1,4] reference=204 stop=0 predicted=216 continuation_actions=9 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/combinatorial_gain-04-three-rooms-six-goals-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 24,
+      "base": 216,
+      "internal_base": 216,
+      "internal_cost": 24,
+      "official": 298,
+      "timed_out": false,
+      "actions": {
+        "move": 3,
+        "open": 3,
+        "close": 3
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=group group=[0,3,1,4] reference=204 stop=0 predicted=216 continuation_actions=9 terminal=legacy_tail"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/combinatorial_gain-04-three-rooms-six-goals-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C01.xml",
+    "sha256": "c133859d1d64f76708bc5b1f4854e7b88f4e6601f44c9edc251fb06f98a72267",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 2,
+      "base": 58,
+      "internal_base": 58,
+      "internal_cost": 2,
+      "official": 156,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=58 stop=0 safe_prefix=58 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C01-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 2,
+      "base": 58,
+      "internal_base": 58,
+      "internal_cost": 2,
+      "official": 156,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=58 stop=0 safe_prefix=58 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C01-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C01.xml",
+    "sha256": "c133859d1d64f76708bc5b1f4854e7b88f4e6601f44c9edc251fb06f98a72267",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 2,
+      "base": 58,
+      "internal_base": 58,
+      "internal_cost": 2,
+      "official": 156,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=58 stop=0 safe_prefix=58 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C01-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 2,
+      "base": 58,
+      "internal_base": 58,
+      "internal_cost": 2,
+      "official": 156,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=58 stop=0 safe_prefix=58 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C01-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C02.xml",
+    "sha256": "89d2138909f75ee4ac6a78b7965627d9c525a146d7447fa8142c02190570bed4",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C02-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C02-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C02.xml",
+    "sha256": "89d2138909f75ee4ac6a78b7965627d9c525a146d7447fa8142c02190570bed4",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C02-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C02-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C03.xml",
+    "sha256": "082cf8b176e9d7576ddc72920fd7ca272e0d6c09ca914ca3e1b01cb203487890",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C03-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C03-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C03.xml",
+    "sha256": "082cf8b176e9d7576ddc72920fd7ca272e0d6c09ca914ca3e1b01cb203487890",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C03-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C03-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C04.xml",
+    "sha256": "9984b8ce1eee820d4c21c2381de0a5b1ba89e7a1e8513df4e9c559bc99a03ca8",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 8,
+      "base": 52,
+      "internal_base": 52,
+      "internal_cost": 8,
+      "official": 146,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=52 stop=0 safe_prefix=52 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C04-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 8,
+      "base": 52,
+      "internal_base": 52,
+      "internal_cost": 8,
+      "official": 146,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=52 stop=0 safe_prefix=52 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C04-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C04.xml",
+    "sha256": "9984b8ce1eee820d4c21c2381de0a5b1ba89e7a1e8513df4e9c559bc99a03ca8",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 8,
+      "base": 52,
+      "internal_base": 52,
+      "internal_cost": 8,
+      "official": 146,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=52 stop=0 safe_prefix=52 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C04-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 1,
+      "cost": 8,
+      "base": 52,
+      "internal_base": 52,
+      "internal_cost": 8,
+      "official": 146,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=52 stop=0 safe_prefix=52 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C04-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C05.xml",
+    "sha256": "b9af71e1fdbc23b674410780db624bc44a52fbc113b343d13db59bbe061e90cb",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 99,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C05-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 99,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C05-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C05.xml",
+    "sha256": "b9af71e1fdbc23b674410780db624bc44a52fbc113b343d13db59bbe061e90cb",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 99,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C05-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 99,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C05-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C06.xml",
+    "sha256": "f6ce7e3fd0297c5b2a5f97927f87452039d1123a85419585e0ccec88e47f54d5",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 4,
+      "base": 96,
+      "internal_base": 96,
+      "internal_cost": 4,
+      "official": 194,
+      "timed_out": false,
+      "actions": {
+        "move": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C06-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 4,
+      "base": 96,
+      "internal_base": 96,
+      "internal_cost": 4,
+      "official": 194,
+      "timed_out": false,
+      "actions": {
+        "move": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C06-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C06.xml",
+    "sha256": "f6ce7e3fd0297c5b2a5f97927f87452039d1123a85419585e0ccec88e47f54d5",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 4,
+      "base": 96,
+      "internal_base": 96,
+      "internal_cost": 4,
+      "official": 194,
+      "timed_out": false,
+      "actions": {
+        "move": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C06-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 4,
+      "base": 96,
+      "internal_base": 96,
+      "internal_cost": 4,
+      "official": 194,
+      "timed_out": false,
+      "actions": {
+        "move": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C06-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C07.xml",
+    "sha256": "ccaecc1ec381bc8cd6de7f24d75af10b2174f828b8c541314594d201f80fc5cc",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C07-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C07-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C07.xml",
+    "sha256": "ccaecc1ec381bc8cd6de7f24d75af10b2174f828b8c541314594d201f80fc5cc",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C07-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 2,
+      "base": 98,
+      "internal_base": 98,
+      "internal_cost": 2,
+      "official": 196,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=98 stop=60 safe_prefix=98 broken_prefix=-1"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C07-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C08.xml",
+    "sha256": "52c7365ac89d1731392e165127a4661689686cf9fecdf07f38a489196c8687e7",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C08-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C08-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C08.xml",
+    "sha256": "52c7365ac89d1731392e165127a4661689686cf9fecdf07f38a489196c8687e7",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C08-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C08-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C09.xml",
+    "sha256": "5f8a2e81b8bffc551e8b625a747ef122989ce51378c35ba2979c6d82635e113e",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 13,
+      "base": 87,
+      "internal_base": 87,
+      "internal_cost": 13,
+      "official": 175,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C09-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 13,
+      "base": 87,
+      "internal_base": 87,
+      "internal_cost": 13,
+      "official": 175,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C09-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C09.xml",
+    "sha256": "5f8a2e81b8bffc551e8b625a747ef122989ce51378c35ba2979c6d82635e113e",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 13,
+      "base": 87,
+      "internal_base": 87,
+      "internal_cost": 13,
+      "official": 175,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C09-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 13,
+      "base": 87,
+      "internal_base": 87,
+      "internal_cost": 13,
+      "official": 175,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "putdown": 2,
+        "move": 1,
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C09-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C10.xml",
+    "sha256": "1d182fcf4b34a534411d88881a1a9c5b659b430c8afe3e1060e45ad82f1c0132",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 1,
+      "cost": 0,
+      "base": 140,
+      "internal_base": 140,
+      "internal_cost": 0,
+      "official": 240,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C10-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 1,
+      "cost": 0,
+      "base": 140,
+      "internal_base": 140,
+      "internal_cost": 0,
+      "official": 240,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C10-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/C10.xml",
+    "sha256": "1d182fcf4b34a534411d88881a1a9c5b659b430c8afe3e1060e45ad82f1c0132",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 1,
+      "cost": 0,
+      "base": 140,
+      "internal_base": 140,
+      "internal_cost": 0,
+      "official": 240,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-C10-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 1,
+      "cost": 0,
+      "base": 140,
+      "internal_base": 140,
+      "internal_cost": 0,
+      "official": 240,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-C10-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N01.xml",
+    "sha256": "e30b6413142de28e8472ac61433839767dff1bc26008c558b9ff2a388042f702",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N01-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 198,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N01-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N01.xml",
+    "sha256": "e30b6413142de28e8472ac61433839767dff1bc26008c558b9ff2a388042f702",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N01-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 198,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N01-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N02.xml",
+    "sha256": "b7e91767e99fa4e0198ec5ac3b42585011f16f4a994e90cafb3383cc65853ee4",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N02-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 198,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N02-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N02.xml",
+    "sha256": "b7e91767e99fa4e0198ec5ac3b42585011f16f4a994e90cafb3383cc65853ee4",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N02-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 198,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N02-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N03.xml",
+    "sha256": "896a9df8563f3d681732437df325137de263665ddd3eba15fa39e1021ff42e5b",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N03-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N03-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N03.xml",
+    "sha256": "896a9df8563f3d681732437df325137de263665ddd3eba15fa39e1021ff42e5b",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N03-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N03-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N04.xml",
+    "sha256": "04cdea520eada3279fcced956f54c3c8d0fca10b506489104186b87b69b1aecb",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N04-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 198,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N04-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N04.xml",
+    "sha256": "04cdea520eada3279fcced956f54c3c8d0fca10b506489104186b87b69b1aecb",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 200,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N04-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 0,
+      "base": 100,
+      "internal_base": 100,
+      "internal_cost": 0,
+      "official": 198,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=100 stop=100 safe_prefix=-1 broken_prefix=74"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N04-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N05.xml",
+    "sha256": "d0a551bb0ede52ea029c4035c616d12753405b69abddcf46d11eac80f28f1e87",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N05-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 178,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N05-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N05.xml",
+    "sha256": "d0a551bb0ede52ea029c4035c616d12753405b69abddcf46d11eac80f28f1e87",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N05-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N05-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N06.xml",
+    "sha256": "91196a77fbaf3e7d0af6956536bcc9a7db243abd1fb583bc16876cacfb7e8a1d",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 0,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N06-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 0,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N06-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N06.xml",
+    "sha256": "91196a77fbaf3e7d0af6956536bcc9a7db243abd1fb583bc16876cacfb7e8a1d",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 0,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N06-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 0,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N06-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N07.xml",
+    "sha256": "82705b981ac29a111841b3507930f3ec5eb0d5e45a06ca8ee74b5f087bb0be33",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=66"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N07-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=66"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N07-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N07.xml",
+    "sha256": "82705b981ac29a111841b3507930f3ec5eb0d5e45a06ca8ee74b5f087bb0be33",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 178,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=66"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N07-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 178,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=66"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N07-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N08.xml",
+    "sha256": "b2b6607945350e4e04b1bd218ba2a4b967cfb72c7050cd70a90b95499c19725c",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 1,
+      "base": 79,
+      "internal_base": 79,
+      "internal_cost": 1,
+      "official": 177,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N08-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 1,
+      "base": 79,
+      "internal_base": 79,
+      "internal_cost": 1,
+      "official": 177,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N08-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N08.xml",
+    "sha256": "b2b6607945350e4e04b1bd218ba2a4b967cfb72c7050cd70a90b95499c19725c",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 1,
+      "base": 79,
+      "internal_base": 79,
+      "internal_cost": 1,
+      "official": 177,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N08-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 1,
+      "base": 79,
+      "internal_base": 79,
+      "internal_cost": 1,
+      "official": 177,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N08-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N09.xml",
+    "sha256": "e69a278e13f412ee99c6b2c41868cfa221ed32fe214ee45a5f748534392a172c",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N09-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N09-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N09.xml",
+    "sha256": "e69a278e13f412ee99c6b2c41868cfa221ed32fe214ee45a5f748534392a172c",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N09-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 2,
+      "constraints": 1,
+      "cost": 1,
+      "base": 99,
+      "internal_base": 59,
+      "internal_cost": 1,
+      "official": 197,
+      "timed_out": false,
+      "actions": {
+        "sense": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N09-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N10.xml",
+    "sha256": "d1af5bd7f55ba40ab2827ba1418db6811fa35ad0fb6dcbc7aa618204dbb317a5",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N10-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 178,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N10-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N10.xml",
+    "sha256": "d1af5bd7f55ba40ab2827ba1418db6811fa35ad0fb6dcbc7aa618204dbb317a5",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 180,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-N10-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 2,
+      "cost": 0,
+      "base": 80,
+      "internal_base": 80,
+      "internal_cost": 0,
+      "official": 178,
+      "timed_out": false,
+      "actions": {},
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=80 stop=80 safe_prefix=-1 broken_prefix=68"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-N10-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P01.xml",
+    "sha256": "faca2fcbb0cc51db2d5b5901af51ab30fe09b3f8a8b67e8b233d6347d0ef0ea1",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P01-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P01-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P01.xml",
+    "sha256": "faca2fcbb0cc51db2d5b5901af51ab30fe09b3f8a8b67e8b233d6347d0ef0ea1",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P01-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P01-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P02.xml",
+    "sha256": "e9aa689410a4641080d7df00a459b4f1258e7546e76008eaddb932848ab9dc41",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P02-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P02-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P02.xml",
+    "sha256": "e9aa689410a4641080d7df00a459b4f1258e7546e76008eaddb932848ab9dc41",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P02-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 12,
+      "base": 148,
+      "internal_base": 148,
+      "internal_cost": 12,
+      "official": 236,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 2,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=148 stop=100 safe_prefix=-1 broken_prefix=148"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P02-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P03.xml",
+    "sha256": "722bdfaacf5a83a74b7627ff729a57c5976d4f0991c1ac4d70131c8625c62cc7",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 16,
+      "base": 184,
+      "internal_base": 184,
+      "internal_cost": 16,
+      "official": 268,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=184 stop=100 safe_prefix=-1 broken_prefix=184"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P03-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 16,
+      "base": 184,
+      "internal_base": 184,
+      "internal_cost": 16,
+      "official": 268,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=184 stop=100 safe_prefix=-1 broken_prefix=184"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P03-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P03.xml",
+    "sha256": "722bdfaacf5a83a74b7627ff729a57c5976d4f0991c1ac4d70131c8625c62cc7",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 16,
+      "base": 184,
+      "internal_base": 184,
+      "internal_cost": 16,
+      "official": 268,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=184 stop=100 safe_prefix=-1 broken_prefix=184"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P03-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 16,
+      "base": 184,
+      "internal_base": 184,
+      "internal_cost": 16,
+      "official": 268,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 3,
+        "putin": 3,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=184 stop=100 safe_prefix=-1 broken_prefix=184"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P03-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P04.xml",
+    "sha256": "0c22a342b59d7bf489a6acd21488f313908527f80d16a9d305612656bb829bc1",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 300,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=220 stop=100 safe_prefix=-1 broken_prefix=220"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P04-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 300,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=220 stop=100 safe_prefix=-1 broken_prefix=220"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P04-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P04.xml",
+    "sha256": "0c22a342b59d7bf489a6acd21488f313908527f80d16a9d305612656bb829bc1",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 300,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=220 stop=100 safe_prefix=-1 broken_prefix=220"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P04-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 20,
+      "base": 220,
+      "internal_base": 220,
+      "internal_cost": 20,
+      "official": 300,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "pickup": 4,
+        "putin": 4,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reference=220 stop=100 safe_prefix=-1 broken_prefix=220"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P04-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P05.xml",
+    "sha256": "fd7e16bfe8fa5887c5c853e062c00cf2fdc96f101134cf48f14b5082c314ed9b",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 16,
+      "base": 104,
+      "internal_base": 104,
+      "internal_cost": 16,
+      "official": 192,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P05-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 16,
+      "base": 104,
+      "internal_base": 104,
+      "internal_cost": 16,
+      "official": 192,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P05-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P05.xml",
+    "sha256": "fd7e16bfe8fa5887c5c853e062c00cf2fdc96f101134cf48f14b5082c314ed9b",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 16,
+      "base": 104,
+      "internal_base": 104,
+      "internal_cost": 16,
+      "official": 192,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P05-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 16,
+      "base": 104,
+      "internal_base": 104,
+      "internal_cost": 16,
+      "official": 192,
+      "timed_out": false,
+      "actions": {
+        "pickup": 2,
+        "move": 2,
+        "putdown": 2
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P05-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P06.xml",
+    "sha256": "57c6815f0e6c7a88678f52039f23cf2812c499f77066b315551c0275ff78c73c",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 8,
+      "base": 232,
+      "internal_base": 232,
+      "internal_cost": 8,
+      "official": 326,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P06-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 8,
+      "base": 232,
+      "internal_base": 232,
+      "internal_cost": 8,
+      "official": 326,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P06-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P06.xml",
+    "sha256": "57c6815f0e6c7a88678f52039f23cf2812c499f77066b315551c0275ff78c73c",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 8,
+      "base": 232,
+      "internal_base": 232,
+      "internal_cost": 8,
+      "official": 326,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P06-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 0,
+      "cost": 8,
+      "base": 232,
+      "internal_base": 232,
+      "internal_cost": 8,
+      "official": 326,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P06-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P07.xml",
+    "sha256": "dfcfe3d1208e9c5eb8418bfcb5ab77e782fb20ca8bca53da8fdd14216f969b2d",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 188,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P07-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 188,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P07-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P07.xml",
+    "sha256": "dfcfe3d1208e9c5eb8418bfcb5ab77e782fb20ca8bca53da8fdd14216f969b2d",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 188,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P07-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 18,
+      "base": 102,
+      "internal_base": 102,
+      "internal_cost": 18,
+      "official": 188,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 2,
+        "putdown": 2,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P07-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P08.xml",
+    "sha256": "db5c046ac23048cf89cf5815bfe90da4a2c3e4c40ddbf69c2b4f699d007d47db",
+    "stage": 1,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 10,
+      "base": 190,
+      "internal_base": 190,
+      "internal_cost": 10,
+      "official": 282,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P08-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 10,
+      "base": 190,
+      "internal_base": 190,
+      "internal_cost": 10,
+      "official": 282,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P08-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P08.xml",
+    "sha256": "db5c046ac23048cf89cf5815bfe90da4a2c3e4c40ddbf69c2b4f699d007d47db",
+    "stage": 1,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 10,
+      "base": 190,
+      "internal_base": 190,
+      "internal_cost": 10,
+      "official": 282,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P08-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 10,
+      "base": 190,
+      "internal_base": 190,
+      "internal_cost": 10,
+      "official": 282,
+      "timed_out": false,
+      "actions": {
+        "open": 1,
+        "takeout": 1,
+        "move": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P08-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P09.xml",
+    "sha256": "438e1bfa779af0b1c6419f4e1e3517561f02c29f58bdad2f61f256aa4399989e",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 228,
+      "timed_out": false,
+      "actions": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P09-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 228,
+      "timed_out": false,
+      "actions": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P09-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P09.xml",
+    "sha256": "438e1bfa779af0b1c6419f4e1e3517561f02c29f58bdad2f61f256aa4399989e",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 228,
+      "timed_out": false,
+      "actions": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P09-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 4,
+      "constraints": 0,
+      "cost": 16,
+      "base": 144,
+      "internal_base": 144,
+      "internal_cost": 16,
+      "official": 228,
+      "timed_out": false,
+      "actions": {
+        "pickup": 3,
+        "putdown": 1,
+        "open": 1,
+        "putin": 2,
+        "close": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P09-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P10.xml",
+    "sha256": "b79143d012c3ddf1d6ff842ea76888691de0a04a1fb4c996c9dfd4e79b65f8c8",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 9,
+      "base": 191,
+      "internal_base": 231,
+      "internal_cost": 9,
+      "official": 283,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P10-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 9,
+      "base": 191,
+      "internal_base": 191,
+      "internal_cost": 9,
+      "official": 283,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P10-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/P10.xml",
+    "sha256": "b79143d012c3ddf1d6ff842ea76888691de0a04a1fb4c996c9dfd4e79b65f8c8",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 9,
+      "base": 191,
+      "internal_base": 231,
+      "internal_cost": 9,
+      "official": 283,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/constraint_tradeoff_challenge_2026-P10-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 5,
+      "constraints": 0,
+      "cost": 9,
+      "base": 191,
+      "internal_base": 191,
+      "internal_cost": 9,
+      "official": 283,
+      "timed_out": false,
+      "actions": {
+        "pickup": 1,
+        "move": 1,
+        "sense": 1,
+        "putdown": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/constraint_tradeoff_challenge_2026-P10-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/01.xml",
+    "sha256": "b2b1eea1b786a4050876ed2cc3e8405cdbf5fac1dd440effd13d62183d637ee6",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 14,
+      "constraints": 0,
+      "cost": 139,
+      "base": 421,
+      "internal_base": 421,
+      "internal_cost": 139,
+      "official": 427,
+      "timed_out": false,
+      "actions": {
+        "putdown": 13,
+        "pickup": 12,
+        "sense": 1,
+        "move": 22
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-01-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 14,
+      "constraints": 0,
+      "cost": 139,
+      "base": 421,
+      "internal_base": 421,
+      "internal_cost": 139,
+      "official": 427,
+      "timed_out": false,
+      "actions": {
+        "putdown": 13,
+        "pickup": 12,
+        "sense": 1,
+        "move": 22
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-01-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/01.xml",
+    "sha256": "b2b1eea1b786a4050876ed2cc3e8405cdbf5fac1dd440effd13d62183d637ee6",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 13,
+      "constraints": 0,
+      "cost": 139,
+      "base": 381,
+      "internal_base": 381,
+      "internal_cost": 139,
+      "official": 387,
+      "timed_out": false,
+      "actions": {
+        "putdown": 13,
+        "pickup": 12,
+        "sense": 1,
+        "move": 22
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-01-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 13,
+      "constraints": 0,
+      "cost": 139,
+      "base": 381,
+      "internal_base": 381,
+      "internal_cost": 139,
+      "official": 385,
+      "timed_out": false,
+      "actions": {
+        "putdown": 13,
+        "pickup": 12,
+        "sense": 1,
+        "move": 22
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-01-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/03.xml",
+    "sha256": "922d7f053ac90009711033704a48d3ff08aab9d5529d13f738042faf048c0f4b",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 15,
+      "cost": 6,
+      "base": 334,
+      "internal_base": 114,
+      "internal_cost": 6,
+      "official": 430,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-03-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 15,
+      "cost": 6,
+      "base": 334,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 430,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-03-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/03.xml",
+    "sha256": "922d7f053ac90009711033704a48d3ff08aab9d5529d13f738042faf048c0f4b",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 15,
+      "cost": 6,
+      "base": 334,
+      "internal_base": 114,
+      "internal_cost": 6,
+      "official": 430,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-03-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 1,
+      "constraints": 15,
+      "cost": 6,
+      "base": 334,
+      "internal_base": 34,
+      "internal_cost": 6,
+      "official": 430,
+      "timed_out": false,
+      "actions": {
+        "move": 1,
+        "pickup": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-03-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+    "sha256": "b63527c3bf958ecd89c8dd3eec6407e92c4368b18cf5df81c00d79129d43bacf",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 9,
+      "constraints": 3,
+      "cost": 118,
+      "base": 302,
+      "internal_base": 302,
+      "internal_cost": 118,
+      "official": 320,
+      "timed_out": false,
+      "actions": {
+        "sense": 4,
+        "move": 19,
+        "pickup": 9,
+        "askloc": 1,
+        "putdown": 9
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-06-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 5,
+      "cost": 81,
+      "base": 259,
+      "internal_base": 159,
+      "internal_cost": 81,
+      "official": 301,
+      "timed_out": false,
+      "actions": {
+        "sense": 3,
+        "move": 13,
+        "pickup": 6,
+        "askloc": 1,
+        "putdown": 6
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-06-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+    "sha256": "b63527c3bf958ecd89c8dd3eec6407e92c4368b18cf5df81c00d79129d43bacf",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 9,
+      "constraints": 3,
+      "cost": 118,
+      "base": 302,
+      "internal_base": 302,
+      "internal_cost": 118,
+      "official": 320,
+      "timed_out": false,
+      "actions": {
+        "sense": 4,
+        "move": 19,
+        "pickup": 9,
+        "askloc": 1,
+        "putdown": 9
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-06-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 6,
+      "constraints": 5,
+      "cost": 81,
+      "base": 259,
+      "internal_base": 159,
+      "internal_cost": 81,
+      "official": 301,
+      "timed_out": false,
+      "actions": {
+        "sense": 3,
+        "move": 13,
+        "pickup": 6,
+        "askloc": 1,
+        "putdown": 6
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-06-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/15.xml",
+    "sha256": "1da256d1c1c936b940050b194c127e776fea2bc12bb45e68e1669309f90a274d",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 33,
+      "base": 87,
+      "internal_base": 47,
+      "internal_cost": 33,
+      "official": 161,
+      "timed_out": false,
+      "actions": {
+        "putdown": 2,
+        "move": 4,
+        "pickup": 1,
+        "sense": 1,
+        "takeout": 2,
+        "askloc": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-15-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 33,
+      "base": 87,
+      "internal_base": 47,
+      "internal_cost": 33,
+      "official": 161,
+      "timed_out": false,
+      "actions": {
+        "putdown": 2,
+        "move": 4,
+        "pickup": 1,
+        "sense": 1,
+        "takeout": 2,
+        "askloc": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-15-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/15.xml",
+    "sha256": "1da256d1c1c936b940050b194c127e776fea2bc12bb45e68e1669309f90a274d",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 33,
+      "base": 87,
+      "internal_base": 47,
+      "internal_cost": 33,
+      "official": 161,
+      "timed_out": false,
+      "actions": {
+        "putdown": 2,
+        "move": 4,
+        "pickup": 1,
+        "sense": 1,
+        "takeout": 2,
+        "askloc": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-15-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 3,
+      "constraints": 0,
+      "cost": 33,
+      "base": 87,
+      "internal_base": 47,
+      "internal_cost": 33,
+      "official": 161,
+      "timed_out": false,
+      "actions": {
+        "putdown": 2,
+        "move": 4,
+        "pickup": 1,
+        "sense": 1,
+        "takeout": 2,
+        "askloc": 1,
+        "open": 1,
+        "putin": 1
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-15-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/28.xml",
+    "sha256": "12db0b95bd2f1018ee14b26b9c2993720e3651eba764cda1bbb866fceb732daa",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 22,
+      "constraints": 0,
+      "cost": 132,
+      "base": 748,
+      "internal_base": 748,
+      "internal_cost": 132,
+      "official": 758,
+      "timed_out": false,
+      "actions": {
+        "move": 21,
+        "pickup": 12,
+        "putdown": 12
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-28-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 24,
+      "constraints": 0,
+      "cost": 144,
+      "base": 816,
+      "internal_base": 816,
+      "internal_cost": 144,
+      "official": 820,
+      "timed_out": false,
+      "actions": {
+        "move": 23,
+        "pickup": 13,
+        "putdown": 13
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-28-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/28.xml",
+    "sha256": "12db0b95bd2f1018ee14b26b9c2993720e3651eba764cda1bbb866fceb732daa",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 24,
+      "constraints": 0,
+      "cost": 144,
+      "base": 816,
+      "internal_base": 816,
+      "internal_cost": 144,
+      "official": 820,
+      "timed_out": false,
+      "actions": {
+        "move": 23,
+        "pickup": 13,
+        "putdown": 13
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-28-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 24,
+      "constraints": 0,
+      "cost": 144,
+      "base": 816,
+      "internal_base": 816,
+      "internal_cost": 144,
+      "official": 820,
+      "timed_out": false,
+      "actions": {
+        "move": 23,
+        "pickup": 13,
+        "putdown": 13
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-28-nt"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/29.xml",
+    "sha256": "bf6f4b10ce147885ffd8d924d870d2e52c0295f65c23b6e3c93b99741ab9c836",
+    "stage": 2,
+    "mode": "it",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 25,
+      "constraints": 0,
+      "cost": 144,
+      "base": 856,
+      "internal_base": 856,
+      "internal_cost": 144,
+      "official": 860,
+      "timed_out": false,
+      "actions": {
+        "move": 23,
+        "pickup": 13,
+        "putdown": 13
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-29-it"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 23,
+      "constraints": 0,
+      "cost": 132,
+      "base": 788,
+      "internal_base": 788,
+      "internal_cost": 132,
+      "official": 798,
+      "timed_out": false,
+      "actions": {
+        "move": 21,
+        "pickup": 12,
+        "putdown": 12
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-29-it"
+    }
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/29.xml",
+    "sha256": "bf6f4b10ce147885ffd8d924d870d2e52c0295f65c23b6e3c93b99741ab9c836",
+    "stage": 2,
+    "mode": "nt",
+    "group_mode": "guarded",
+    "baseline": {
+      "version": "src1.6.1",
+      "status": "ok",
+      "goals": 25,
+      "constraints": 0,
+      "cost": 144,
+      "base": 856,
+      "internal_base": 856,
+      "internal_cost": 144,
+      "official": 860,
+      "timed_out": false,
+      "actions": {
+        "move": 23,
+        "pickup": 13,
+        "putdown": 13
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.1/realcompetiton_2024-29-nt"
+    },
+    "current": {
+      "version": "src1.6.2",
+      "status": "ok",
+      "goals": 25,
+      "constraints": 0,
+      "cost": 144,
+      "base": 856,
+      "internal_base": 856,
+      "internal_cost": 144,
+      "official": 860,
+      "timed_out": false,
+      "actions": {
+        "move": 23,
+        "pickup": 13,
+        "putdown": 13
+      },
+      "guarded": [
+        "[GuardedDecision] outcome=legacy reason=unsupported_or_time"
+      ],
+      "output": "/tmp/rdfw-162-final-guarded/src1.6.2/realcompetiton_2024-29-nt"
+    }
+  }
+]
