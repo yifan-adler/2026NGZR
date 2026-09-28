@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 1)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 cup) (size 2 small) (at 2 2)
+(sort 3 table) (size 3 big) (at 3 3)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:task (puton X Y) (:cond (sort X cup) (sort Y table)))
+(:task (puton X Y) (:cond (sort X cup) (sort Y table)))
+(:task (pickup X) (:cond (sort X cup)))
+)
+</instr>
+<nl>
+Put the cup on the table.
+Put the cup on the table.
+Pick up the cup.
+</nl>
+</test>

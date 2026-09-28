@@ -1,0 +1,155 @@
+Test project /tmp/rdfw-164-baseline-probe
+      Start  1: baseline_invariant_0
+ 1/20 Test  #1: baseline_invariant_0 .............***Exception: Child aborted  0.02 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:51: int main(int, char**): Assertion `a.id==7 && a.location==11 && b.id==8 && b.location==12' failed.
+
+      Start  2: baseline_invariant_1
+ 2/20 Test  #2: baseline_invariant_1 .............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:55: int main(int, char**): Assertion `c->location==w->location && w->IsLocationVerified(2)' failed.
+
+      Start  3: baseline_invariant_2
+ 3/20 Test  #3: baseline_invariant_2 .............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:59: int main(int, char**): Assertion `s->inside==NONE && c->smallObjectsInside.empty()' failed.
+
+      Start  4: baseline_invariant_3
+ 4/20 Test  #4: baseline_invariant_3 .............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:73: int main(int, char**): Assertion `c->smallObjectsInside.empty() && d->smallObjectsInside.size()==1' failed.
+
+      Start  5: baseline_invariant_4
+ 5/20 Test  #5: baseline_invariant_4 .............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:80: int main(int, char**): Assertion `!ScoreSemanticsTestAccess::Dry(*w,"PutIn",{3,2})' failed.
+
+      Start  6: baseline_invariant_5
+ 6/20 Test  #6: baseline_invariant_5 .............   Passed    0.00 sec
+      Start  7: baseline_invariant_6
+ 7/20 Test  #7: baseline_invariant_6 .............   Passed    0.00 sec
+      Start  8: baseline_invariant_7
+ 8/20 Test  #8: baseline_invariant_7 .............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:107: int main(int, char**): Assertion `!w->IsLocationVerified(3)' failed.
+
+      Start  9: baseline_invariant_8
+ 9/20 Test  #9: baseline_invariant_8 .............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:118: int main(int, char**): Assertion `w->objects[4]->location==UNKNOWN' failed.
+
+      Start 10: baseline_invariant_9
+10/20 Test #10: baseline_invariant_9 .............   Passed    0.00 sec
+      Start 11: baseline_invariant_10
+11/20 Test #11: baseline_invariant_10 ............   Passed    0.00 sec
+      Start 12: baseline_invariant_11
+12/20 Test #12: baseline_invariant_11 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:139: int main(int, char**): Assertion `c->location==s->location && c->isOpen==1' failed.
+
+      Start 13: baseline_invariant_12
+13/20 Test #13: baseline_invariant_12 ............   Passed    0.00 sec
+      Start 14: baseline_invariant_13
+14/20 Test #14: baseline_invariant_13 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:166: int main(int, char**): Assertion `w->GetTerminalSummary().goals==p.terminal_after.goals' failed.
+
+      Start 15: baseline_invariant_14
+15/20 Test #15: baseline_invariant_14 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:171: int main(int, char**): Assertion `s->inside==2 && c->smallObjectsInside.size()==1' failed.
+
+      Start 16: baseline_invariant_15
+16/20 Test #16: baseline_invariant_15 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:181: int main(int, char**): Assertion `!w->posSensedFlag[4] && !w->HasObjectAtLocation(4,2)' failed.
+
+      Start 17: baseline_invariant_16
+17/20 Test #17: baseline_invariant_16 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:189: int main(int, char**): Assertion `w->LocationSource(2)==EvidenceSource::INITIAL' failed.
+
+      Start 18: baseline_invariant_17
+18/20 Test #18: baseline_invariant_17 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+x: 3 y: 2
+obj_to_cont[x]: 2
+sm->inside: 2
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:203: int main(int, char**): Assertion `s->location==1' failed.
+
+      Start 19: baseline_invariant_18
+19/20 Test #19: baseline_invariant_18 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:211: int main(int, char**): Assertion `s->inside==2 && s->location==1' failed.
+
+      Start 20: baseline_invariant_19
+20/20 Test #20: baseline_invariant_19 ............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:217: int main(int, char**): Assertion `c->isOpen==1 && w->IsContainerStateVerified(2)' failed.
+
+
+25% tests passed, 15 tests failed out of 20
+
+Total Test time (real) =   0.21 sec
+
+The following tests FAILED:
+	  1 - baseline_invariant_0 (Child aborted)
+	  2 - baseline_invariant_1 (Child aborted)
+	  3 - baseline_invariant_2 (Child aborted)
+	  4 - baseline_invariant_3 (Child aborted)
+	  5 - baseline_invariant_4 (Child aborted)
+	  8 - baseline_invariant_7 (Child aborted)
+	  9 - baseline_invariant_8 (Child aborted)
+	 12 - baseline_invariant_11 (Child aborted)
+	 14 - baseline_invariant_13 (Child aborted)
+	 15 - baseline_invariant_14 (Child aborted)
+	 16 - baseline_invariant_15 (Child aborted)
+	 17 - baseline_invariant_16 (Child aborted)
+	 18 - baseline_invariant_17 (Child aborted)
+	 19 - baseline_invariant_18 (Child aborted)
+	 20 - baseline_invariant_19 (Child aborted)

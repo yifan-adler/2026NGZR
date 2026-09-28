@@ -1,0 +1,156 @@
+[
+  {
+    "suite": "full",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N01.xml",
+    "mode": "it",
+    "repeat": 1,
+    "base": [
+      100,
+      100
+    ],
+    "official": [
+      198,
+      200
+    ],
+    "time_reward": [
+      98,
+      100
+    ],
+    "elapsed_ms": [
+      0,
+      0
+    ]
+  },
+  {
+    "suite": "full",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N02.xml",
+    "mode": "it",
+    "repeat": 1,
+    "base": [
+      100,
+      100
+    ],
+    "official": [
+      200,
+      198
+    ],
+    "time_reward": [
+      100,
+      98
+    ],
+    "elapsed_ms": [
+      0,
+      0
+    ]
+  },
+  {
+    "suite": "full",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N05.xml",
+    "mode": "it",
+    "repeat": 1,
+    "base": [
+      80,
+      80
+    ],
+    "official": [
+      180,
+      178
+    ],
+    "time_reward": [
+      100,
+      98
+    ],
+    "elapsed_ms": [
+      0,
+      0
+    ]
+  },
+  {
+    "suite": "full",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/constraint_tradeoff_challenge_2026/N06.xml",
+    "mode": "it",
+    "repeat": 1,
+    "base": [
+      80,
+      80
+    ],
+    "official": [
+      178,
+      180
+    ],
+    "time_reward": [
+      98,
+      100
+    ],
+    "elapsed_ms": [
+      0,
+      0
+    ]
+  },
+  {
+    "suite": "full",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+    "mode": "it",
+    "repeat": 1,
+    "base": [
+      330,
+      330
+    ],
+    "official": [
+      340,
+      338
+    ],
+    "time_reward": [
+      10,
+      8
+    ],
+    "elapsed_ms": [
+      4481,
+      4508
+    ]
+  },
+  {
+    "suite": "target",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+    "mode": "it",
+    "repeat": 2,
+    "base": [
+      330,
+      330
+    ],
+    "official": [
+      338,
+      340
+    ],
+    "time_reward": [
+      8,
+      10
+    ],
+    "elapsed_ms": [
+      4525,
+      4494
+    ]
+  },
+  {
+    "suite": "target",
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/06.xml",
+    "mode": "nt",
+    "repeat": 2,
+    "base": [
+      330,
+      330
+    ],
+    "official": [
+      338,
+      340
+    ],
+    "time_reward": [
+      8,
+      10
+    ],
+    "elapsed_ms": [
+      4512,
+      4482
+    ]
+  }
+]

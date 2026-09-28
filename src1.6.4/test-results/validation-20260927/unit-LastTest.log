@@ -1,0 +1,2416 @@
+Start testing: Sep 27 22:58 CST
+----------------------------------------------------------
+1/31 Testing: input_safety_tests
+1/31 Test: input_safety_tests
+Command: "/tmp/rdfw-164-unit/input_safety_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"input_safety_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6237 Env sentence has an invalid object id: (sort -1 cup)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6374 Ignoring invalid environment fact: (sort -1 cup)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6237 Env sentence has an invalid object id: (sort 999999999 cup)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6374 Ignoring invalid environment fact: (sort 999999999 cup)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6284 Env sentence has an invalid location: (at 2 999999999)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6374 Ignoring invalid environment fact: (at 2 999999999)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6284 Env sentence has an invalid location: (at 2 12junk)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6374 Ignoring invalid environment fact: (at 2 12junk)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6347 WorldState input is empty, oversized, or lacks robot object 0[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6231 Env sentence has an unknown predicate or wrong field count: (sort 8)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6374 Ignoring invalid environment fact: (sort 8)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:6387 Ignoring invalid hold reference 3[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=open reason=X actual object type violates schema[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=pickup reason=condition contains an invalid object id[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=pickup reason=condition must contain exactly three fields[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5233 Instruction Error: No object found matching conditionX (sort=does_not_exist, color=)[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=pickup reason=X binding resolved to an empty set[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=putin reason=action parameter count does not match schema[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=putin reason=condition binds an unknown variable[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave= reason=instruction action is empty[0m
+[LOG]:[InputSafety] recovered missing outer close at byte 8
+[LOG]:[InputSafety] instruction putin status=REPAIRED
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/parser.cpp:196 next is unknown type word
+[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/parser.cpp:153 The garmmar of sentence:(next to.) is incorrect!
+ <PREP:to>
+[0m
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.hpp:291 Object (2 cup) cast error.[0m
+input/index safety tests passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"input_safety_tests" end time: Sep 27 22:58 CST
+"input_safety_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/31 Testing: three_a_tests
+2/31 Test: three_a_tests
+Command: "/tmp/rdfw-164-unit/three_a_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"three_a_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[DBG] goto risk@loc=4 bool=0
+[DBG] goto risk@loc=4 bool=0
+3A/3B infrastructure tests passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"three_a_tests" end time: Sep 27 22:58 CST
+"three_a_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/31 Testing: question_preflight_tests
+3/31 Test: question_preflight_tests
+Command: "/tmp/rdfw-164-unit/question_preflight_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"question_preflight_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][Duplicate] 0:close:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][Duplicate] 0:puton:X[2,]:Y[4,] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][Duplicate] 2:pickup:X[2,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][Duplicate] 4:closed:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[33m[Defer] multi-goto detected: 2 tasks; skip in main loop, handle at final aggregation
+[0m
+[LOG]:[Preflight][Duplicate] 0:goto:X[2,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:[Preflight] task raw=2 unique=2 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:[33m[Defer] multi-goto detected: 2 tasks; skip in main loop, handle at final aggregation
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][Duplicate] 0:open:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight][Duplicate] 2:open:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=5 unique=4 duplicate=1 rejected=0; constraint raw=5 unique=4 duplicate=1 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][Duplicate] 3:inside:X[2,]:Y[3,] policy=unique-goals
+[LOG]:[Preflight][Duplicate] 4:near:X[2,]:Y[5,] policy=unique-goals
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=4 unique=2 duplicate=2 rejected=0; world_errors=0
+[LOG]:[Preflight][Duplicate] 4:near:X[2,4,]:Y[5,] policy=unique-goals
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=4 unique=3 duplicate=1 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32mclose the closet.[0m
+[LOG]:<S:>
+  <VP:>
+    <V:close>
+    <NP:>
+      <ART:the>
+      <N:closet>
+
+[LOG]:[32mclose the closet.[0m
+[LOG]:<S:>
+  <VP:>
+    <V:close>
+    <NP:>
+      <ART:the>
+      <N:closet>
+
+[LOG]:[Preflight][Duplicate] 0:close:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5801 Isolated malformed instruction form at byte 6[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5801 Isolated malformed instruction form at byte 6[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5801 Isolated malformed instruction form at byte 6[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5874 Ignoring malformed :cons_notnot wrapper[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5867 Ignoring :cons_not with invalid child :cons_not[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5867 Ignoring :cons_not with invalid child :unknown[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5854 Ignoring malformed :cons_not wrapper[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5899 [InputSafety] isolated instruction behave=inside reason=action parameter count does not match schema[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5801 Isolated malformed instruction form at byte 0[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:[Preflight][WorldWarning] multiple big objects at Stage 1 location 1
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][WorldWarning] human differs from conventional object 1 layout
+[LOG]:[Preflight][WorldWarning] human count differs from conventional layout
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/question_preflight.cpp:47 [Preflight][World] object registration mismatch at 2[0m
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=1
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight][WorldWarning] object lacks stable sort/runtime type; isolate bindings: 7
+[LOG]:[Preflight] task raw=0 unique=0 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/question_preflight.cpp:107 [Preflight] isolated unmodelled/invalid binding: goto[0m
+[LOG]:[Preflight] task raw=1 unique=0 duplicate=0 rejected=1; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight][Duplicate] 0:puton:X[2,]:Y[4,] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):(2 cup)(5 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[33m(4 table)[0m
+UnknownPos:
+
+Task:
+Behave:[35mputon[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"puton","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=puton legacy_choice=true eligible=true complete=true actions=4 duration_ms=440 action_cost=12 score_before=0 score_after=28 marginal_score=28 utility=28 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/1 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=puton can_finish=true remaining_plan_ms=440 safety_ms=300 budget_remaining_ms=5000
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":1,"task_index":0,"tasks":[0],"task_label":"puton","generated_ms":0,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28},"expected_reward":28,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"inside","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=puton executed=0 total=4 remaining_utility=28 remaining_duration_ms=440
+[0m
+puton cup的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=4 remaining_utility=32 remaining_duration_ms=320 can_finish=true
+[0m
+[LOG]:PickUp(2,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PickUp executed=2 total=4 remaining_utility=34 remaining_duration_ms=220 can_finish=true
+[0m
+[LOG]:Move(4)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=3 total=4 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PutDown(2,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PutDown executed=4 total=4 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mputon[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":1,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=puton succeeded=true executed=4 total=4 remaining_utility=0 remaining_duration_ms=0
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):(5 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[32m(robot hold:0 plate:0)[0m(2 cup)[33m(4 table)[0m
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=28, action_cost=12, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:puton], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:1    Expect Num:1
+[LOG]:[36m[3A][final] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=28, action_cost=12, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:puton], satisfied_constraints=[]
+[0m
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=2 unique=2 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):(2 cup)(5 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[33m(4 table)[0m
+UnknownPos:
+
+Task:
+Behave:[35mputon[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mputon[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+2
+[LOG]:[32m[MultiPuton] Big object 4 (sort: table) appears in 2 puton tasks[0m
+[LOG]:[33m[MultiPuton] Marked task 0 as multi-puton for object 4[0m
+[LOG]:[33m[MultiPuton] Marked task 1 as multi-puton for object 4[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"puton","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=puton legacy_choice=true eligible=true complete=true actions=4 duration_ms=440 action_cost=12 score_before=0 score_after=28 marginal_score=28 utility=28 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"main-loop","task_index":1,"task_label":"puton","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=2 task_index=1 behave=puton legacy_choice=false eligible=true complete=true actions=4 duration_ms=440 action_cost=12 score_before=0 score_after=28 marginal_score=28 utility=28 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/2 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=puton can_finish=true remaining_plan_ms=440 safety_ms=300 budget_remaining_ms=5000
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":1,"task_index":0,"tasks":[0],"task_label":"puton","generated_ms":0,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28},"expected_reward":28,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"inside","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=puton executed=0 total=4 remaining_utility=28 remaining_duration_ms=440
+[0m
+puton cup的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=4 remaining_utility=32 remaining_duration_ms=320 can_finish=true
+[0m
+[LOG]:PickUp(2,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PickUp executed=2 total=4 remaining_utility=34 remaining_duration_ms=220 can_finish=true
+[0m
+[LOG]:Move(4)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=3 total=4 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PutDown(2,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PutDown executed=4 total=4 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mputon[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":1,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":28,"utility":28},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=puton succeeded=true executed=4 total=4 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":3,"phase":"main-loop","task_index":1,"task_label":"puton","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":56,"utility":28}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=1 behave=puton legacy_choice=true eligible=true complete=true actions=4 duration_ms=440 action_cost=12 score_before=28 score_after=56 marginal_score=28 utility=28 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=1/2 (unknown=0), constraints=0/0 (unknown=0), base_score=28, action_cost=12, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:puton], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=1 behave=puton can_finish=true remaining_plan_ms=440 safety_ms=300 budget_remaining_ms=5000
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":3,"task_index":1,"tasks":[1],"task_label":"puton","generated_ms":0,"world_revision":4,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":56,"utility":28},"expected_reward":56,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"action_success","verified":true},{"object_id":2,"fact":"inside","source":"action_success","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=1 behave=puton executed=0 total=4 remaining_utility=28 remaining_duration_ms=440
+[0m
+puton cup的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=1 total=4 remaining_utility=32 remaining_duration_ms=320 can_finish=true
+[0m
+[LOG]:PickUp(5,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=PickUp executed=2 total=4 remaining_utility=34 remaining_duration_ms=220 can_finish=true
+[0m
+[LOG]:Move(4)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=3 total=4 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PutDown(5,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=PutDown executed=4 total=4 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mputon[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":3,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":56,"utility":28},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":4,"action_cost":12,"final_reward":56,"utility":28},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=1 behave=puton succeeded=true executed=4 total=4 remaining_utility=0 remaining_duration_ms=0
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[32m(robot hold:0 plate:0)[0m(2 cup)[33m(4 table)[0m(5 cup)
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=2/2 (unknown=0), constraints=0/0 (unknown=0), base_score=56, action_cost=24, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:puton,1:puton], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:2    Expect Num:2
+[LOG]:[36m[3A][final] goals=2/2 (unknown=0), constraints=0/0 (unknown=0), base_score=56, action_cost=24, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:puton,1:puton], satisfied_constraints=[]
+[0m
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight][Duplicate] 2:pickup:X[2,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):(2 cup)(5 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[33m(4 table)[0m
+UnknownPos:
+
+Task:
+Behave:[35mpickup[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+Behave:[35mpickup[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"pickup","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":1,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[0] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/1 (unknown=0), constraints=1/1 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[0]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=5000
+[0m
+[LOG]:[TradeoffDecision] phase=main-loop task=0 decision=execute priority=34 incumbent_priority=0 lower=34 upper=34 group=1
+
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":1,"task_index":0,"tasks":[0],"task_label":"pickup","generated_ms":0,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":1,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34},"expected_reward":34,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"inside","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"location","source":"initial","verified":true},{"object_id":5,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=pickup executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+pickup cup的风险系数是：1
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PickUp(2,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=PickUp executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mpickup[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":1,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":1,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":1,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=pickup succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:2 plate:0)[0m(2 cup)(5 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[33m(4 table)[0m
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=1/1 (unknown=0), constraints=0/1 (unknown=0), base_score=34, action_cost=6, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:pickup], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:1    Expect Num:1
+[LOG]:[36m[3A][final] goals=1/1 (unknown=0), constraints=0/1 (unknown=0), base_score=34, action_cost=6, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:pickup], satisfied_constraints=[]
+[0m
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/question_preflight.cpp:47 [Preflight][World] robot has no usable initial location[0m
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=1
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:1860 [Preflight] unsafe WorldState; skipping question before planning[0m
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[32mclose the closet.[0m
+[LOG]:<S:>
+  <VP:>
+    <V:close>
+    <NP:>
+      <ART:the>
+      <N:closet>
+
+[LOG]:[32mclose the closet.[0m
+[LOG]:<S:>
+  <VP:>
+    <V:close>
+    <NP:>
+      <ART:the>
+      <N:closet>
+
+[LOG]:[Preflight][Duplicate] 0:close:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):(2 cup)(5 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+Pos  4:(T):[33m(4 table)[0m
+UnknownPos:
+
+Task:
+Behave:[35mclose[0m
+ConditionX:[35m(Sort:closet,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[LOG]:[36m[3A][main-loop] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=40, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:close], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before main-loop
+[0m
+-----check check check-----
+
+Sovled Task Num:0    Expect Num:1
+[LOG]:[36m[3A][final] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=40, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:close], satisfied_constraints=[]
+[0m
+Question Preflight tests passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"question_preflight_tests" end time: Sep 27 22:58 CST
+"question_preflight_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/31 Testing: legal_preservation_tests
+4/31 Test: legal_preservation_tests
+Command: "/tmp/rdfw-164-unit/legal_preservation_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"legal_preservation_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+[LOG]:[32mgive the red cup to the human.[0m
+[LOG]:<S:>
+  <VP:>
+    <V:give>
+    <NP:>
+      <ART:the>
+      <ADJ:red>
+      <N:cup>
+    <PREP:to>
+    <NP:>
+      <ART:the>
+      <N:human>
+
+[LOG]:[Preflight] task raw=3 unique=2 duplicate=1 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+[LOG]:[Preflight][Duplicate] 0:close:X[3,]:Y[] policy=unique-goals
+[LOG]:[Preflight][Duplicate] 2:pickup:X[2,]:Y[] policy=unique-goals
+[LOG]:[Preflight] task raw=2 unique=1 duplicate=1 rejected=0; constraint raw=2 unique=1 duplicate=1 rejected=0; world_errors=0
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[Preflight][WorldWarning] human differs from conventional object 1 layout
+[LOG]:[Preflight][WorldWarning] multiple big objects at Stage 1 location 1
+[LOG]:[Preflight][WorldWarning] object lacks stable sort/runtime type; isolate bindings: 7
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+[LOG]:[Preflight][WorldWarning] multiple big objects at Stage 1 location 1
+[LOG]:[Preflight][WorldWarning] object lacks stable sort/runtime type; isolate bindings: 7
+[LOG]:[Preflight][WorldWarning] human count differs from conventional layout
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+[LOG]:[InputSafety] recovered missing outer close at byte 6
+[31m[ERROR]:/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp:5801 Isolated malformed instruction form at byte 6[0m
+#(RDFW): Fini - Comprehensive state cleanup for next test
+#(RDFW): Optimizing memory usage...
+#(RDFW): Memory optimization completed
+#(RDFW): Comprehensive state cleanup completed - ready for next test
+legal preservation tests passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"legal_preservation_tests" end time: Sep 27 22:58 CST
+"legal_preservation_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/31 Testing: recovery_evidence_tests
+5/31 Test: recovery_evidence_tests
+Command: "/tmp/rdfw-164-unit/recovery_evidence_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"recovery_evidence_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+x: 3 y: 2
+obj_to_cont[x]: 2
+sm->inside: 0
+[LOG]:[32m[MustIn] (direct) set obj 3 @ 3 (in 2)
+[0m
+[LOG]:[32m[MustIn] correction done.
+[0m
+[LOG]:[32m[Zero-Action] validated as done
+ Behave:[35mputin[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[AutoOpenClose] set container 2 closed (by notnot)
+[0m
+[LOG]:[32m[Zero-Action] validated as done
+ Behave:[35mclose[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[Zero-Action] validated as done
+ Behave:[35mclose[0m
+ConditionX:[35m(Sort:,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[MustNear] relation obj 3 <-> obj 2
+[0m
+[LOG]:[33m[MustNear] component 3 has conflicting/insufficient evidence; not propagated
+[0m
+[LOG]:[32m[MustNear] correction done.
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[MustNear] relation obj 3 <-> obj 2
+[0m
+[LOG]:[32m[MustNear] inferred obj 3 at location 2
+[0m
+[LOG]:[32m[MustNear] correction done.
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[36m[Recovery] reactivated task=0 behave=goto revision=0
+[0m
+[DBG] goto risk@loc=4 bool=0
+[LOG]:[36m[Recovery] reactivated task=0 behave=goto revision=0
+[0m
+[DBG] goto risk@loc=4 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"terminal-recovery","task_index":0,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36}}
+[LOG]:[36m[3B][Candidate] phase=terminal-recovery rank=1 task_index=0 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=0 score_after=36 marginal_score=36 utility=36 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[Recovery] execute task=0 behave=goto marginal=36 actions=1 revision=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":2,"task_index":0,"tasks":[0],"task_label":"goto","generated_ms":0,"world_revision":0,"selection_reason":"terminal_recovery_positive_marginal_score","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"expected_reward":36,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=goto executed=0 total=1 remaining_utility=36 remaining_duration_ms=120
+[0m
+goto cup的风险系数是：0
+[LOG]:Move(4)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=1 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":2,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=goto succeeded=true executed=1 total=1 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=2 unique=2 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 cupboard inside:[] Closed)[0m
+UnknownPos:
+
+Task:
+Behave:[35mopen[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+Behave:[35mopened[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Not_Task:
+
+NotNot_Info:
+Behave:[35mclosed[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"open","legacy_choice":true,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=open legacy_choice=true eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/1 (unknown=0), constraints=2/2 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[0,1]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"stop-rescan","task_index":0,"task_label":"open","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=open legacy_choice=false eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before main-loop; candidate_count=1 fresh_positive=false include_goto=false
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":3,"phase":"must-choose-one","task_index":0,"task_label":"open","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=must-choose-one rank=1 task_index=0 behave=open legacy_choice=false eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][must-choose-one] goals=0/1 (unknown=0), constraints=2/2 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][must-choose-one] completed_goals=[], satisfied_constraints=[0,1]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":4,"phase":"stop-rescan","task_index":0,"task_label":"open","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=open legacy_choice=false eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before must-choose-one; candidate_count=1 fresh_positive=false include_goto=true
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 cupboard inside:[] Closed)[0m
+UnknownPos:
+
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":5,"phase":"multi-goto","task_index":0,"task_label":"open","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=multi-goto rank=1 task_index=0 behave=open legacy_choice=false eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][multi-goto] goals=0/1 (unknown=0), constraints=2/2 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[], satisfied_constraints=[0,1]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":6,"phase":"stop-rescan","task_index":0,"task_label":"open","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=open legacy_choice=false eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before multi-goto; candidate_count=1 fresh_positive=false include_goto=true
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":7,"phase":"terminal-recovery","task_index":0,"task_label":"open","legacy_choice":false,"eligible":false,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":2,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":38,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=terminal-recovery rank=1 task_index=0 behave=open legacy_choice=false eligible=false complete=true actions=1 duration_ms=100 action_cost=2 score_before=0 score_after=38 marginal_score=38 utility=38 gained_goals=[0] lost_goals=[] broken_constraints=[0,1] preserved_constraints=[]
+[0m
+[LOG]:[33m[Recovery] stop: no positive legal candidate after full rescan; goals=0/1 revision=0
+[0m
+
+Sovled Task Num:0    Expect Num:1
+[LOG]:[36m[3A][final] goals=0/1 (unknown=0), constraints=2/2 (unknown=0), base_score=0, action_cost=0, elapsed=1ms, remaining=4999ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[], satisfied_constraints=[0,1]
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=1 unique=1 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m
+Pos  3:(T):[33m(2 cupboard inside:[] Open)[0m
+Pos  4:(T):(3 book)
+UnknownPos:
+
+[LOG]:[32m[AutoOpenClose] set container 2 closed (by notnot)
+[0m
+[LOG]:[32m[MustIn] correction done.
+[0m
+[LOG]:[32m[MustNear] correction done.
+[0m
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m
+Pos  3:(T):[33m(2 cupboard inside:[] Closed)[0m
+Pos  4:(T):(3 book)
+UnknownPos:
+
+Task:
+Behave:[35mclose[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Behave:[35mclosed[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[LOG]:[36m[3A][main-loop] goals=1/1 (unknown=0), constraints=1/1 (unknown=0), base_score=60, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:close], satisfied_constraints=[0]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before main-loop
+[0m
+-----check check check-----
+
+Sovled Task Num:0    Expect Num:1
+[LOG]:[36m[3A][final] goals=1/1 (unknown=0), constraints=1/1 (unknown=0), base_score=60, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:close], satisfied_constraints=[0]
+[0m
+recovery/evidence tests passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"recovery_evidence_tests" end time: Sep 27 22:58 CST
+"recovery_evidence_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/31 Testing: task_group_search_tests
+6/31 Test: task_group_search_tests
+Command: "/tmp/rdfw-164-unit/task_group_search_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"task_group_search_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"task_group_search_tests" end time: Sep 27 22:58 CST
+"task_group_search_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/31 Testing: task_group_projection_tests
+7/31 Test: task_group_projection_tests
+Command: "/tmp/rdfw-164-unit/task_group_projection_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"task_group_projection_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"task_group_projection_tests" end time: Sep 27 22:58 CST
+"task_group_projection_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/31 Testing: guarded_decision_tests
+8/31 Test: guarded_decision_tests
+Command: "/tmp/rdfw-164-unit/guarded_decision_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"guarded_decision_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):[33m(2 table)[0m
+UnknownPos:
+
+Task:
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:table,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[LOG]:[36m[3A][main-loop] goals=0/1 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[]
+[0m
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"stop-rescan","task_index":0,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=0 score_after=36 marginal_score=36 utility=36 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before main-loop; candidate_count=0 fresh_positive=true include_goto=false
+[0m
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"must-choose-one","task_index":0,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36}}
+[LOG]:[36m[3B][Candidate] phase=must-choose-one rank=1 task_index=0 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=0 score_after=36 marginal_score=36 utility=36 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][must-choose-one] goals=0/1 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][must-choose-one] completed_goals=[], satisfied_constraints=[]
+[0m
+stage=1
+[LOG]:[36m[3B][Deadline] phase=must-choose-one task_index=0 behave=goto can_finish=true remaining_plan_ms=120 safety_ms=300 budget_remaining_ms=5000
+[0m
+Must Choose one:goto
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":3,"task_index":0,"tasks":[0],"task_label":"goto","generated_ms":0,"world_revision":0,"selection_reason":"legacy_must_choose_one_risk","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"expected_reward":36,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=goto executed=0 total=1 remaining_utility=36 remaining_duration_ms=120
+[0m
+goto table的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=1 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":3,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=goto succeeded=true executed=1 total=1 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[32mTask done
+ Behave:[35mgoto[0m
+ConditionX:[35m(Sort:table,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 table)[0m
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=36, action_cost=4, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:goto], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:1    Expect Num:1
+[LOG]:[36m[3A][final] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=36, action_cost=4, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:goto], satisfied_constraints=[]
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):[33m(2 table)[0m
+UnknownPos:
+
+Task:
+Behave:[35mgoto[0m
+ConditionX:[35m(Sort:table,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+1
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"guarded","task_index":0,"task_label":"goto","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=1 task_index=0 behave=goto legacy_choice=true eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=0 score_after=36 marginal_score=36 utility=36 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[GuardedDecision] outcome=legacy reference=36 stop=0 safe_prefix=36 broken_prefix=-1
+
+[LOG]:[36m[3A][main-loop] goals=0/1 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[]
+[0m
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":4,"phase":"stop-rescan","task_index":0,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36}}
+[LOG]:[36m[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=0 score_after=36 marginal_score=36 utility=36 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[33m[3B][StopGate] no complete candidate plan fits before main-loop; candidate_count=0 fresh_positive=true include_goto=false
+[0m
+[DBG] goto risk@loc=2 bool=0
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":5,"phase":"must-choose-one","task_index":0,"task_label":"goto","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36}}
+[LOG]:[36m[3B][Candidate] phase=must-choose-one rank=1 task_index=0 behave=goto legacy_choice=false eligible=true complete=true actions=1 duration_ms=120 action_cost=4 score_before=0 score_after=36 marginal_score=36 utility=36 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][must-choose-one] goals=0/1 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][must-choose-one] completed_goals=[], satisfied_constraints=[]
+[0m
+stage=1
+[LOG]:[36m[3B][Deadline] phase=must-choose-one task_index=0 behave=goto can_finish=true remaining_plan_ms=120 safety_ms=300 budget_remaining_ms=4999
+[0m
+Must Choose one:goto
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":6,"task_index":0,"tasks":[0],"task_label":"goto","generated_ms":1,"world_revision":0,"selection_reason":"legacy_must_choose_one_risk","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"expected_reward":36,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=goto executed=0 total=1 remaining_utility=36 remaining_duration_ms=120
+[0m
+goto table的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=1 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":6,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":36,"utility":36},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=goto succeeded=true executed=1 total=1 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[32mTask done
+ Behave:[35mgoto[0m
+ConditionX:[35m(Sort:table,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:0 plate:0)[0m[33m(2 table)[0m
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=36, action_cost=4, elapsed=1ms, remaining=4999ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:goto], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:1    Expect Num:1
+[LOG]:[36m[3A][final] goals=1/1 (unknown=0), constraints=0/0 (unknown=0), base_score=36, action_cost=4, elapsed=1ms, remaining=4999ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:goto], satisfied_constraints=[]
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=3 unique=3 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):[33m(2 cupboard inside:[] Closed)[0m(4 cup)
+Pos  3:(T):[33m(3 closet inside:[] Open)[0m
+UnknownPos:
+
+Task:
+Behave:[35mopen[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mclose[0m
+ConditionX:[35m(Sort:closet,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mpickup[0m
+ConditionX:[35m(Sort:cup,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+3
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":1,"phase":"main-loop","task_index":0,"task_label":"open","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=open legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"main-loop","task_index":1,"task_label":"close","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=2 task_index=1 behave=close legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":3,"phase":"main-loop","task_index":2,"task_label":"pickup","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=3 task_index=2 behave=pickup legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/3 (unknown=0), constraints=0/0 (unknown=0), base_score=0, action_cost=0, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=open can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=5000
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":1,"task_index":0,"tasks":[0],"task_label":"open","generated_ms":0,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34},"expected_reward":34,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"container_state","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=open executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+open cupboard的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:Open(2,cupboard)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Open executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mopen[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":1,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=open succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":5,"phase":"main-loop","task_index":2,"task_label":"pickup","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":72,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=2 behave=pickup legacy_choice=false eligible=true complete=true actions=1 duration_ms=100 action_cost=2 score_before=34 score_after=72 marginal_score=38 utility=38 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":4,"phase":"main-loop","task_index":1,"task_label":"close","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":68,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=2 task_index=1 behave=close legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=34 score_after=68 marginal_score=34 utility=34 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=1/3 (unknown=0), constraints=0/0 (unknown=0), base_score=34, action_cost=6, elapsed=0ms, remaining=5000ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:open], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=1 behave=close can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=5000
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":4,"task_index":1,"tasks":[1],"task_label":"close","generated_ms":0,"world_revision":2,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":68,"utility":34},"expected_reward":68,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"action_success","verified":true},{"object_id":2,"fact":"container_state","source":"action_success","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=1 behave=close executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+close closet的风险系数是：0
+[LOG]:Move(3)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:(3,closet) has closed
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Close executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mclose[0m
+ConditionX:[35m(Sort:closet,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":4,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":68,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":68,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=1 behave=close succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":6,"phase":"main-loop","task_index":2,"task_label":"pickup","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":102,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=2 behave=pickup legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=68 score_after=102 marginal_score=34 utility=34 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/3 (unknown=0), constraints=0/0 (unknown=0), base_score=68, action_cost=12, elapsed=1ms, remaining=4999ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:open,1:close], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=2 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=4999
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":6,"task_index":2,"tasks":[2],"task_label":"pickup","generated_ms":1,"world_revision":4,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":102,"utility":34},"expected_reward":102,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"action_success","verified":true},{"object_id":2,"fact":"container_state","source":"action_success","verified":true},{"object_id":3,"fact":"location","source":"action_success","verified":true},{"object_id":3,"fact":"container_state","source":"action_success","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=2 behave=pickup executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+pickup cup的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=2 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PickUp(4,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=2 action=PickUp executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mpickup[0m
+ConditionX:[35m(Sort:cup,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":6,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":102,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":102,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=2 behave=pickup succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:4 plate:0)[0m[33m(2 cupboard inside:[] Open)[0m(4 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=3/3 (unknown=0), constraints=0/0 (unknown=0), base_score=102, action_cost=18, elapsed=1ms, remaining=4999ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:open,1:close,2:pickup], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:3    Expect Num:3
+[LOG]:[36m[3A][final] goals=3/3 (unknown=0), constraints=0/0 (unknown=0), base_score=102, action_cost=18, elapsed=1ms, remaining=4999ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:open,1:close,2:pickup], satisfied_constraints=[]
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=3 unique=3 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):[33m(2 cupboard inside:[] Closed)[0m(4 cup)
+Pos  3:(T):[33m(3 closet inside:[] Open)[0m
+UnknownPos:
+
+Task:
+Behave:[35mopen[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mclose[0m
+ConditionX:[35m(Sort:closet,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mpickup[0m
+ConditionX:[35m(Sort:cup,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+3
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"guarded","task_index":0,"task_label":"open","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=1 task_index=0 behave=open legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":3,"phase":"guarded","task_index":1,"task_label":"close","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=2 task_index=1 behave=close legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":4,"phase":"guarded","task_index":2,"task_label":"pickup","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=3 task_index=2 behave=pickup legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":18,"task_index":1,"tasks":[1,0,2],"task_label":"close","generated_ms":2,"world_revision":0,"selection_reason":"guarded_task_group","prediction":{"goal_gain":3,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":5,"action_cost":14,"final_reward":106,"utility":106},"expected_reward":106,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"container_state","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=1 behave=close executed=0 total=5 remaining_utility=106 remaining_duration_ms=540
+[0m
+close closet的风险系数是：0
+[LOG]:Move(3)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=1 total=5 remaining_utility=110 remaining_duration_ms=420 can_finish=true
+[0m
+[LOG]:(3,closet) has closed
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Close executed=2 total=5 remaining_utility=112 remaining_duration_ms=320 can_finish=true
+[0m
+open cupboard的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=3 total=5 remaining_utility=76 remaining_duration_ms=200 can_finish=true
+[0m
+[LOG]:Open(2,cupboard)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Open executed=4 total=5 remaining_utility=78 remaining_duration_ms=100 can_finish=true
+[0m
+pickup cup的风险系数是：0
+[LOG]:PickUp(4,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=PickUp executed=5 total=5 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":18,"prediction":{"goal_gain":3,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":5,"action_cost":14,"final_reward":106,"utility":106},"actual":{"goal_gain":3,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":5,"action_cost":14,"final_reward":106,"utility":106},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=1 behave=close succeeded=true executed=5 total=5 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[GuardedDecision] outcome=group group=[1,0,2] reference=102 stop=0 predicted=106 continuation_actions=5 terminal=after_group
+
+-----check check check-----
+
+Sovled Task Num:3    Expect Num:3
+[LOG]:[36m[3A][final] goals=3/3 (unknown=0), constraints=0/0 (unknown=0), base_score=106, action_cost=14, elapsed=3ms, remaining=4997ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:open,1:close,2:pickup], satisfied_constraints=[]
+[0m
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[PlannerVersion] 1.6.4
+#(RDFW): Starting new test - verifying clean state
+#(RDFW): Pre-test state verification completed
+[32m
+[0m--------------------------------------------
+Ready to Parse Env Infos.
+
+ParseEnv finished
+--------------------------------------------
+Ready to Parse Tasks and Cons.
+[LOG]:[Preflight] task raw=3 unique=3 duplicate=0 rejected=0; constraint raw=0 unique=0 duplicate=0 rejected=0; world_errors=0
+Pos  0:(T):
+Pos  1:(T):[32m(robot hold:0 plate:0)[0m[33m(1 human)[0m
+Pos  2:(T):[33m(2 cupboard inside:[] Closed)[0m(4 cup)
+Pos  3:(T):[33m(3 closet inside:[] Open)[0m
+UnknownPos:
+
+Task:
+Behave:[35mopen[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mclose[0m
+ConditionX:[35m(Sort:closet,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+Behave:[35mpickup[0m
+ConditionX:[35m(Sort:cup,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+
+Info:
+
+Not_Info:
+
+Not_Task:
+
+NotNot_Info:
+Parse Tasks, Cons and Infos finished.
+--------------------------------------------
+Ready to Cons  plan
+cons_plan finished
+--------------------------------------------
+taskoptimization finished
+--------------------------------------------
+3
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":2,"phase":"guarded","task_index":0,"task_label":"open","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=1 task_index=0 behave=open legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":3,"phase":"guarded","task_index":1,"task_label":"close","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=2 task_index=1 behave=close legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":4,"phase":"guarded","task_index":2,"task_label":"pickup","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":34,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=guarded rank=3 task_index=2 behave=pickup legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":18,"task_index":1,"tasks":[1,0,2],"task_label":"close","generated_ms":2,"world_revision":0,"selection_reason":"guarded_task_group","prediction":{"goal_gain":3,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":5,"action_cost":14,"final_reward":106,"utility":106},"expected_reward":106,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"container_state","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=1 behave=close executed=0 total=5 remaining_utility=106 remaining_duration_ms=540
+[0m
+close closet的风险系数是：0
+[LOG]:Move(3)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=1 total=5 remaining_utility=110 remaining_duration_ms=420 can_finish=true
+[0m
+[LOG]:[GuardedExecution] replan task=1 reason=Move failed in approved task group
+
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":18,"prediction":{"goal_gain":3,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":5,"action_cost":14,"final_reward":106,"utility":106},"actual":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":0,"maintained_constraints":0,"action_count":1,"action_cost":4,"final_reward":-4,"utility":-4},"succeeded":false,"failed_action":true,"failure_reasons":["Move_returned_false"],"error":{"goal_gain":-3,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":-10,"utility":-110}}
+[LOG]:[36m[3B][Remaining] event=end task_index=1 behave=close succeeded=false executed=1 total=5 remaining_utility=110 remaining_duration_ms=420
+[0m
+[LOG]:[GuardedDecision] outcome=replan group=[1,0,2] reference=102 stop=0 predicted=106 continuation_actions=5 terminal=after_group
+
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":19,"phase":"main-loop","task_index":0,"task_label":"open","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":30,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=open legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=-4 score_after=30 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":20,"phase":"main-loop","task_index":1,"task_label":"close","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":30,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=2 task_index=1 behave=close legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=-4 score_after=30 marginal_score=34 utility=34 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":21,"phase":"main-loop","task_index":2,"task_label":"pickup","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":30,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=3 task_index=2 behave=pickup legacy_choice=false eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=-4 score_after=30 marginal_score=34 utility=34 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=0/3 (unknown=0), constraints=0/0 (unknown=0), base_score=-4, action_cost=4, elapsed=3ms, remaining=4997ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=0 behave=open can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=4997
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":19,"task_index":0,"tasks":[0],"task_label":"open","generated_ms":3,"world_revision":0,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":30,"utility":34},"expected_reward":30,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"container_state","source":"initial","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=0 behave=open executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+open cupboard的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:Open(2,cupboard)
+[LOG]:[36m[3B][Remaining] event=action task_index=0 action=Open executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mopen[0m
+ConditionX:[35m(Sort:cupboard,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":19,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":30,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":1,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":30,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=0 behave=open succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":23,"phase":"main-loop","task_index":2,"task_label":"pickup","legacy_choice":false,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":1,"action_cost":2,"final_reward":68,"utility":38}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=2 behave=pickup legacy_choice=false eligible=true complete=true actions=1 duration_ms=100 action_cost=2 score_before=30 score_after=68 marginal_score=38 utility=38 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":22,"phase":"main-loop","task_index":1,"task_label":"close","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":64,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=2 task_index=1 behave=close legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=30 score_after=64 marginal_score=34 utility=34 gained_goals=[1] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=1/3 (unknown=0), constraints=0/0 (unknown=0), base_score=30, action_cost=10, elapsed=3ms, remaining=4997ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:open], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=1 behave=close can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=4997
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":22,"task_index":1,"tasks":[1],"task_label":"close","generated_ms":3,"world_revision":2,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":64,"utility":34},"expected_reward":64,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"action_success","verified":true},{"object_id":2,"fact":"container_state","source":"action_success","verified":true},{"object_id":3,"fact":"location","source":"initial","verified":true},{"object_id":3,"fact":"container_state","source":"initial","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=1 behave=close executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+close closet的风险系数是：0
+[LOG]:Move(3)
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:(3,closet) has closed
+[LOG]:[36m[3B][Remaining] event=action task_index=1 action=Close executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mclose[0m
+ConditionX:[35m(Sort:closet,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":22,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":64,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":2,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":64,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=1 behave=close succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_considered","candidate_id":24,"phase":"main-loop","task_index":2,"task_label":"pickup","legacy_choice":true,"eligible":true,"dry_run_succeeded":true,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":98,"utility":34}}
+[LOG]:[36m[3B][Candidate] phase=main-loop rank=1 task_index=2 behave=pickup legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=64 score_after=98 marginal_score=34 utility=34 gained_goals=[2] lost_goals=[] broken_constraints=[] preserved_constraints=[]
+[0m
+[LOG]:[36m[3A][main-loop] goals=2/3 (unknown=0), constraints=0/0 (unknown=0), base_score=64, action_cost=16, elapsed=4ms, remaining=4996ms
+[0m
+[LOG]:[36m[3A][main-loop] completed_goals=[0:open,1:close], satisfied_constraints=[]
+[0m
+[LOG]:[36m[3B][Deadline] phase=main-loop task_index=2 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=4996
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_selected","candidate_id":24,"task_index":2,"tasks":[2],"task_label":"pickup","generated_ms":3,"world_revision":4,"selection_reason":"legacy_main_loop_task_order","prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":98,"utility":34},"expected_reward":98,"evidence":[{"object_id":1,"fact":"location","source":"initial","verified":true},{"object_id":2,"fact":"location","source":"action_success","verified":true},{"object_id":2,"fact":"container_state","source":"action_success","verified":true},{"object_id":3,"fact":"location","source":"action_success","verified":true},{"object_id":3,"fact":"container_state","source":"action_success","verified":true},{"object_id":4,"fact":"location","source":"initial","verified":true},{"object_id":4,"fact":"inside","source":"initial","verified":true}]}
+[LOG]:[36m[3B][Remaining] event=begin task_index=2 behave=pickup executed=0 total=2 remaining_utility=34 remaining_duration_ms=220
+[0m
+pickup cup的风险系数是：0
+[LOG]:Move(2)
+[LOG]:[36m[3B][Remaining] event=action task_index=2 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true
+[0m
+[LOG]:PickUp(4,cup)
+[LOG]:[36m[3B][Remaining] event=action task_index=2 action=PickUp executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true
+[0m
+[LOG]:[32mTask done
+ Behave:[35mpickup[0m
+ConditionX:[35m(Sort:cup,Color:)[0m
+ConditionY:[35m(Sort:,Color:)[0m
+[0m
+[LOG]:[DecisionFeedback] {"schema":"decision_feedback.v1","event":"candidate_result","candidate_id":24,"prediction":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":98,"utility":34},"actual":{"goal_gain":1,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"completed_goals":3,"maintained_constraints":0,"action_count":2,"action_cost":6,"final_reward":98,"utility":34},"succeeded":true,"failed_action":false,"failure_reasons":[],"error":{"goal_gain":0,"goal_loss":0,"constraint_gain":0,"constraint_loss":0,"action_cost":0,"utility":0}}
+[LOG]:[36m[3B][Remaining] event=end task_index=2 behave=pickup succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0
+[0m
+-----check check check-----
+Pos  0:(T):
+Pos  1:(T):[33m(1 human)[0m
+Pos  2:(T):[32m(robot hold:4 plate:0)[0m[33m(2 cupboard inside:[] Open)[0m(4 cup)
+Pos  3:(T):[33m(3 closet inside:[] Closed)[0m
+UnknownPos:
+
+[LOG]:[36m[3A][multi-goto] goals=3/3 (unknown=0), constraints=0/0 (unknown=0), base_score=98, action_cost=22, elapsed=4ms, remaining=4996ms
+[0m
+[LOG]:[36m[3A][multi-goto] completed_goals=[0:open,1:close,2:pickup], satisfied_constraints=[]
+[0m
+[LOG]:[32m[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto
+[0m
+
+Sovled Task Num:3    Expect Num:3
+[LOG]:[36m[3A][final] goals=3/3 (unknown=0), constraints=0/0 (unknown=0), base_score=98, action_cost=22, elapsed=4ms, remaining=4996ms
+[0m
+[LOG]:[36m[3A][final] completed_goals=[0:open,1:close,2:pickup], satisfied_constraints=[]
+[0m
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"guarded_decision_tests" end time: Sep 27 22:58 CST
+"guarded_decision_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/31 Testing: score_semantics_tests
+9/31 Test: score_semantics_tests
+Command: "/tmp/rdfw-164-unit/score_semantics_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"score_semantics_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+putdown_inside internal=40:40 expected=40:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+puton_inside_explicit_at internal=40:40 expected=40:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+inside_does_not_imply_at internal=0:0 expected=0:0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+initial_not_checked internal=60:60 expected=60:60
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:AskLoc(3)
+[LOG]:[32m[SenseCurrentLocationOnly] Location 1 marked as sensed
+[0m
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=1 expected at 1 but not sensed, set location UNKNOWN
+[0m
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=2 expected at 1 but not sensed, set location UNKNOWN
+[0m
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=3 expected at 1 but not sensed, set location UNKNOWN
+[0m
+observations_not_persisted internal=57:57 expected=57:57
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+first_transition_restores internal=58:58 expected=58:58
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+[LOG]:(2,cupboard) has closed
+permanent_loss internal=36:36 expected=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+task_constraint_checks_state internal=36:36 expected=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+negate_each_binding internal=36:36 expected=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+zero_goal_gate internal=0:0 expected=0:0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+ambiguous_choice internal=0:40 expected=0:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+all_choices_true internal=40:40 expected=40:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+failed_action_charged internal=58:58 expected=58:58
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+on_while_carried internal=56:56 expected=56:56
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+pickup_constraint_without_pickup internal=36:36 expected=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:PutIn(3,cup)(2,cupboard)
+putin_removes_at internal=38:38 expected=38:38
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+score semantics tests passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"score_semantics_tests" end time: Sep 27 22:58 CST
+"score_semantics_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/31 Testing: interval_gate_tests
+10/31 Test: interval_gate_tests
+Command: "/tmp/rdfw-164-unit/interval_gate_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit
+"interval_gate_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[TradeoffDecision] phase=interval_test task=0 decision=execute reason=legacy_priority lower=-2 upper=38
+
+[LOG]:[TradeoffDecision] phase=interval_test task=0 decision=defer reason=legacy_priority lower=-2 upper=38
+
+[LOG]:[TradeoffDecision] phase=interval_test task=0 decision=execute priority=-2 incumbent_priority=0 lower=-2 upper=38 group=1
+
+[LOG]:[TradeoffDecision] phase=interval_test task=0 decision=skip reason=strict_interval_dominance best_priority=-2 incumbent_priority=39 search_ms=0
+
+[LOG]:[TradeoffDecision] phase=interval_test task=0 decision=execute priority=-2 incumbent_priority=38 lower=-2 upper=38 group=1
+
+[LOG]:[TradeoffDecision] phase=interval_test task=0 decision=execute priority=-2 incumbent_priority=0 lower=-2 upper=38 group=1
+
+[LOG]:[3B][Deadline] phase=interval_test task_index=0 can_finish=false reason=incomplete_projection actions=0
+
+[LOG]:[33m[3B][Deadline] phase=interval_test task_index=0 behave=close can_finish=false remaining_plan_ms=100 safety_ms=300 budget_remaining_ms=50
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"interval_gate_tests" end time: Sep 27 22:58 CST
+"interval_gate_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/31 Testing: state_invariant_0
+11/31 Test: state_invariant_0
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "0"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_0" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_0" end time: Sep 27 22:58 CST
+"state_invariant_0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/31 Testing: state_invariant_1
+12/31 Test: state_invariant_1
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "1"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_1" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_1" end time: Sep 27 22:58 CST
+"state_invariant_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/31 Testing: state_invariant_2
+13/31 Test: state_invariant_2
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "2"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_2" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:PickUp(3,cup)
+[LOG]:ToPlate(3,cup)
+[LOG]:Move(5)
+[LOG]:FromPlate(3,cup)
+[LOG]:PutDown(3,cup)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_2" end time: Sep 27 22:58 CST
+"state_invariant_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/31 Testing: state_invariant_3
+14/31 Test: state_invariant_3
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "3"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_3" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:PickUp(3,cup)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_3" end time: Sep 27 22:58 CST
+"state_invariant_3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/31 Testing: state_invariant_4
+15/31 Test: state_invariant_4
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "4"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_4" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_4" end time: Sep 27 22:58 CST
+"state_invariant_4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/31 Testing: state_invariant_5
+16/31 Test: state_invariant_5
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "5"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_5" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+[LOG]:PickUp(3,cup)
+[LOG]:ToPlate(3,cup)
+[LOG]:FromPlate(3,cup)
+[LOG]:PutDown(3,cup)
+[LOG]:PutIn(3,cup)(2,cupboard)
+[LOG]:TakeOut(3,cup)(2,cupboard)
+[LOG]:Move(5)
+[LOG]:[31mMove: TimedPlatformCall([&]() { return Plug::Move(5); }) failed
+[0m
+[LOG]:(2,cupboard) has closed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_5" end time: Sep 27 22:58 CST
+"state_invariant_5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/31 Testing: state_invariant_6
+17/31 Test: state_invariant_6
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "6"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_6" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+takeout cup的风险系数是：0
+[LOG]:TakeOut(3,cup)(2,cupboard)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_6" end time: Sep 27 22:58 CST
+"state_invariant_6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/31 Testing: state_invariant_7
+18/31 Test: state_invariant_7
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "7"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_7" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[SenseCurrentLocationOnly] Location 1 marked as sensed
+[0m
+[LOG]:[SenseCurrentLocationOnly] Container 2 detected at location 1
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=1 expected at 1 but not sensed, set location UNKNOWN
+[0m
+[LOG]:[32m[SenseCurrentLocationOnly] Location 1 marked as sensed
+[0m
+[LOG]:[SenseCurrentLocationOnly] Container 2 detected at location 1
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_7" end time: Sep 27 22:58 CST
+"state_invariant_7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/31 Testing: state_invariant_8
+19/31 Test: state_invariant_8
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "8"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_8" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[MustNear] relation obj 2 <-> obj 4
+[0m
+[LOG]:[32m[MustNear] inferred obj 4 at location 4
+[0m
+[LOG]:[32m[MustNear] correction done.
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_8" end time: Sep 27 22:58 CST
+"state_invariant_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/31 Testing: state_invariant_9
+20/31 Test: state_invariant_9
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "9"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_9" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:AskLoc(3)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_9" end time: Sep 27 22:58 CST
+"state_invariant_9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/31 Testing: state_invariant_10
+21/31 Test: state_invariant_10
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "10"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_10" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[SenseCurrentLocationOnly] Location 1 marked as sensed
+[0m
+[LOG]:[SenseCurrentLocationOnly] Container 2 detected at location 1
+[LOG]:[SenseCurrentLocationOnly] Object 3 detected at location 1
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=1 expected at 1 but not sensed, set location UNKNOWN
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_10" end time: Sep 27 22:58 CST
+"state_invariant_10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/31 Testing: state_invariant_11
+22/31 Test: state_invariant_11
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "11"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_11" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+[LOG]:TakeOut(3,cup)(2,cupboard)
+[LOG]:PutIn(3,cup)(2,cupboard)
+[LOG]:(2,cupboard) has closed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_11" end time: Sep 27 22:58 CST
+"state_invariant_11" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/31 Testing: state_invariant_12
+23/31 Test: state_invariant_12
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "12"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_12" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:TakeOut(3,cup)(2,cupboard)
+[LOG]:PutIn(3,cup)(2,cupboard)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_12" end time: Sep 27 22:58 CST
+"state_invariant_12" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/31 Testing: state_invariant_13
+24/31 Test: state_invariant_13
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "13"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_13" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(5)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_13" end time: Sep 27 22:58 CST
+"state_invariant_13" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/31 Testing: state_invariant_14
+25/31 Test: state_invariant_14
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "14"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_14" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_14" end time: Sep 27 22:58 CST
+"state_invariant_14" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/31 Testing: state_invariant_15
+26/31 Test: state_invariant_15
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "15"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_15" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+[LOG]:PickUp(3,cup)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_15" end time: Sep 27 22:58 CST
+"state_invariant_15" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/31 Testing: state_invariant_16
+27/31 Test: state_invariant_16
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "16"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_16" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[MustNear] relation obj 2 <-> obj 4
+[0m
+[LOG]:[32m[MustNear] inferred obj 4 at location 4
+[0m
+[LOG]:[32m[MustNear] correction done.
+[0m
+[LOG]:[33m[MustNear] component 2 has conflicting/insufficient evidence; not propagated
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_16" end time: Sep 27 22:58 CST
+"state_invariant_16" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/31 Testing: state_invariant_17
+28/31 Test: state_invariant_17
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "17"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_17" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+x: 3 y: 2
+obj_to_cont[x]: 2
+sm->inside: 2
+[LOG]:[32m[MustIn] (direct) set obj 3 @ 4 (in 2)
+[0m
+[LOG]:[32m[MustIn] correction done.
+[0m
+[LOG]:Open(2,cupboard)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_17" end time: Sep 27 22:58 CST
+"state_invariant_17" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/31 Testing: state_invariant_18
+29/31 Test: state_invariant_18
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "18"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_18" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[SenseCurrentLocationOnly] Location 1 marked as sensed
+[0m
+[LOG]:[SenseCurrentLocationOnly] Container 2 detected at location 1
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=1 expected at 1 but not sensed, set location UNKNOWN
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_18" end time: Sep 27 22:58 CST
+"state_invariant_18" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/31 Testing: state_invariant_19
+30/31 Test: state_invariant_19
+Command: "/tmp/rdfw-164-unit/state_invariant_tests" "/tmp/rdfw-164-unit/words.txt" "19"
+Directory: /tmp/rdfw-164-unit
+"state_invariant_19" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:[32m[AutoOpenClose] set container 2 open (by notnot)
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_invariant_19" end time: Sep 27 22:58 CST
+"state_invariant_19" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/31 Testing: official_score_semantics_tests
+31/31 Test: official_score_semantics_tests
+Command: "/tmp/rdfw-164-unit/official_score_semantics_tests" "/tmp/rdfw-164-unit/words.txt"
+Directory: /tmp/rdfw-164-unit/official-semantics
+"official_score_semantics_tests" start time: Sep 27 22:58 CST
+Output:
+----------------------------------------------------------
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+putdown_inside internal=40:40 expected=40:40
+SDK putdown_inside official=40 bounds=40:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+puton_inside_explicit_at internal=40:40 expected=40:40
+SDK puton_inside_explicit_at official=40 bounds=40:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+inside_does_not_imply_at internal=0:0 expected=0:0
+SDK inside_does_not_imply_at official=0 bounds=0:0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+initial_not_checked internal=60:60 expected=60:60
+SDK initial_not_checked official=60 bounds=60:60
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:AskLoc(3)
+[LOG]:[32m[SenseCurrentLocationOnly] Location 1 marked as sensed
+[0m
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=1 expected at 1 but not sensed, set location UNKNOWN
+[0m
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=2 expected at 1 but not sensed, set location UNKNOWN
+[0m
+[LOG]:[33m[SenseCurrentLocationOnly] Object id=3 expected at 1 but not sensed, set location UNKNOWN
+[0m
+observations_not_persisted internal=57:57 expected=57:57
+SDK observations_not_persisted official=57 bounds=57:57
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+first_transition_restores internal=58:58 expected=58:58
+SDK first_transition_restores official=58 bounds=58:58
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+[LOG]:(2,cupboard) has closed
+permanent_loss internal=36:36 expected=36:36
+SDK permanent_loss official=36 bounds=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+task_constraint_checks_state internal=36:36 expected=36:36
+SDK task_constraint_checks_state official=36 bounds=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+negate_each_binding internal=36:36 expected=36:36
+SDK negate_each_binding official=36 bounds=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+zero_goal_gate internal=0:0 expected=0:0
+SDK zero_goal_gate official=0 bounds=0:0
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+ambiguous_choice internal=0:40 expected=0:40
+SDK ambiguous_choice official=0 bounds=0:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+all_choices_true internal=40:40 expected=40:40
+SDK all_choices_true official=40 bounds=40:40
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Open(2,cupboard)
+failed_action_charged internal=58:58 expected=58:58
+SDK failed_action_charged official=58 bounds=58:58
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+on_while_carried internal=56:56 expected=56:56
+SDK on_while_carried official=56 bounds=56:56
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:Move(2)
+pickup_constraint_without_pickup internal=36:36 expected=36:36
+SDK pickup_constraint_without_pickup official=36 bounds=36:36
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+[LOG]:PutIn(3,cup)(2,cupboard)
+putin_removes_at internal=38:38 expected=38:38
+SDK putin_removes_at official=38 bounds=38:38
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+score semantics tests passed
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"official_score_semantics_tests" end time: Sep 27 22:58 CST
+"official_score_semantics_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 27 22:58 CST

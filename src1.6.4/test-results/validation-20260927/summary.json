@@ -1,0 +1,41 @@
+{
+  "full": {
+    "pairs": 86,
+    "identical_base": 86,
+    "identical_actions": 86,
+    "gains": 0,
+    "losses": 0,
+    "invalid": 0,
+    "timeouts": 0,
+    "cost_mismatches": 0,
+    "lower_exceeds_official": 0,
+    "raw_score_differences": 5,
+    "identical_goal_constraint_counts": 86
+  },
+  "target": {
+    "pairs": 18,
+    "identical_base": 18,
+    "identical_actions": 18,
+    "gains": 0,
+    "losses": 0,
+    "invalid": 0,
+    "timeouts": 0,
+    "cost_mismatches": 0,
+    "lower_exceeds_official": 0,
+    "raw_score_differences": 2,
+    "identical_goal_constraint_counts": 18
+  },
+  "off": {
+    "pairs": 14,
+    "identical_base": 14,
+    "identical_actions": 14,
+    "gains": 0,
+    "losses": 0,
+    "invalid": 0,
+    "timeouts": 0,
+    "cost_mismatches": 0,
+    "lower_exceeds_official": 0,
+    "raw_score_differences": 0,
+    "identical_goal_constraint_counts": 14
+  }
+}

@@ -1,0 +1,28 @@
+Scanning dependencies of target rdfw_test_core
+[  2%] Building CXX object CMakeFiles/rdfw_test_core.dir/mnt/d/FILES_for_Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/rdfw.cpp.o
+[  5%] Linking CXX static library librdfw_test_core.a
+[ 29%] Built target rdfw_test_core
+[ 35%] Linking CXX executable interval_gate_tests
+[ 35%] Linking CXX executable score_semantics_tests
+[ 38%] Linking CXX executable state_invariant_tests
+[ 41%] Linking CXX executable task_group_projection_tests
+[ 44%] Built target interval_gate_tests
+[ 50%] Built target task_group_projection_tests
+[ 50%] Built target score_semantics_tests
+[ 52%] Built target state_invariant_tests
+[ 55%] Linking CXX executable task_group_search_tests
+[ 58%] Linking CXX executable question_preflight_tests
+[ 61%] Linking CXX executable three_a_tests
+[ 64%] Linking CXX executable official_score_semantics_tests
+[ 67%] Built target question_preflight_tests
+[ 70%] Built target task_group_search_tests
+[ 76%] Linking CXX executable legal_preservation_tests
+[ 76%] Linking CXX executable guarded_decision_tests
+[ 79%] Built target three_a_tests
+[ 82%] Built target official_score_semantics_tests
+[ 85%] Linking CXX executable input_safety_tests
+[ 88%] Linking CXX executable recovery_evidence_tests
+[ 91%] Built target legal_preservation_tests
+[ 94%] Built target guarded_decision_tests
+[ 97%] Built target input_safety_tests
+[100%] Built target recovery_evidence_tests

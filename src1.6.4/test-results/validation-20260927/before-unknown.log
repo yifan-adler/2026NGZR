@@ -1,0 +1,16 @@
+Test project /tmp/rdfw-164-unit
+    Start 29: state_invariant_18
+1/1 Test #29: state_invariant_18 ...............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:211: int main(int, char**): Assertion `s->inside==2 && s->location==1' failed.
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+The following tests FAILED:
+	 29 - state_invariant_18 (Child aborted)

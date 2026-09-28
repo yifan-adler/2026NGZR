@@ -1,0 +1,226 @@
+[
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/03.xml",
+    "sha256": "922d7f053ac90009711033704a48d3ff08aab9d5529d13f738042faf048c0f4b",
+    "stage": 2,
+    "mode": "it",
+    "repeat": 1,
+    "pair": [
+      {
+        "version": "src1.6.3",
+        "status": "ok",
+        "startup_attempt": null,
+        "goals": 1,
+        "constraints": 15,
+        "cost": 6,
+        "base": 334,
+        "official": 430,
+        "timed_out": false,
+        "elapsed_ms": 193,
+        "internal_base": 34,
+        "internal_cost": 6,
+        "timing": [],
+        "tradeoff": [
+          "[TradeoffDecision] phase=main-loop task=0 decision=execute reason=legacy_priority lower=34 upper=334"
+        ],
+        "deadlines": [
+          "[3B][Deadline] phase=main-loop task_index=0 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=5000"
+        ],
+        "trace": {
+          "actions": [
+            "Move 8",
+            "PickUp 12"
+          ],
+          "observations": [],
+          "parsed": "Behave:pickup\nConditionX:(Sort:cup,Color:black)\nConditionY:(Sort:,Color:)\n\nInfo:\n\nNot_Info:\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:couch,Color:)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:chair,Color:)\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:teapoy,Color:)\n\nNot_Task:\nBehave:goto\nConditionX:(Sort:table,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:chair,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:couch,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:teapoy,Color:)\nConditionY:(Sort:,Color:)\n\nNotNot_Info:\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:remotecontrol,Color:yellow)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:cup,Color:black)",
+          "decisions": [
+            "[LOG]:[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][main-loop] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][main-loop] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Deadline] phase=main-loop task_index=0 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=<clock>",
+            "[LOG]:[3B][Remaining] event=begin task_index=0 behave=pickup executed=0 total=2 remaining_utility=34 remaining_duration_ms=220",
+            "pickup cup的风险系数是：0",
+            "[LOG]:[3B][Remaining] event=action task_index=0 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true",
+            "[LOG]:[3B][Remaining] event=action task_index=0 action=PickUp executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true",
+            "[LOG]:Task done",
+            "[LOG]:[3B][Remaining] event=end task_index=0 behave=pickup succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0",
+            "[LOG]:[3A][multi-goto] goals=1/1 (unknown=0), constraints=0/15 (unknown=15), base_score=34, action_cost=6, remaining=<clock>",
+            "[LOG]:[3A][multi-goto] completed_goals=[0:pickup], satisfied_constraints=[]",
+            "[LOG]:[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto",
+            "[LOG]:[3A][final] goals=1/1 (unknown=0), constraints=0/15 (unknown=15), base_score=34, action_cost=6, remaining=<clock>",
+            "[LOG]:[3A][final] completed_goals=[0:pickup], satisfied_constraints=[]"
+          ],
+          "preflight": [
+            "[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=15 unique=15 duplicate=0 rejected=0; world_errors=0"
+          ],
+          "errors": []
+        },
+        "output": "/tmp/rdfw-164-final-full/src1.6.3/realcompetiton_2024-03-it-r1"
+      },
+      {
+        "version": "src1.6.4",
+        "status": "ok",
+        "startup_attempt": null,
+        "goals": 0,
+        "constraints": 0,
+        "cost": 0,
+        "base": 0,
+        "official": 98,
+        "timed_out": false,
+        "elapsed_ms": 0,
+        "internal_base": 0,
+        "internal_cost": 0,
+        "timing": [],
+        "tradeoff": [],
+        "deadlines": [],
+        "trace": {
+          "actions": [],
+          "observations": [],
+          "parsed": "Behave:pickup\nConditionX:(Sort:cup,Color:black)\nConditionY:(Sort:,Color:)\n\nInfo:\n\nNot_Info:\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:couch,Color:)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:chair,Color:)\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:teapoy,Color:)\n\nNot_Task:\nBehave:goto\nConditionX:(Sort:table,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:chair,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:couch,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:teapoy,Color:)\nConditionY:(Sort:,Color:)\n\nNotNot_Info:\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:remotecontrol,Color:yellow)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:cup,Color:black)",
+          "decisions": [
+            "[LOG]:[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][main-loop] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][main-loop] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before main-loop; candidate_count=1 fresh_positive=false include_goto=false",
+            "[LOG]:[3B][Candidate] phase=must-choose-one rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][must-choose-one] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][must-choose-one] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before must-choose-one; candidate_count=1 fresh_positive=false include_goto=true",
+            "[LOG]:[3B][Candidate] phase=check-phase rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][check-phase] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][check-phase] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before check-phase; candidate_count=1 fresh_positive=false include_goto=false",
+            "[LOG]:[3B][Candidate] phase=multi-goto rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][multi-goto] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][multi-goto] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before multi-goto; candidate_count=1 fresh_positive=false include_goto=true",
+            "[LOG]:[3B][Candidate] phase=terminal-recovery rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][final] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][final] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]"
+          ],
+          "preflight": [
+            "[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=15 unique=15 duplicate=0 rejected=0; world_errors=0"
+          ],
+          "errors": []
+        },
+        "output": "/tmp/rdfw-164-final-full/src1.6.4/realcompetiton_2024-03-it-r1"
+      }
+    ]
+  },
+  {
+    "case": "/mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/题目/realcompetiton_2024/03.xml",
+    "sha256": "922d7f053ac90009711033704a48d3ff08aab9d5529d13f738042faf048c0f4b",
+    "stage": 2,
+    "mode": "nt",
+    "repeat": 1,
+    "pair": [
+      {
+        "version": "src1.6.3",
+        "status": "ok",
+        "startup_attempt": null,
+        "goals": 1,
+        "constraints": 15,
+        "cost": 6,
+        "base": 334,
+        "official": 430,
+        "timed_out": false,
+        "elapsed_ms": 189,
+        "internal_base": 34,
+        "internal_cost": 6,
+        "timing": [],
+        "tradeoff": [
+          "[TradeoffDecision] phase=main-loop task=0 decision=execute reason=legacy_priority lower=34 upper=334"
+        ],
+        "deadlines": [
+          "[3B][Deadline] phase=main-loop task_index=0 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=5000"
+        ],
+        "trace": {
+          "actions": [
+            "Move 8",
+            "PickUp 12"
+          ],
+          "observations": [],
+          "parsed": "Behave:pickup\nConditionX:(Sort:cup,Color:black)\nConditionY:(Sort:,Color:)\n\nInfo:\n\nNot_Info:\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:couch,Color:)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:chair,Color:)\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:teapoy,Color:)\n\nNot_Task:\nBehave:goto\nConditionX:(Sort:table,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:chair,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:couch,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:teapoy,Color:)\nConditionY:(Sort:,Color:)\n\nNotNot_Info:\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:remotecontrol,Color:yellow)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:cup,Color:black)",
+          "decisions": [
+            "[LOG]:[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=true actions=2 duration_ms=220 action_cost=6 score_before=0 score_after=34 marginal_score=34 utility=34 gained_goals=[0] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][main-loop] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][main-loop] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Deadline] phase=main-loop task_index=0 behave=pickup can_finish=true remaining_plan_ms=220 safety_ms=300 budget_remaining_ms=<clock>",
+            "[LOG]:[3B][Remaining] event=begin task_index=0 behave=pickup executed=0 total=2 remaining_utility=34 remaining_duration_ms=220",
+            "pickup cup的风险系数是：0",
+            "[LOG]:[3B][Remaining] event=action task_index=0 action=Move executed=1 total=2 remaining_utility=38 remaining_duration_ms=100 can_finish=true",
+            "[LOG]:[3B][Remaining] event=action task_index=0 action=PickUp executed=2 total=2 remaining_utility=40 remaining_duration_ms=0 can_finish=true",
+            "[LOG]:Task done",
+            "[LOG]:[3B][Remaining] event=end task_index=0 behave=pickup succeeded=true executed=2 total=2 remaining_utility=0 remaining_duration_ms=0",
+            "[LOG]:[3A][multi-goto] goals=1/1 (unknown=0), constraints=0/15 (unknown=15), base_score=34, action_cost=6, remaining=<clock>",
+            "[LOG]:[3A][multi-goto] completed_goals=[0:pickup], satisfied_constraints=[]",
+            "[LOG]:[3A][StopGate] all goals are SATISFIED; normal stop before multi-goto",
+            "[LOG]:[3A][final] goals=1/1 (unknown=0), constraints=0/15 (unknown=15), base_score=34, action_cost=6, remaining=<clock>",
+            "[LOG]:[3A][final] completed_goals=[0:pickup], satisfied_constraints=[]"
+          ],
+          "preflight": [
+            "[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=15 unique=15 duplicate=0 rejected=0; world_errors=0"
+          ],
+          "errors": []
+        },
+        "output": "/tmp/rdfw-164-final-full/src1.6.3/realcompetiton_2024-03-nt-r1"
+      },
+      {
+        "version": "src1.6.4",
+        "status": "ok",
+        "startup_attempt": null,
+        "goals": 0,
+        "constraints": 0,
+        "cost": 0,
+        "base": 0,
+        "official": 98,
+        "timed_out": false,
+        "elapsed_ms": 0,
+        "internal_base": 0,
+        "internal_cost": 0,
+        "timing": [],
+        "tradeoff": [],
+        "deadlines": [],
+        "trace": {
+          "actions": [],
+          "observations": [],
+          "parsed": "Behave:pickup\nConditionX:(Sort:cup,Color:black)\nConditionY:(Sort:,Color:)\n\nInfo:\n\nNot_Info:\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:table,Color:)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:couch,Color:)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:chair,Color:)\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:teapoy,Color:)\n\nNot_Task:\nBehave:goto\nConditionX:(Sort:table,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:chair,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:couch,Color:)\nConditionY:(Sort:,Color:)\nBehave:goto\nConditionX:(Sort:teapoy,Color:)\nConditionY:(Sort:,Color:)\n\nNotNot_Info:\nBehave:near\nConditionX:(Sort:cup,Color:green)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:red)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:bottle,Color:blue)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:remotecontrol,Color:yellow)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:book,Color:white)\nConditionY:(Sort:cup,Color:black)\nBehave:near\nConditionX:(Sort:can,Color:blue)\nConditionY:(Sort:cup,Color:black)",
+          "decisions": [
+            "[LOG]:[3B][Candidate] phase=main-loop rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][main-loop] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][main-loop] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before main-loop; candidate_count=1 fresh_positive=false include_goto=false",
+            "[LOG]:[3B][Candidate] phase=must-choose-one rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][must-choose-one] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][must-choose-one] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before must-choose-one; candidate_count=1 fresh_positive=false include_goto=true",
+            "[LOG]:[3B][Candidate] phase=check-phase rank=1 task_index=0 behave=pickup legacy_choice=true eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][check-phase] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][check-phase] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before check-phase; candidate_count=1 fresh_positive=false include_goto=false",
+            "[LOG]:[3B][Candidate] phase=multi-goto rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][multi-goto] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][multi-goto] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][Candidate] phase=stop-rescan rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3B][StopGate] no complete candidate plan fits before multi-goto; candidate_count=1 fresh_positive=false include_goto=true",
+            "[LOG]:[3B][Candidate] phase=terminal-recovery rank=1 task_index=0 behave=pickup legacy_choice=false eligible=true complete=false actions=3 duration_ms=320 action_cost=8 score_before=0 score_after=-8 marginal_score=-8 utility=-8 gained_goals=[] lost_goals=[] broken_constraints=[] preserved_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+            "[LOG]:[3A][final] goals=0/1 (unknown=1), constraints=15/15 (unknown=15), base_score=0, action_cost=0, remaining=<clock>",
+            "[LOG]:[3A][final] completed_goals=[], satisfied_constraints=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]"
+          ],
+          "preflight": [
+            "[Preflight] task raw=1 unique=1 duplicate=0 rejected=0; constraint raw=15 unique=15 duplicate=0 rejected=0; world_errors=0"
+          ],
+          "errors": []
+        },
+        "output": "/tmp/rdfw-164-final-full/src1.6.4/realcompetiton_2024-03-nt-r1"
+      }
+    ]
+  }
+]

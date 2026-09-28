@@ -1,0 +1,673 @@
+--- src1.6.3/CMakeLists.txt
++++ src1.6.4/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-PROJECT(rdfw VERSION 1.6.3)
++PROJECT(rdfw VERSION 1.6.4)
+ # 设置指定的C++编译器版本是必须的，如果不设置，或者为OFF，则指定版本不可用时，会使用上一版本。
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ 
+@@ -34,7 +34,7 @@
+ ADD_DEPENDENCIES(example frame utility)
+ TARGET_LINK_LIBRARIES(example frame utility ${Boost_LIBRARIES})
+ 
+-option(BUILD_INPUT_SAFETY_TESTS "Build src1.6.3 input safety unit tests" OFF)
++option(BUILD_INPUT_SAFETY_TESTS "Build src1.6.4 input safety unit tests" OFF)
+ if(BUILD_INPUT_SAFETY_TESTS)
+     ADD_EXECUTABLE(input_safety_tests
+         tests/input_safety_tests.cpp
+--- src1.6.3/rdfw.cpp
++++ src1.6.4/rdfw.cpp
+@@ -314,7 +314,8 @@
+ CandidatePlan RDFW::BuildTaskGroupPlan(const std::vector<std::size_t>& group,
+                                        bool continue_legacy,
+                                        std::size_t legacy_cursor,
+-                                       bool defer_multi_goto) {
++                                       bool defer_multi_goto,
++                                       int final_move_destination) {
+     StageTimer phase_timer(StageTiming::PROJECTION);
+     const bool previous_complete_single_plan = shadow_complete_single_plan;
+     shadow_complete_single_plan = group.size() == 1 && !continue_legacy;
+@@ -571,7 +572,8 @@
+     shadow_action_sink = &actions;
+     shadow_projected_duration = std::chrono::milliseconds(0);
+     has_active_candidate = false;
+-    task_index = static_cast<int>(candidate_task_index);
++    if (final_move_destination == UNKNOWN)
++        task_index = static_cast<int>(candidate_task_index);
+     DebugLogSuppressed() = true;
+     std::cout.setstate(std::ios_base::failbit);
+     bool succeeded = true;
+@@ -583,6 +585,15 @@
+             break;
+         }
+         const std::size_t index = group[step];
++        if (final_move_destination != UNKNOWN) {
++            try {
++                succeeded = Move(static_cast<unsigned int>(final_move_destination));
++            } catch (const std::exception& error) {
++                LOG_ERROR("[Projection] final Move incomplete: %s", error.what());
++                succeeded = false;
++            }
++            break;
++        }
+         if (!tasks[index].IsUsable()) { succeeded = false; break; }
+         task_index = static_cast<int>(index);
+         try {
+@@ -726,44 +737,16 @@
+ }
+ 
+ CandidatePlan RDFW::PreviewFinalMove(unsigned int destination) {
+-    const std::vector<bool> old_eligible = constraint_eligible;
+-    const std::vector<bool> old_uncertain = constraint_uncertain;
+-    const std::vector<int> old_score_locations = score_locations;
+-    InitializeConstraintLedger();
+-    const TerminalSummary before = terminal_checker.evaluateAll(*this);
+-    const ScoreSnapshot score_before = score_evaluator.snapshot(before);
+-    const int old_location = location;
+-    const int old_hold_location = hold ? hold->location : UNKNOWN;
+-    const int old_plate_location = plate ? plate->location : UNKNOWN;
+-    const std::size_t old_revision = world_revision;
+-    const ScoreEvaluator old_evaluator = score_evaluator;
+-
+-    location = static_cast<int>(destination);
+-    if (hold) hold->location = location;
+-    if (plate) plate->location = location;
+-    score_evaluator.recordAction(ActionCategory::MOVE);
+-    UpdateConstraintLedger("Move", std::vector<unsigned int>{destination});
+-    const TerminalSummary after = terminal_checker.evaluateAll(*this);
+-    const ScoreSnapshot score_after = score_evaluator.snapshot(after);
+-
+-    location = old_location;
+-    if (hold) hold->location = old_hold_location;
+-    if (plate) plate->location = old_plate_location;
+-    constraint_eligible = old_eligible;
+-    constraint_uncertain = old_uncertain;
+-    score_locations = old_score_locations;
+-    world_revision = old_revision;
+-    score_evaluator = old_evaluator;
+-    CandidatePlan plan = CandidatePlanEvaluator::evaluate(
+-        std::numeric_limits<std::size_t>::max(), "multi-goto-final-move",
+-        true, true,
+-        std::vector<CandidateAction>{CandidateAction(
+-            "Move", std::vector<unsigned int>{destination}, ActionCategory::MOVE)},
+-        before, after, score_before, score_after);
+-    plan.candidate_id = next_candidate_id++;
+-    plan.generated_ms = static_cast<std::size_t>(deadline_manager.elapsed().count());
+-    plan.world_revision = world_revision;
+-    plan.projected_location = static_cast<int>(destination);
++    if (destination > static_cast<unsigned int>(MAX_LOCATION_ID) || tasks.empty())
++        return CandidatePlan();
++    // Project the existing Move wrapper under the same snapshot as task plans.
++    // This includes carry cleanup, evidence, Sense invalidation and derived state.
++    CandidatePlan plan = BuildTaskGroupPlan({0}, false, 0, false,
++                                           static_cast<int>(destination));
++    plan.task_index = std::numeric_limits<std::size_t>::max();
++    plan.task_label = "multi-goto-final-move";
++    plan.task_indices.clear();
++    plan.eligible = true;
+     return plan;
+ }
+ 
+@@ -1440,7 +1423,8 @@
+     const std::string action(name);
+     if (action == "Move")
+         return !arguments.empty() && arguments[0] <=
+-               static_cast<unsigned int>(MAX_LOCATION_ID);
++               static_cast<unsigned int>(MAX_LOCATION_ID) &&
++               static_cast<int>(arguments[0]) != location;
+     if (arguments.empty() || arguments[0] >= objects.size() ||
+         !objects[arguments[0]]) return false;
+ 
+@@ -1448,7 +1432,8 @@
+     if (action == "PickUp") {
+         const std::shared_ptr<SmallObject> small =
+             std::dynamic_pointer_cast<SmallObject>(objects[a]);
+-        return small && hold_id == NONE && small->location == location &&
++        return small && hold_id == NONE && plate_id != static_cast<int>(a) &&
++               small->location == location &&
+                (small->inside == NONE || small->inside == UNKNOWN);
+     }
+     if (action == "PutDown") return hold_id == static_cast<int>(a);
+@@ -1459,7 +1444,8 @@
+     if (action == "Open" || action == "Close") {
+         const std::shared_ptr<Container> container =
+             std::dynamic_pointer_cast<Container>(objects[a]);
+-        return container && container->location == location;
++        return container && container->location == location && hold_id == NONE &&
++               container->isOpen == (action == "Open" ? 0 : 1);
+     }
+     if ((action == "PutIn" || action == "TakeOut") && arguments.size() >= 2) {
+         const unsigned int b = arguments[1];
+@@ -1469,7 +1455,7 @@
+         const std::shared_ptr<Container> container =
+             std::dynamic_pointer_cast<Container>(objects[b]);
+         if (!small || !container || container->location != location ||
+-            !container->isOpen) return false;
++            container->isOpen != 1) return false;
+         if (action == "PutIn") return hold_id == static_cast<int>(a);
+         return hold_id == NONE && small->inside == static_cast<int>(b);
+     }
+@@ -1488,7 +1474,7 @@
+             static_cast<std::size_t>(small->inside) < objects.size()) {
+             const std::shared_ptr<Container> container =
+                 std::dynamic_pointer_cast<Container>(objects[small->inside]);
+-            if (container && !container->isOpen) continue;
++            if (container && container->isOpen != 1) continue;
+         }
+         sensed_ids.push_back(static_cast<unsigned int>(i));
+     }
+@@ -1726,7 +1712,7 @@
+ 
+ void RDFW::Plan() // 改
+ {
+-    LOG("[PlannerVersion] 1.6.3");
++    LOG("[PlannerVersion] 1.6.4");
+     deadline_manager.reset(deadline_manager.timeLimit());
+     StageTiming::get().reset();
+     ScopeExit timing_report([this]() { StageTiming::get().report(deadline_manager.elapsed().count(), deadline_manager.remaining().count()); });
+@@ -3538,10 +3524,13 @@
+         SenseCurrentLocationOnly(true);
+         if (HasObjectAtLocation(location, a)) return true;
+         auto small = dynamic_pointer_cast<SmallObject>(objects[a]);
+-        if (small && small->inside > 0 && HasObjectAtLocation(location, small->inside)) {
++        if (small && small->inside > 0 && IsInsideVerified(a) &&
++            HasObjectAtLocation(location, small->inside)) {
++            small->location = location;
+             MarkDirectLocationEvidence(a, true, EvidenceSource::SENSE);
+             return true;
+         }
++        if (t >= 2) return false;
+     }
+     else if(!Move(objects[a]->location))
+     {
+@@ -3553,7 +3542,9 @@
+         SenseCurrentLocationOnly(true);
+         if (HasObjectAtLocation(location, a)) return true;
+         auto small = dynamic_pointer_cast<SmallObject>(objects[a]);
+-        if (small && small->inside > 0 && HasObjectAtLocation(location, small->inside)) {
++        if (small && small->inside > 0 && IsInsideVerified(a) &&
++            HasObjectAtLocation(location, small->inside)) {
++            small->location = location;
+             MarkDirectLocationEvidence(a, true, EvidenceSource::SENSE);
+             return true;
+         }
+@@ -4873,6 +4864,8 @@
+     // 遍历感知到的物体，更新其位置
+     for (auto id : sensed_ids) {
+         if (id > 0 && id < objects.size() && objects[id] != nullptr) {
++            if (objects[id]->location != curr_loc)
++                InvalidateSenseAtLocation(objects[id]->location);
+             objects[id]->location = curr_loc;
+             MarkDirectLocationEvidence(id, true, EvidenceSource::SENSE);
+             if (objects[id]->unable_site == curr_loc) objects[id]->unable_site = UNKNOWN;
+@@ -4905,7 +4898,9 @@
+         bool visible_container_is_open = false;
+         if (sensed_container_id > 0 && sensed_container_id < objects.size()) {
+             auto visible_container = dynamic_pointer_cast<Container>(objects[sensed_container_id]);
+-            visible_container_is_open = visible_container && visible_container->isOpen;
++            // UNKNOWN cannot prove that an observed item is outside the
++            // container: the container may be open and expose its contents.
++            visible_container_is_open = visible_container && visible_container->isOpen != 0;
+         }
+ 
+         const bool relation_is_ambiguous =
+@@ -4937,7 +4932,7 @@
+     if (sensed_container_id > 0 && sensed_container_id < objects.size() && objects[sensed_container_id] != nullptr) {
+         auto cont = std::dynamic_pointer_cast<Container>(objects[sensed_container_id]);
+         if (cont) {
+-            container_is_open = cont->isOpen;
++            container_is_open = cont->isOpen == 1;
+         }
+     }
+ 
+@@ -5247,6 +5242,55 @@
+ 
+ 
+ /**====================== 原子动作 =========================== */
++void RDFW::ClearContainerMembership(const shared_ptr<SmallObject>& small) {
++    if (!small) return;
++    for (const auto& object : objects) {
++        auto container = dynamic_pointer_cast<Container>(object);
++        if (!container) continue;
++        auto& items = container->smallObjectsInside;
++        items.erase(std::remove_if(items.begin(), items.end(),
++            [&](const shared_ptr<SmallObject>& item) {
++                return item && item->id == small->id;
++            }), items.end());
++    }
++}
++
++void RDFW::ReconcileLocationRelation(const shared_ptr<SmallObject>& small) {
++    if (!small || small->inside <= 0) return;
++    auto container = dynamic_pointer_cast<Container>(GetObject(small->inside));
++    if (container && container->location != UNKNOWN && small->location != UNKNOWN &&
++        container->location != small->location) {
++        ClearContainerMembership(small);
++        small->inside = UNKNOWN;
++        SetInsideEvidence(small->id, false, EvidenceSource::EXPLICIT_INFO);
++    }
++}
++
++// A successful container action proves co-location even when the initial
++// location was misleading. Its contents inherit that location only with the
++// strength of their own inside evidence.
++void RDFW::ConfirmContainerLocation(const shared_ptr<Container>& container) {
++    if (container->location != location)
++        InvalidateSenseAtLocation(container->location);
++    container->location = location;
++    MarkDirectLocationEvidence(container->id, true);
++    for (const auto& item : container->smallObjectsInside) {
++        if (!item || item->inside != container->id) continue;
++        if (IsLocationVerified(item->id) && !IsInsideVerified(item->id) &&
++            item->location != location) continue;
++        item->location = location;
++        const bool inside_verified = IsInsideVerified(item->id);
++        // The action verifies the container, not an inside relation that was
++        // inferred from a constraint. Preserve that dependency for terminal
++        // checking if the supporting constraint later loses eligibility.
++        const EvidenceSource source = inside_verified &&
++            InsideSource(item->id) == EvidenceSource::CONSTRAINT_DERIVED
++                ? EvidenceSource::CONSTRAINT_DERIVED
++                : EvidenceSource::ACTION_SUCCESS;
++        MarkDirectLocationEvidence(item->id, inside_verified, source);
++    }
++}
++
+ bool RDFW::TakeOut(unsigned int a, unsigned int b)
+ {
+     if (!IsValidObjectId(static_cast<int>(a)) ||
+@@ -5262,6 +5306,7 @@
+     RecordActionOutcome("TakeOut", action_succeeded);
+     if (action_succeeded)
+     {
++        ClearContainerMembership(small);
+         small->inside = NONE;
+         small->location = location;
+         cont->DeleteObjectInside(small);
+@@ -5271,7 +5316,7 @@
+         EnsureEvidenceCapacity(b);
+         MarkDirectLocationEvidence(a, true);
+         SetInsideEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+-        MarkDirectLocationEvidence(b, true);
++        ConfirmContainerLocation(cont);
+         SetContainerEvidence(b, true, EvidenceSource::ACTION_SUCCESS);
+         InvalidateSenseAtLocation(location);
+         UpdateTaskList("takeout", objects[a], objects[b]);
+@@ -5299,8 +5344,9 @@
+     RecordActionOutcome("PutIn", action_succeeded);
+     if (action_succeeded)
+     {
+-
++        ClearContainerMembership(small);
+         small->inside = b;
++        small->on = NONE;
+         small->location = location;
+         SetHold(nullptr);
+         bool already_listed = false;
+@@ -5313,7 +5359,7 @@
+         EnsureEvidenceCapacity(b);
+         MarkDirectLocationEvidence(a, true);
+         SetInsideEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+-        MarkDirectLocationEvidence(b, true);
++        ConfirmContainerLocation(cont);
+         SetContainerEvidence(b, true, EvidenceSource::ACTION_SUCCESS);
+         InvalidateSenseAtLocation(location);
+         UpdateTaskList("putin", objects[a], objects[b]);
+@@ -5339,7 +5385,7 @@
+     if (action_succeeded)
+     {
+         container->isOpen = false;
+-        MarkDirectLocationEvidence(a, true);
++        ConfirmContainerLocation(container);
+         SetContainerEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+         InvalidateSenseAtLocation(location);
+         UpdateTaskList("close", objects[a]);
+@@ -5365,7 +5411,7 @@
+     if (action_succeeded)
+     {
+         container->isOpen = true;
+-        MarkDirectLocationEvidence(a, true);
++        ConfirmContainerLocation(container);
+         SetContainerEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+         InvalidateSenseAtLocation(location);
+         UpdateTaskList("open", objects[a]);
+@@ -5388,7 +5434,9 @@
+     RecordActionOutcome("FromPlate", action_succeeded);
+     if (action_succeeded)
+     {
+-        SetHold(plate);
++        auto small = dynamic_pointer_cast<SmallObject>(objects[a]);
++        ClearContainerMembership(small);
++        SetHold(small);
+         SetPlate(nullptr);
+         MarkDirectLocationEvidence(a, true);
+         SetInsideEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+@@ -5411,7 +5459,9 @@
+     RecordActionOutcome("ToPlate", action_succeeded);
+     if (action_succeeded)
+     {
+-        SetPlate(hold);
++        auto small = dynamic_pointer_cast<SmallObject>(objects[a]);
++        ClearContainerMembership(small);
++        SetPlate(small);
+         SetHold(nullptr);
+         MarkDirectLocationEvidence(a, true);
+         SetInsideEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+@@ -5438,8 +5488,10 @@
+         SetHold(nullptr);
+         auto small = dynamic_pointer_cast<SmallObject>(objects[a]);
+         if (small) {
++            ClearContainerMembership(small);
+             small->location = location;
+             small->inside = NONE;
++            small->on = NONE;
+         }
+         MarkDirectLocationEvidence(a, true);
+         SetInsideEvidence(a, true, EvidenceSource::ACTION_SUCCESS);
+@@ -5467,6 +5519,7 @@
+     RecordActionOutcome("PickUp", action_succeeded);
+     if (action_succeeded)
+     {
++        ClearContainerMembership(small);
+         SetHold(small);
+         small->location = location;
+         small->inside = NONE;
+@@ -6412,9 +6465,9 @@
+                                        EvidenceSource::EXPLICIT_INFO);
+             auto small=dynamic_pointer_cast<SmallObject>(v);
+             if(small!=nullptr) {
+-                small->inside=NONE;
++                // Official on/near mean co-location; neither proves outside.
++                ReconcileLocationRelation(small);
+                 small->on = info.Y[0]->id;
+-                SetInsideEvidence(v->id, true, EvidenceSource::EXPLICIT_INFO);
+             }
+         }
+     }
+@@ -6432,8 +6485,7 @@
+                                        EvidenceSource::EXPLICIT_INFO);
+             auto small=dynamic_pointer_cast<SmallObject>(v);
+             if(small!=nullptr) {
+-                small->inside=NONE;
+-                SetInsideEvidence(v->id, true, EvidenceSource::EXPLICIT_INFO);
++                ReconcileLocationRelation(small);
+             }
+             }
+ 
+@@ -6447,8 +6499,7 @@
+                                        EvidenceSource::EXPLICIT_INFO);
+             auto small=dynamic_pointer_cast<SmallObject>(v);
+             if(small!=nullptr) {
+-                small->inside=NONE;
+-                SetInsideEvidence(v->id, true, EvidenceSource::EXPLICIT_INFO);
++                ReconcileLocationRelation(small);
+             }
+             }
+         }
+@@ -6459,6 +6510,8 @@
+         {
+             auto small = dynamic_pointer_cast<SmallObject>(info.X[0]);
+             if (!small) return;
++            ClearContainerMembership(small);
++            if (hold_id == small->id) SetHold(nullptr);
+             SetPlate(small);
+             SetInsideEvidence(small->id, true, EvidenceSource::EXPLICIT_INFO);
+         }
+@@ -6477,6 +6530,10 @@
+         {
+             auto p = dynamic_pointer_cast<SmallObject>(v);
+             if (!p) continue;
++            ClearContainerMembership(p);
++            if (hold_id == p->id) SetHold(nullptr);
++            if (plate_id == p->id) SetPlate(nullptr);
++            p->on = NONE;
+             p->inside = cId;
+             p->location=c->location;
+             SetInsideEvidence(p->id, true, EvidenceSource::EXPLICIT_INFO);
+@@ -7112,11 +7169,26 @@
+             }
+         }
+ 
++        // Inferred positions are dependent values, never independent votes.
++        // Drop them when their anchor disappears, moves or is contradicted,
++        // including refreshes that deliberately do not propagate new values.
++        for (unsigned int id : members) {
++            if (!objectLocationInferredByMustNear[id]) continue;
++            if (chosen_location == UNKNOWN || conflicts_with_evidence ||
++                objects[id]->location != chosen_location) {
++                objects[id]->location = UNKNOWN;
++                MarkDirectLocationEvidence(id, false, EvidenceSource::UNKNOWN);
++            } else if (direct_votes.empty()) {
++                MarkDirectLocationEvidence(id, false, EvidenceSource::CONSTRAINT_HEURISTIC);
++            }
++        }
++
+         if (propagate_evidence && chosen_location != UNKNOWN && !conflicts_with_evidence) {
+             const bool anchored = !direct_votes.empty();
+             for (unsigned int id : members) {
+                 if (objects[id]->location == chosen_location &&
+-                    objectLocationVerified[id] && !objectLocationInferredByMustNear[id]) continue;
++                    !objectLocationInferredByMustNear[id] &&
++                    (objectLocationVerified[id] || !anchored)) continue;
+ 
+                 objects[id]->location = chosen_location;
+                 MarkDirectLocationEvidence(id, anchored,
+@@ -7309,7 +7381,7 @@
+         // 优先满足冲突最小原则
+         // 如果必须open且不能closed
+         if (must_open && !cons_not_open && !must_closed) {
+-            if (!cont->isOpen) {
++            if (cont->isOpen != 1) {
+                 cont->isOpen = true;
+                 LOG(GREEN "[AutoOpenClose] set container %d open (by notnot)\n" RESET, cont->id);
+             }
+@@ -7330,7 +7402,7 @@
+         }
+         // 如果not要求not closed，则要打开
+         else if (cons_not_closed && !must_closed) {
+-            if (!cont->isOpen) {
++            if (cont->isOpen != 1) {
+                 cont->isOpen = true;
+                 LOG(GREEN "[AutoOpenClose] set container %d open (by not constraint)\n" RESET, cont->id);
+             }
+--- src1.6.3/rdfw.hpp
++++ src1.6.4/rdfw.hpp
+@@ -122,7 +122,7 @@
+ 
+         // Initialize through info
+         SmallObject(int id, int location = UNKNOWN, const string &sort = "", const string &color = "")
+-            : Object(location, sort, id), color(color) {}
++            : Object(id, sort, location), color(color) {}
+ 
+         // Initialize through Object class
+         SmallObject(shared_ptr<Object> obj)
+@@ -149,7 +149,7 @@
+     public:
+         // Initialize through info
+         BigObject(int id, int location = UNKNOWN, string sort = "")
+-            : Object(location, sort, id) {}
++            : Object(id, sort, location) {}
+ 
+         // Initialize through Object class
+         BigObject(shared_ptr<Object> obj)
+@@ -245,6 +245,11 @@
+                 this->hold->location = location;
+                 hold_id = hold->id;
+                 hold->inside = NONE;
++                hold->on = NONE;
++                if (plate_id == hold_id) {
++                    plate.reset();
++                    plate_id = NONE;
++                }
+             }
+             else
+                 hold_id = NONE;
+@@ -256,6 +261,11 @@
+                 this->plate->location = location;
+                 plate_id = plate->id;
+                 plate->inside = NONE;
++                plate->on = NONE;
++                if (hold_id == plate_id) {
++                    hold.reset();
++                    hold_id = NONE;
++                }
+             }
+             else
+                 plate_id = NONE;
+@@ -679,6 +689,9 @@
+ 
+ 
+     private:
++        void ClearContainerMembership(const shared_ptr<SmallObject>& small);
++        void ReconcileLocationRelation(const shared_ptr<SmallObject>& small);
++        void ConfirmContainerLocation(const shared_ptr<Container>& container);
+         friend struct ScoreSemanticsTestAccess;
+ 
+         friend class TerminalChecker;
+@@ -724,7 +737,8 @@
+         CandidatePlan BuildTaskGroupPlan(const std::vector<std::size_t>& group,
+                                          bool continue_legacy = false,
+                                          std::size_t legacy_cursor = 0,
+-                                         bool defer_multi_goto = false);
++                                         bool defer_multi_goto = false,
++                                         int final_move_destination = UNKNOWN);
+         CandidatePlan ProjectLegacyContinuation(std::size_t main_cursor,
+                                                 bool defer_multi_goto);
+         enum class GuardedDecisionOutcome { USE_LEGACY, EXECUTED, STOPPED };
+--- src1.6.3/README.md
++++ src1.6.4/README.md
+@@ -1,30 +1,33 @@
+-# src1.6.3
++# src1.6.4
+ 
+-基于 `src1.6.2` 的独立版本。保留 1.6.2 的评分语义与资格账本，将确定下界/可能上界与 1.6.1 的决策优先级分开；只有严格区间支配才允许因评分硬淘汰。统一按平台 5000 ms 上限管理时间，修复不完整投影被当作零耗时计划的尾部门控。默认仍为 off；guarded 仍只支持原 Stage 1 范围。没有概率、贝叶斯或学习。
++独立基线为已完成的 src1.6.3。此版修复状态一致性，没有增加决策策略、任务或评分启发式；strict interval dominance、legacy priority fallback、完整投影准入和 5000 ms 平台期限不变。
+ 
+-- [修复与验证说明](docs/RELEASE_1.6.3.md)
+-- [逐题、重复和性能证据](test-results/validation-20260927/REPORT.md)
+-- 最终配对入口：`tests/run_interval_validation.py`
+-- `docs/AUDIT.md` 和 `docs/RELEASE_1.6.2.md` 是继承的基线审计记录。
++- [开发报告](docs/RELEASE_1.6.4.md)
++- [验证汇总](test-results/validation-20260927/summary.json)
++- [修复前复现](test-results/validation-20260927/probe-ctest.log)
++- [源码差异与哈希](test-results/validation-20260927/manifest.json)
+ 
+-在 Linux/WSL 中构建本地测试：
++本地与官方语义测试（WSL/Linux，SDK 只读，构建目录独立）：
+ 
+ ```sh
+-mkdir -p /tmp/rdfw-163-tests
+-cd /tmp/rdfw-163-tests
+-cmake /path/to/src1.6.3/tests -DCMAKE_BUILD_TYPE=Debug -DOFFICIAL_SDK=/home/yifan/env-release-2026
++mkdir -p /tmp/rdfw-164-unit
++cd /tmp/rdfw-164-unit
++cmake /path/to/src1.6.4/tests -DOFFICIAL_SDK=/home/yifan/env-release-2026
+ cmake --build . -- -j4
+ ctest --output-on-failure
+ ```
+ 
+-省略 `OFFICIAL_SDK` 运行 10 组本地测试；提供 SDK 增加包含 16 个案例的官方语义测试，合计 11 组。SDK 资源复制到独立构建目录，不修改安装目录。
++包含原有十组本地测试、新增二十个状态用例及一组含十六个案例的官方评分语义测试，共 31 个 CTest；sanitizer 不链接未插桩的官方评分库，共 30 个。
+ 
+-官方复跑：
++官方配对：
+ 
+ ```sh
+-python3 tests/run_interval_validation.py --output /tmp/rdfw-163-new-full --full --repeats 1
+-python3 tests/run_interval_validation.py --output /tmp/rdfw-163-new-target --repeats 5
+-python3 tests/run_interval_validation.py --output /tmp/rdfw-163-new-off --quick --group-mode off --repeats 1
++python3 tests/run_interval_validation.py --output /tmp/rdfw-164-release-final-full --full --repeats 1 --diagnostics off
++python3 tests/run_interval_validation.py --output /tmp/rdfw-164-release-final-target --cases 03 06 29 --repeats 3 --diagnostics off
++python3 tests/run_interval_validation.py --output /tmp/rdfw-164-release-final-off --quick --group-mode off --repeats 1 --diagnostics off
++python3 tests/package_state_validation.py
+ ```
+ 
+-默认定向 06 IT/NT、29 IT；`--full` 覆盖基线 86 对，`--quick` 覆盖 14 对默认路径。重复轮交替执行两版；`--binaries` 可复用两个已核对哈希的构建。`RDFW_STAGE_TIMING=1` 开启固定计数器的阶段计时，仅在 Plan 结束汇总输出；默认关闭。`--diagnostics off` 可测诊断关闭路径，`tests/build_diagnostic_baseline.py` 创建只增加计时的 1.6.2 副本供性能对照。
++默认配对为 src1.6.3 / src1.6.4，外部种子 20260927，平台期限 5000 ms。`--binaries` 可复用已核对源码哈希的两个构建。`tests/baseline_probe` 直接编译未改动的 src1.6.3，只替换测试 stub，以复现新增测试；其中失败是预期的审计证据。
++
++继承的 RELEASE_1.6.3、RELEASE_1.6.2、AUDIT 是历史基线记录；其旧验证目录位于原版本中。其他继承的历史测试工具仍可能固定使用旧版本，当前验收入口为上列命令。
+--- src1.6.3/tests/CMakeLists.txt
++++ src1.6.4/tests/CMakeLists.txt
+@@ -19,6 +19,13 @@
+     add_test(NAME ${test_name} COMMAND ${test_name} "${CMAKE_CURRENT_BINARY_DIR}/words.txt")
+ endforeach()
+ 
++add_executable(state_invariant_tests state_invariant_tests.cpp)
++target_link_libraries(state_invariant_tests rdfw_test_core)
++target_compile_options(state_invariant_tests PRIVATE -UNDEBUG)
++foreach(case RANGE 0 19)
++    add_test(NAME state_invariant_${case} COMMAND state_invariant_tests "${CMAKE_CURRENT_BINARY_DIR}/words.txt" ${case})
++endforeach()
++
+ if(OFFICIAL_SDK)
+     add_executable(official_score_semantics_tests score_semantics_tests.cpp)
+     target_compile_definitions(official_score_semantics_tests PRIVATE OFFICIAL_SCORE_TEST)
+--- src1.6.3/tests/run_interval_validation.py
++++ src1.6.4/tests/run_interval_validation.py
+@@ -16,9 +16,10 @@
+ def main():
+     p = argparse.ArgumentParser(description=__doc__)
+     p.add_argument('--output', type=Path, required=True)
+-    p.add_argument('--versions', nargs='+', default=['src1.6.2', 'src1.6.3'])
++    p.add_argument('--versions', nargs='+', default=['src1.6.3', 'src1.6.4'])
+     p.add_argument('--binaries', nargs='+', type=Path)
+     p.add_argument('--repeats', type=int, default=3)
++    p.add_argument('--cases', nargs='+', help='Target original cases, both IT and NT')
+     p.add_argument('--full', action='store_true')
+     p.add_argument('--quick', action='store_true', help='the 7 decision/combinatorial fixtures, IT/NT')
+     p.add_argument('--group-mode', default='guarded', choices=['off', 'guarded'])
+@@ -28,17 +29,20 @@
+     a.output.mkdir(parents=True, exist_ok=False)
+     binaries = a.binaries or [build(v, a.sdk, a.output / ('build-' + Path(v).name)) for v in a.versions]
+     assert len(binaries) == len(a.versions)
+-    shim = Path('/tmp/rdfw-163-seed.so')
++    shim = Path('/tmp/rdfw-164-seed.so')
+     subprocess.run(['g++', '-shared', '-fPIC', str(Path(__file__).with_name('seed_rng.cpp')), '-ldl', '-o', str(shim)], check=True)
+     os.environ.update(LD_PRELOAD=str(shim), RDFW_TEST_SEED='20260927', RDFW_TASK_GROUP_MODE=a.group_mode, RDFW_STAGE_TIMING='1' if a.diagnostics=='on' else '0')
+     assets = a.output / 'assets'
+     assets.mkdir()
+-    (assets / 'words.txt').write_bytes((ROOT / 'src1.6.3/words.txt').read_bytes().replace(b'\r\n', b'\n'))
++    (assets / 'words.txt').write_bytes((ROOT / 'src1.6.4/words.txt').read_bytes().replace(b'\r\n', b'\n'))
+     cases = [(ROOT / '题目/realcompetiton_2024' / (i + '.xml'), m) for i, m in [('06','it'),('06','nt'),('29','it')]]
++    if a.cases:
++        cases = [(ROOT / '题目/realcompetiton_2024' / (i + '.xml'), m)
++                 for i in a.cases for m in ('it', 'nt')]
+     if a.full or a.quick:
+         files = []
+         for d in ('decision','combinatorial_gain'):
+-            files += sorted((ROOT / 'src1.6.3/tests/fixtures' / d).glob('*.xml'))
++            files += sorted((ROOT / 'src1.6.4/tests/fixtures' / d).glob('*.xml'))
+         if not a.quick:
+             files += sorted((ROOT / '题目/constraint_tradeoff_challenge_2026').glob('*.xml'))
+             files += [ROOT / '题目/realcompetiton_2024' / (i+'.xml') for i in ('01','03','06','15','28','29')]
+--- src1.6.3/tests/stubs/cserver/plug.hpp
++++ src1.6.4/tests/stubs/cserver/plug.hpp
+@@ -17,6 +17,8 @@
+         platform_calls_ = 0;
+     }
+     unsigned int TestPlatformCalls() const { return platform_calls_; }
++    void SetSenseResult(const std::vector<unsigned int>& values) { sense_result_ = values; }
++    void SetAskResult(const std::string& value) { ask_result_ = value; }
+     void SetActionResults(const std::vector<bool>& results) {
+         action_results_ = results;
+         action_result_cursor_ = 0;
+@@ -41,8 +43,8 @@
+     virtual bool Close(unsigned int) { return NextActionResult(); }
+     virtual bool PutIn(unsigned int, unsigned int) { return NextActionResult(); }
+     virtual bool TakeOut(unsigned int, unsigned int) { return NextActionResult(); }
+-    virtual std::string AskLoc(unsigned int) { ++platform_calls_; return "not_known"; }
+-    virtual void Sense(std::vector<unsigned int>& values) { ++platform_calls_; values.clear(); }
++    virtual std::string AskLoc(unsigned int) { ++platform_calls_; return ask_result_; }
++    virtual void Sense(std::vector<unsigned int>& values) { ++platform_calls_; values = sense_result_; }
+ 
+ private:
+     bool NextActionResult() {
+@@ -56,6 +58,8 @@
+     unsigned int platform_calls_ = 0;
+     std::vector<bool> action_results_;
+     std::size_t action_result_cursor_ = 0;
++    std::vector<unsigned int> sense_result_;
++    std::string ask_result_ = "not_known";
+ };
+ 
+ } // namespace _home

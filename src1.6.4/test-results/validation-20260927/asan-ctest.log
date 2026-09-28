@@ -1,0 +1,65 @@
+Test project /tmp/rdfw-164-asan
+      Start  1: input_safety_tests
+ 1/30 Test  #1: input_safety_tests ...............   Passed    0.02 sec
+      Start  2: three_a_tests
+ 2/30 Test  #2: three_a_tests ....................   Passed    0.02 sec
+      Start  3: question_preflight_tests
+ 3/30 Test  #3: question_preflight_tests .........   Passed    0.05 sec
+      Start  4: legal_preservation_tests
+ 4/30 Test  #4: legal_preservation_tests .........   Passed    0.02 sec
+      Start  5: recovery_evidence_tests
+ 5/30 Test  #5: recovery_evidence_tests ..........   Passed    0.03 sec
+      Start  6: task_group_search_tests
+ 6/30 Test  #6: task_group_search_tests ..........   Passed    0.02 sec
+      Start  7: task_group_projection_tests
+ 7/30 Test  #7: task_group_projection_tests ......   Passed    0.02 sec
+      Start  8: guarded_decision_tests
+ 8/30 Test  #8: guarded_decision_tests ...........   Passed    0.06 sec
+      Start  9: score_semantics_tests
+ 9/30 Test  #9: score_semantics_tests ............   Passed    0.04 sec
+      Start 10: interval_gate_tests
+10/30 Test #10: interval_gate_tests ..............   Passed    0.02 sec
+      Start 11: state_invariant_0
+11/30 Test #11: state_invariant_0 ................   Passed    0.02 sec
+      Start 12: state_invariant_1
+12/30 Test #12: state_invariant_1 ................   Passed    0.02 sec
+      Start 13: state_invariant_2
+13/30 Test #13: state_invariant_2 ................   Passed    0.02 sec
+      Start 14: state_invariant_3
+14/30 Test #14: state_invariant_3 ................   Passed    0.02 sec
+      Start 15: state_invariant_4
+15/30 Test #15: state_invariant_4 ................   Passed    0.02 sec
+      Start 16: state_invariant_5
+16/30 Test #16: state_invariant_5 ................   Passed    0.02 sec
+      Start 17: state_invariant_6
+17/30 Test #17: state_invariant_6 ................   Passed    0.02 sec
+      Start 18: state_invariant_7
+18/30 Test #18: state_invariant_7 ................   Passed    0.02 sec
+      Start 19: state_invariant_8
+19/30 Test #19: state_invariant_8 ................   Passed    0.02 sec
+      Start 20: state_invariant_9
+20/30 Test #20: state_invariant_9 ................   Passed    0.02 sec
+      Start 21: state_invariant_10
+21/30 Test #21: state_invariant_10 ...............   Passed    0.02 sec
+      Start 22: state_invariant_11
+22/30 Test #22: state_invariant_11 ...............   Passed    0.02 sec
+      Start 23: state_invariant_12
+23/30 Test #23: state_invariant_12 ...............   Passed    0.02 sec
+      Start 24: state_invariant_13
+24/30 Test #24: state_invariant_13 ...............   Passed    0.02 sec
+      Start 25: state_invariant_14
+25/30 Test #25: state_invariant_14 ...............   Passed    0.02 sec
+      Start 26: state_invariant_15
+26/30 Test #26: state_invariant_15 ...............   Passed    0.02 sec
+      Start 27: state_invariant_16
+27/30 Test #27: state_invariant_16 ...............   Passed    0.02 sec
+      Start 28: state_invariant_17
+28/30 Test #28: state_invariant_17 ...............   Passed    0.02 sec
+      Start 29: state_invariant_18
+29/30 Test #29: state_invariant_18 ...............   Passed    0.02 sec
+      Start 30: state_invariant_19
+30/30 Test #30: state_invariant_19 ...............   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 30
+
+Total Test time (real) =   0.66 sec

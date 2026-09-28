@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+<env mis="off" err="off" ans="off">
+<info>
+(hold 0) (plate 0) (at 0 1)
+(sort 1 human) (size 1 big) (at 1 1)
+(sort 2 cup) (size 2 small) (color 2 red) (at 2 2)
+(sort 3 cup) (size 3 small) (color 3 blue) (at 3 3)
+(sort 4 cup) (size 4 small) (color 4 green) (at 4 3)
+</info>
+<mis></mis><err><r></r><w></w></err><extra></extra>
+</env>
+<instr>
+(:ins
+(:task (pickup X) (:cond (sort X cup) (color X red)))
+(:task (pickup X) (:cond (sort X cup) (color X blue)))
+(:task (pickup X) (:cond (sort X cup) (color X green)))
+)
+</instr>
+<nl>
+Pick up the red cup.
+Pick up the blue cup.
+Pick up the green cup.
+</nl>
+</test>

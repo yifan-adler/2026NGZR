@@ -1,0 +1,16 @@
+Test project /tmp/rdfw-164-unit
+    Start 30: state_invariant_19
+1/1 Test #30: state_invariant_19 ...............***Exception: Child aborted  0.01 sec
+[LOG]:-path
+[LOG]:nlp 0, err 0
+#(RDFW): Initializing dynamic arrays with size 100
+#(RDFW): Dynamic arrays initialization completed
+state_invariant_tests: /mnt/d/FILES for Yvaine/WUT/Match/robocup/2026NGZR/src1.6.4/tests/state_invariant_tests.cpp:217: int main(int, char**): Assertion `c->isOpen==1 && w->IsContainerStateVerified(2)' failed.
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+The following tests FAILED:
+	 30 - state_invariant_19 (Child aborted)
